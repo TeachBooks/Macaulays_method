@@ -1,3 +1,6 @@
 [submodule "book/theses/De-methode-van-Macaulay-voor-tweedimensionale-constructies"]
 	path = book/theses/De-methode-van-Macaulay-voor-tweedimensionale-constructies
 	url = https://github.com/jvanderWulp/De-methode-van-Macaulay-voor-tweedimensionale-constructies
+[submodule "book/theses/Macaulay-s-toegepast-met-invloedslijnen"]
+	path = book/theses/Macaulay-s-toegepast-met-invloedslijnen
+	url = https://github.com/JuliaJankie/Macaulay-s-toegepast-met-invloedslijnen

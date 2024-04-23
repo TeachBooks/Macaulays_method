@@ -8,6 +8,12 @@ parts:
       sections:
       - file: theses/De-methode-van-Macaulay-voor-tweedimensionale-constructies/BEP_Voorbeelden.ipynb
         title: Code example
+    - file: theses/julia.md
+      sections:
+      - file: theses/Macaulay-s-toegepast-met-invloedslijnen/Eendimensionale_voorbeelden.ipynb
+        title: Code example one dimensional
+      - file: theses/Macaulay-s-toegepast-met-invloedslijnen/Tweedimensionale_voorbeelden.ipynb
+        title: Code example two dimensional
   - caption: Appendices
     chapters:
     - file: references.md
