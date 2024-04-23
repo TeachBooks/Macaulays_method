@@ -3,15 +3,15 @@
 
 _This book shows an overview of the student's work on Macaulay's method_
 
-|     Feature                                     |     Toegevoegd door    |     Datum              |     Status                      |
+|     Feature                                     |     Added by           |     Date               |     Status                      |
 |-------------------------------------------------|------------------------|------------------------|---------------------------------|
-|     Normaalkrachten                             |     Justus             |     23 juni 2023       |     Afgerond                    |
-|     Scharnieren                                 |     Justus             |     23 juni 2023       |     Afgerond                    |
-|     Verende verbindingen                        |     Justus             |     23 juni 2023       |     Afgerond                    |
-|     Verende opleggingen                         |     Justus             |     23 juni 2023       |     Afgerond                    |
-|     2D discrete aanpak                          |     Justus             |     23 juni 2023       |     Verbeteringen   mogelijk    |
-|     Invloedslijnen voor   1D                    |     Julia              |     31 oktober 2023    |     Afgerond                    |
-|     Invloedslijnen voor   2D discrete aanpak    |                        |                        |                                 |
+|     Normal forces                               |     Justus             |     23 June 2023       |     Completed                   |
+|     Hinges                                      |     Justus             |     23 June 2023       |     Completed                   |
+|     Hinged connections                          |     Justus             |     23 June 2023       |     Completed                   |
+|     Hinged supports                             |     Justus             |     23 June 2023       |     Completed                   |
+|     2D structure with discrete parts            |     Justus             |     23 June 2023       |     Could be improved with continuous implementation |
+|     Influence line voor 1D structures           |     Julia              |     31 October 2023    |     Completed                   |
+
 
 ---
 
