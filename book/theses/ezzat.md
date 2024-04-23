@@ -4,10 +4,10 @@
 >
 > In het werkelijkheid kunnen liggers schuin geplaatst zijn of een gebogen vorm hebben. Echter, is er nog geen onderzoek gedaan naar de toepassing van Macaulay’s methode met niet rechte liggers. Dit rapport probeert de volgende vraag en de te beantwoorden:
 >
->Hoe kan de methode van Macaulay worden toegepast met betrekking tot zowel schuine liggers als
+> Hoe kan de methode van Macaulay worden toegepast met betrekking tot zowel schuine liggers als
 kromme liggers?
-
->Om de schuine liggers te kunnen analyseren, worden de evenwichtsvergelijkingen eerst opgesteld voor een hellingssnede (snede van een balk die onder hoek $\theta$ staat met de horizontale as).
+> 
+> Om de schuine liggers te kunnen analyseren, worden de evenwichtsvergelijkingen eerst opgesteld voor een hellingssnede (snede van een balk die onder hoek $\theta$ staat met de horizontale as).
 > 
 > ```{figure} ./figures/Figuur_1_ezzat.png
 > :height: 200 px

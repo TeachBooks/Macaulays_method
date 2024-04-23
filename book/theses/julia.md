@@ -1,4 +1,4 @@
-# Julia: influence lines
+# Julia: Influence lines
 
 > De methode van Macaulay is een methode waarmee interne krachten voor een constructie met belastingen kan worden bepaald. Macaulay maakt gebruik van singulariteitsfuncties om discontinue belastingen op constructies overzichtelijk te beschrijven. De methode van Macaulay is zowel voor eendimensionale als tweedimensionale constructies toepasbaar.
 > Invloedslijnen worden toegepast in de mechanica om de meest ongunstige posities van krachten te vinden. Echter is er nog geen onderzoek verricht naar de toepassing van Macaulay’s methode met invloedslijnen. Daarom is er gekeken naar hoe deze invloedslijnen kunnen worden gecombineerd met de methode van Macaulay om het bepalen van invloedslijnen overzichtelijker te maken. De onderzoeksvraag van dit rapport luidt: _Hoe kan Macaulay’s methode worden toegepast met invloedslijnen voor zowel eendimensionale als tweedimensionale constructies?_

@@ -1,4 +1,4 @@
-# Justus: hinges and 2D discrete
+# Justus: Hinges and 2D discrete
 
 > Macaulay’s methode is een methode om de kracht en doorbuiging eigenschappen van constructies te bepalen aan de hand van de differentiaalvergelijking voor buiging. Met gebruik van singularity functies is het mogelijk discontinue belastingen werkend op een constructie in één vergelijking te schrijven. Op deze wijze is de gehele constructie te beschrijven met behulp van één differentiaalvergelijking. Dit in tegenstelling tot de klassieke integratie methode, waar voor elke discontinuïteit de constructie wordt opgedeeld in verschillende vergelijkingen.
 > De methode van Macaulay biedt als voordeel dat de integratieconstanten gering blijven. Daarnaast wordt de invloed van een desbetreffende kracht op de constructie zichtbaar. Uitbreidingen op de methode zijn er op basis van discontinuïteiten in de buigstijfheid, doorbuiging en rotatie van de constructie. De methode is echter nooit uitgebreid voor tweedimensionale constructies.
