@@ -1,6 +1,8 @@
 # first list the packages you wish to download from PyPI
 teachbooks # depends on jupyter-book
-# numpy
+numpy
+sympy
+matplotlib
 
 # docutils version for reference page formatting
 docutils==0.17.1
@@ -10,6 +12,3 @@ docutils==0.17.1
 jupyterbook_patches ~= 0.1.4
 --extra-index-url https://gitlab.tudelft.nl/api/v4/projects/11239/packages/pypi/simple
 sphinx-thebe ~= 0.9.9
-
-# lastly any packages you wish to download directly from a Git repository
-download_link_replacer @ git+https://gitlab.tudelft.nl/mude/sphinx-download-link-replacer
