@@ -16,4 +16,4 @@ en vervolgens worden toegepast?
 
 ## Document
 - [TU Delft Education repository](http://resolver.tudelft.nl/uuid:96ec934a-4520-465f-8079-01b9fad73360)
-- [GitHub repository](https://github.com/jvanderWulp/De-methode-van-Macaulay-voor-tweedimensionale-constructies)
+- [GitHub repository](https://github.com/jvanderWulp/De-methode-van-Macaulay-voor-tweedimensionale-constructies), examples also shown [in this book](./De-methode-van-Macaulay-voor-tweedimensionale-constructies/BEP_Voorbeelden.ipynb)
