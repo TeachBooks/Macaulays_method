@@ -4,9 +4,10 @@ root: intro.md
 parts:
   - caption: Overview
     chapters:
-    - file: overview.md
     - file: Onderzoeksvoorstel.ipynb
-  - caption: Student theses
+      title: Research proposal (in Dutch)
+    - file: overview.md
+  - caption: Student theses (in Dutch)
     chapters:
     - file: theses/justus.md
       sections:
