@@ -6,7 +6,9 @@ parts:
     chapters:
     - file: theses/justus.md
       sections:
-      - file: theses/De-methode-van-Macaulay-voor-tweedimensionale-constructies/BEP%20Voorbeelden.ipynb
+      - file: theses/De-methode-van-Macaulay-voor-tweedimensionale-constructies/BEP_Voorbeelden.ipynb
         title: Code example
+  - caption: Appendices
+    chapters:
     - file: references.md
     - file: credits.md

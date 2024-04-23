@@ -13,8 +13,7 @@ en vervolgens worden toegepast?
 > Het is te concluderen dat de gevonden methode voor de uitbreiding van Macaulay voor tweedimensionale constructies correct en toepasbaar is. Met betrekking tot effectiviteit is de vergelijking gemaakt met de methode van het klassiek integreren. Op basis van de veronderstelling dat de gevonden methode vier extra onbekenden introduceert per hoekpunt en de klassieke integratiemethode zes, is te concluderen dat deze methode een duidelijk te overwegen alternatief is op de klassieke integratie methode.
 
 {cite:ps}`vanderwulp_2023`
-{cite:ps}`vanderwulp_2023_2`
 
 ## Document
-[TU Delft Education repository](http://resolver.tudelft.nl/uuid:96ec934a-4520-465f-8079-01b9fad73360)
-[GitHub repository](https://github.com/jvanderWulp/De-methode-van-Macaulay-voor-tweedimensionale-constructies)
+- [TU Delft Education repository](http://resolver.tudelft.nl/uuid:96ec934a-4520-465f-8079-01b9fad73360)
+- [GitHub repository](https://github.com/jvanderWulp/De-methode-van-Macaulay-voor-tweedimensionale-constructies)
