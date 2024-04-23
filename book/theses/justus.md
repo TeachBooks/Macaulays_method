@@ -12,7 +12,7 @@ en vervolgens worden toegepast?
 > Vervolgens blijkt dat tweedimensionale constructies beschreven dienen te worden met de differentiaalvergelijkingen voor buiging en extensie. Met een discrete aanpak worden per hoekpunt vier onbekenden geïntroduceerd. Deze onbekenden hebben betrekking op de verplaatsing in axiale richting, de verplaatsing in dwarsrichting (doorbuiging), de normaalkracht en de dwarskracht. Op basis van vier verkregen relaties per hoekpunt is het mogelijk de onbekenden te achterhalen en zo de karakteristieken van de tweedimensionale constructie te bepalen. De relaties hebben betrekking op de wisselwerking tussen de normaalkracht en dwarskracht, en de wisselwerking tussen de axiale verplaatsing en de doorbuiging.
 > Het is te concluderen dat de gevonden methode voor de uitbreiding van Macaulay voor tweedimensionale constructies correct en toepasbaar is. Met betrekking tot effectiviteit is de vergelijking gemaakt met de methode van het klassiek integreren. Op basis van de veronderstelling dat de gevonden methode vier extra onbekenden introduceert per hoekpunt en de klassieke integratiemethode zes, is te concluderen dat deze methode een duidelijk te overwegen alternatief is op de klassieke integratie methode.
 
-{cite:ps}`vanderwulp_2023`
+{cite:ts}`vanderwulp_2023`
 
 ## Document
 - [TU Delft Education repository](http://resolver.tudelft.nl/uuid:96ec934a-4520-465f-8079-01b9fad73360)
