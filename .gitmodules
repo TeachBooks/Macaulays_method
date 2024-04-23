@@ -4,3 +4,6 @@
 [submodule "book/theses/Macaulay-s-toegepast-met-invloedslijnen"]
 	path = book/theses/Macaulay-s-toegepast-met-invloedslijnen
 	url = https://github.com/JuliaJankie/Macaulay-s-toegepast-met-invloedslijnen
+[submodule "book/theses/De-methode-van-Macaulay"]
+	path = book/theses/De-methode-van-Macaulay
+	url = https://github.com/Ezzat1998/De-methode-van-Macaulay

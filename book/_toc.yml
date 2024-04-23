@@ -19,6 +19,16 @@ parts:
         title: Code example one dimensional
       - file: theses/Macaulay-s-toegepast-met-invloedslijnen/Tweedimensionale_voorbeelden.ipynb
         title: Code example two dimensional
+    - file: theses/ezzat.md
+      sections:
+      - file: theses/De-methode-van-Macaulay/geknikte_constructie.ipynb
+        title: Code example kinked structure
+      - file: theses/De-methode-van-Macaulay/Varianten-(1).ipynb
+        title: Code example variants integrating
+      - file: theses/De-methode-van-Macaulay/Voorbeelden-1-t_m-3.ipynb
+        title: Code example 1 to 3
+      - file: theses/De-methode-van-Macaulay/Voorbeelden-4-en-5.ipynb
+        title: Code example 4 and 5
   - caption: Appendices
     chapters:
     - file: references.md
