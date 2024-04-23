@@ -1,5 +1,5 @@
 (intro)=
-# Macaulay's method
+# Overview
 
 _This book shows an overview of the student's work on Macaulay's method_
 
