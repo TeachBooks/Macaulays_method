@@ -1,9 +1,17 @@
 (intro)=
-# Welcome to the Template Book
+# Macaulay's method
 
-_Write book intro here. This is the first page the student will see when opening the url._
+_This book shows an overview of the student's work on Macaulay's method_
 
-This book can be used as a template for other books. It includes all software developed by the CEG interactive books initiative and make it easier to keep various software in those other books up to date.
+|     Feature                                     |     Toegevoegd door    |     Datum              |     Status                      |
+|-------------------------------------------------|------------------------|------------------------|---------------------------------|
+|     Normaalkrachten                             |     Justus             |     23 juni 2023       |     Afgerond                    |
+|     Scharnieren                                 |     Justus             |     23 juni 2023       |     Afgerond                    |
+|     Verende verbindingen                        |     Justus             |     23 juni 2023       |     Afgerond                    |
+|     Verende opleggingen                         |     Justus             |     23 juni 2023       |     Afgerond                    |
+|     2D discrete aanpak                          |     Justus             |     23 juni 2023       |     Verbeteringen   mogelijk    |
+|     Invloedslijnen voor   1D                    |     Julia              |     31 oktober 2023    |     Afgerond                    |
+|     Invloedslijnen voor   2D discrete aanpak    |                        |                        |                                 |
 
 ---
 
