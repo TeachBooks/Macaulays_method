@@ -28,6 +28,6 @@
 
 {cite:ts}`jankie_2023`
 
-## Document
+## Documenten
 - [TU Delft Education repository](http://resolver.tudelft.nl/uuid:d6869e59-57a0-4dca-9d4d-19050a0e1a89)
 - [GitHub repository](https://github.com/JuliaJankie/Macaulay-s-toegepast-met-invloedslijnen), examples also shown in this book: [example 1](./Macaulay-s-toegepast-met-invloedslijnen/Eendimensionale_voorbeelden.ipynb) and [example 2](./Macaulay-s-toegepast-met-invloedslijnen/Tweedimensionale_voorbeelden.ipynb)
