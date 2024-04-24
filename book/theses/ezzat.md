@@ -31,7 +31,7 @@ kromme liggers?
 > Kniksnede
 > ```
 >
-> Onder de aanname dat een kromme lijn is een opeenvolging van lijnsegmenten die elkaar opvlogen met kleine hoekverschillen, kan $\Delta\theta$ als klein worden beschouwd. Door deze aanname, in combinatie van de drie evenwichtsvergelijkingen voor de kinksnede, worden opnieuw dezelfde differentiaalvergelijkingen verkregen die al eerder zijn afgeleid voor de hellingssnede. Het enige verschil nu is dat de hoek $\theta$ niet langer constant maar varieert telkens wanneer de kromme van richting verandert. De hoek $\theta$ kan zowel globaal (globale $\theta$ is de afgeleide van de construc􀆟efunc􀆟e) als lokaal (lokale $\theta$ is de hoek onder elke lijnsegment van de kromme) worden bepaald. Het blijkt dat het toepassen van de lokale $\theta$ een nauwkeurige analyse oplevert van zowel de krachten als de doorbuiging.
+> Onder de aanname dat een kromme lijn is een opeenvolging van lijnsegmenten die elkaar opvlogen met kleine hoekverschillen, kan $\Delta\theta$ als klein worden beschouwd. Door deze aanname, in combinatie van de drie evenwichtsvergelijkingen voor de kinksnede, worden opnieuw dezelfde differentiaalvergelijkingen verkregen die al eerder zijn afgeleid voor de hellingssnede. Het enige verschil nu is dat de hoek $\theta$ niet langer constant maar varieert telkens wanneer de kromme van richting verandert. De hoek $\theta$ kan zowel globaal (globale $\theta$ is de afgeleide van de constructoefunctoe) als lokaal (lokale $\theta$ is de hoek onder elke lijnsegment van de kromme) worden bepaald. Het blijkt dat het toepassen van de lokale $\theta$ een nauwkeurige analyse oplevert van zowel de krachten als de doorbuiging.
 >
 > ```{figure} ./figures/Figuur_3_ezzat.png
 > :height: 200 px
