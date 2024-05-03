@@ -7,6 +7,7 @@ parts:
     - file: Onderzoeksvoorstel.ipynb
       title: Research proposal (in Dutch)
     - file: overview.md
+    - file: current_extensions
   - caption: Student theses (in Dutch)
     chapters:
     - file: theses/justus.md

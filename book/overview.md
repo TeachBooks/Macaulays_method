@@ -1,7 +1,6 @@
 (overview)=
-# Current and future extensions
+# List of current and future extensions
 
-_This book shows an overview of the student's work on Macaulay's method_
 
 |    Extension                                    |     Added by           |     Date               |     Status                       |
 |-------------------------------------------------|------------------------|------------------------|----------------------------------|
