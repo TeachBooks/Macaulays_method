@@ -30,6 +30,8 @@ parts:
         title: Code example 1 to 3
       - file: theses/De-methode-van-Macaulay/Voorbeelden-4-en-5.ipynb
         title: Code example 4 and 5
+    - file: theses/alex
+    - file: theses/mark
   - caption: Appendices
     chapters:
     - file: references.md
