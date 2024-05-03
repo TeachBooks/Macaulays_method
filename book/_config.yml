@@ -1,7 +1,6 @@
 title: Template
-author: Tom van Woudenberg
+author: Tom van Woudenberg, built with <a href="https://teachbooks.tudelft.nl/">TeachBooks</a> and <a href="https://jupyterbook.org/">Jupyter Book</a>, <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer"">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""> #Add your own name here
 logo: figures/TUDelft_logo_rgb.png
-copyright: Delft University of Technology, CC BY 4.0
 
 execute:
   execute_notebooks: "off"
@@ -10,11 +9,12 @@ only_build_toc_files: true
 
 html:
   favicon : "figures/favicon.ico"
+  baseurl :  "https://teachbooks.github.io/Macaulays_method/" #Replace this with your own URL
   home_page_in_navbar       : false
 
 sphinx:
   config:
-    html_show_copyright: true
+    html_show_copyright: false
     html_js_files:
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     thebe_config:
