@@ -13,7 +13,7 @@
 |     Influence line for 2D structures            |     Julia              |     31 October 2023    |     Completed                    |
 |     (Curved) 1D structures with continuous parts with load in global coordinate system          |     Ezzat              |             |     Completed |
 |     Implementation in SymPy package             |     Mark               |     -                  |     Work in progress             |
-|     2D structures with continuous definition     |     Alex                  |     -                  |     Work in progress              |
+|     2D structures with continuous definition     |     -                 |     -                  |     -             |
 |     Branching 2D structures with discrete parts  |     Alex                  |     -                  |     Work in progress, suggestions provided by Ezzat |
 |     Branching 2D structures with continuous definition  |   Alex                  |     -                  |     Work in progress suggestion provided by Ezzat |
 |     Looping 2D structures                       |     Alex                  |     -                  |     Work in progress              |
