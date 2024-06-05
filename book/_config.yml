@@ -19,7 +19,7 @@ sphinx:
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     thebe_config:
       use_thebe_lite: true
-      exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"]
+      exclude_patterns: ["**/**"]
     html_theme_options:
       repository_url: "https://github.com/TeachBooks/Macaulays_method"
       use_repository_button: true
