@@ -18,9 +18,17 @@ In dit rapport wordt er gerefereerd naar de werken van Van der Wulp (2023), Jank
 
 ### 1.1 Belastingvergelijking
 
-Uit de balkentheorie van Euler-Bernoulli kunnen de differentiaalvergelijkingen voor buiging (vgl. 1) en extensie (vgl. 2) worden afgeleid. Begrip over de afleiding en het gebruik van deze vergelijkingen wordt als voorkennis beschouwd.
+Uit de balkentheorie van Euler-Bernoulli kunnen de differentiaalvergelijkingen voor buiging {eq}`vgl_1` en extensie {eq}`vgl_2` worden afgeleid. Begrip over de afleiding en het gebruik van deze vergelijkingen wordt als voorkennis beschouwd.
 
-$EI\frac{d^{4}w}{dx^{4}} + q_{z}$ (1) ; $EA\frac{d^{2}w}{dx^{2}} + q_{x}$ (2)
+```{math}
+:label: vgl_1
+EI\frac{d^{4}w}{dx^{4}} + q_{z}
+```
+
+```{math}
+:label: vgl_2
+EA\frac{d^{2}w}{dx^{2}} + q_{x}
+```
 
 Over het algemeen worden deze vergelijkingen gebruikt door liggers eerst in verschillende delen met gelijke belasting op te splitsen. Vervolgens kan ieder deel beschreven worden met de differentiaalvergelijking en wordt er gebruik gemaakt van overgangsvoorwaarden.
 
