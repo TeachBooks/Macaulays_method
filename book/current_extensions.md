@@ -12,10 +12,11 @@ Dit rapport bestaat uit 4 hoofdstukken:
 
 4.  Oplossen van 2D constructies
 
-In dit rapport wordt er gerefereerd naar de werken van {cite:ts}`vanderwulp_2023`, Jankie (2023), Baudoin (2024) en Van Gelder (2024) en wordt er hevig gebruik gemaakt van citaties en parafraseringen.
+In dit rapport wordt er gerefereerd naar de werken van {cite:ts}`vanderwulp_2023`, {cite:ts}`jankie_2023`, {cite:ts}`alex_2024` en {cite:ts}`mark_2023` en wordt er hevig gebruik gemaakt van citaties en parafraseringen.
 
 ## 1.  De methode van Macaulay
 
+(hoofdstuk_1_1)=
 ### 1.1 Belastingvergelijking
 
 Uit de balkentheorie van Euler-Bernoulli kunnen de differentiaalvergelijkingen voor buiging {eq}`vgl_1` en extensie {eq}`vgl_2` worden afgeleid. Begrip over de afleiding en het gebruik van deze vergelijkingen wordt als voorkennis beschouwd.
@@ -40,26 +41,35 @@ Zoals hierboven aangegeven maakt de methode van Macaulay gebruik van singularite
 
 Voor $n\  \geq \ 0$:
 
-$f(x) \equiv < x - a >^{n} = \left\{ \begin{array}{r}
+```{math}
+:label: vgl_3
+f(x) \equiv < x - a >^{n} = \left\{ \begin{array}{r}
 (x - a)^{n}\ \ \ x \geq a \\
 0\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x < a
-\end{array} \right.\ $ (3)
+\end{array} \right.\
+```
 
 Voor $n < \ 0$:
 
-$f(x) \equiv < x - a >^{n} = \left\{ \begin{array}{r}
+```{math}
+:label: vgl_4
+f(x) \equiv < x - a >^{n} = \left\{ \begin{array}{r}
 0\ \ \ \ x \neq a \\
 \infty\ \ \ x = a
-\end{array} \right.\ $ (4)
+\end{array} \right.\ 
+```
 
 Hierin geeft $a$ de positie aan waar de singulariteit voorkomt, en is $n$ de orde van de functie.
 
 Het integreren van de singulariteitsfunctie is afhankelijk van zijn orde en is als volgt gedefinieerd:
 
-$\int_{}^{}{(x - a)^{n}dx} = \left\{ \begin{array}{r}
+```{math}
+:label: vgl_5
+\int_{}^{}{(x - a)^{n}dx} = \left\{ \begin{array}{r}
 (x - a)^{n + 1},\ \ n < 0 \\
 \frac{(x - a)^{n + 1}}{n + 1}\ \ \ \ \ ,\ \ n \geq 0
-\end{array} \right.\ $ (5)
+\end{array} \right.\
+```
 
 De meest voorkomende ordes voor de singulariteitsfunctie zijn van -2 tot 2, waarbij iedere orde een specifieke functie benaming heeft. Deze benamingen zijn in volgorde 'unit doublet', 'unit impulse (Dirac-delta)', 'unit step (Heaviside)', 'unit ramp' en 'unit parabolic'. Deze functies kunnen als volgt worden gevisualiseerd.
 
@@ -70,7 +80,7 @@ width: 400
 name: Figuur_1
 align: center
 ---
-Unit doublet functie {cite:ts}`vanderwulp_2023`
+Unit doublet functie {cite:p}`vanderwulp_2023`
 ```
 
 ***Dirac-delta (Unit impulse)***
@@ -80,7 +90,7 @@ width: 400
 name: Figuur_2
 align: center 
 ---
-Dirac-delta functie {cite:ts}`vanderwulp_2023`
+Dirac-delta functie {cite:p}`vanderwulp_2023`
 ```
 
 ***Unit step (Heaviside)***
@@ -90,7 +100,7 @@ width: 400
 name: Figuur_3
 align: center
 ---
-Unit step functie {cite:ts}`vanderwulp_2023`
+Unit step functie {cite:p}`vanderwulp_2023`
 ```
 
 ***Unit ramp***
@@ -100,7 +110,7 @@ width: 400
 name: Figuur_4
 align: center 
 ---
-Unit ramp functie {cite:ts}`vanderwulp_2023`
+Unit ramp functie {cite:p}`vanderwulp_2023`
 ```
 
 ***Unit parabolic***
@@ -110,12 +120,12 @@ width: 400
 name: Figuur_5
 align: center
 ---
-Unit parabolic functie {cite:ts}`vanderwulp_2023`
+Unit parabolic functie {cite:p}`vanderwulp_2023`
 ```
 
 ### 1.3  Oplossingsstrategie
 
-De eerste stap bij het oplossen van een probleem met de methode van Macaulay is het opstellen van de belastingvergelijking. Hiervoor wordt de hele constructie gemodelleerd in één vergelijking. Deze vergelijking kan vervolgens ingevuld worden als $q$ in de differentiaalvergelijkingen in hoofdstuk 1.1 Belastingvergelijking. Hoe verschillende onderdelen van een constructie gemodelleerd kunnen worden in deze vergelijking is beschreven in hoofdstuk 2 Modelleren van belastingen, opleggingen en verbindingen.
+De eerste stap bij het oplossen van een probleem met de methode van Macaulay is het opstellen van de belastingvergelijking. Hiervoor wordt de hele constructie gemodelleerd in één vergelijking. Deze vergelijking kan vervolgens ingevuld worden als $q$ in de differentiaalvergelijkingen in `ref`(hoofdstuk_1_1). Hoe verschillende onderdelen van een constructie gemodelleerd kunnen worden in deze vergelijking is beschreven in `ref`(hoofdstuk_2).
 
 Als de belastingvergelijking is gevonden kan deze geïntegreerd worden. Dit geeft vergelijkingen die de dwarskracht, het moment, de rotatie en de doorbuiging van de staaf beschrijven. In deze vergelijkingen staan nog onbekende reactiekrachten en integratieconstanten.
 
@@ -123,6 +133,7 @@ Om deze onbekende reactiekrachten en integratieconstanten op te lossen kunnen de
 
 De gevonden waardes voor de reactiekrachten en integratieconstanten kunnen worden ingevuld in de vergelijkingen. Dit geeft de vergelijkingen die het gedrag van de staaf beschrijven.
 
+(hoofdstuk_2)=
 ## 2.  Modelleren van belastingen, opleggingen en verbindingen
 
 ### 2.1 Modelleren van belastingen
@@ -131,22 +142,27 @@ Voor het modeleren van belastingen op de constructie wordt gebruik gemaakt van s
 
 Belastingen kunnen worden beschreven door de een singulariteitsfunctie van bijbehorende orde te vermenigvuldigen met de waarde van de kracht of verbinding. Naar aanleiding van het assenstelsel wordt een kracht positief of negatief gemodelleerd.
 
-***Puntlast***\
+***Puntlast***
 Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $a$ wordt gemodelleerd in de krachtvergelijking als $F{< x - a >}^{- 1}$.
 
-***Koppel***\
+***Koppel***
 Een koppel werkt ook op een enkel punt in de constructie. Een koppel wordt beschreven door de unit doublet in de krachtenvergelijking. Een koppel met waarde $T$ gelegen op punt $a$ wordt gemodelleerd als $T{< x - a >}^{- 2}$.
 
-***Uniform verdeelde belasting***\
-Belasting die gelijkmatig verdeeld is over de constructie kan beschreven worden met de Heaviside functie. Een uniform verdeelde belasting met waarde $q_{z}$, beginpunt $a$ en eindpunt $b$ kan dan in de krachtvergelijking gemodelleerd worden als $q_{z}{< x - a >}^{0} - q_{z}{< x - b >}^{0}$. Hierbij werkt de waarde van $q_{z}$ vanaf $b$ in tegengestelde richting, dit geeft een totaal van 0. Deze werking is in figuur 6 weergegeven. Wanneer een uniform verdeelde belasting tot het einde van een constructie werkt is het niet nodig om de kracht nog te compenseren. In dat geval kan de kracht gemodelleerd worden als $q_{z}{< x - a >}^{0}$.\
-\
-<img src="figures/image6.png" width="750" height="100">\
-*Figuur 6: Modelleren van een uniform verdeelde belasting (Van der Wulp, 2023)*
-<br><br>
+***Uniform verdeelde belasting***
+Belasting die gelijkmatig verdeeld is over de constructie kan beschreven worden met de Heaviside functie. Een uniform verdeelde belasting met waarde $q_{z}$, beginpunt $a$ en eindpunt $b$ kan dan in de krachtvergelijking gemodelleerd worden als $q_{z}{< x - a >}^{0} - q_{z}{< x - b >}^{0}$. Hierbij werkt de waarde van $q_{z}$ vanaf $b$ in tegengestelde richting, dit geeft een totaal van 0. Deze werking is in {numref}`Figuur_6` weergegeven. Wanneer een uniform verdeelde belasting tot het einde van een constructie werkt is het niet nodig om de kracht nog te compenseren. In dat geval kan de kracht gemodelleerd worden als $q_{z}{< x - a >}^{0}$.
 
-***Lineair en parabolisch verdeelde belastingen*** \
+```{figure} figures/image6.png
+---
+width: 600
+name: Figuur_6
+align: center
+---
+Modelleren van een uniform verdeelde belasting {cite:p}`vanderwulp_2023`
+```
+
+***Lineair en parabolisch verdeelde belastingen*** 
 Belastingen die niet uniform maar lineair of parabolisch verdeeld zijn kunnen op eenzelfde manier gemodelleerd worden als de uniform verdeelde belasting.
-<br><br>
+
 
 ### 2.2 Modelleren van opleggingen en verbindingen voor buiging
 
@@ -156,44 +172,65 @@ Naast belastingen kunnen ook opleggingen en verbindingen worden gemodelleerd doo
 Bij een inklemming kunnen een verticale oplegreactie en een inklemmingsmoment optreden. Zoals beschreven in het hoofdstuk modelleren van belastingen, kunnen deze beschreven worden met singulariteitsfuncties van respectievelijk orde -1 en -2.
 
 Daarnaast introduceert een inklemming ook twee randvoorwaarden. Ter plaatse van een inklemming is de zakking ($w$) en de rotatie ($\varphi$) van de staaf gelijk aan 0.
-In figuur 7 is weergegeven hoe een inklemming gemodelleerd kan worden.
+In {numref}`Figuur_7` is weergegeven hoe een inklemming gemodelleerd kan worden.
 
-<img src="figures/image7.png" width="500" height="200">\
-*Figuur 7: Modelleren van een inklemming (Van der Wulp, 2023)*
-<br><br><br>
+```{figure} figures/image7.png
+---
+width: 400
+name: Figuur_7
+align: center
+---
+Modelleren van een inklemming {cite:p}`vanderwulp_2023`
+```
 
-***Scharnier- en roloplegging***\
+***Scharnier- en roloplegging***
 Aangezien krachten in de richting van de staaf nog niet worden meegenomen, kunnen scharnier- en rolopleggingen op dezelfde manier worden gemodelleerd. Bij een scharnier- of roloplegging speelt een verticale oplegreactie. Deze oplegreactie kan worden gemodelleerd met een singulariteitsfunctie van orde -1.
 
 Een scharnier- of roloplegging introduceert ook een randvoorwaarde. Ter plaatse van de oplegging is de zakking ($w$) gelijk aan 0.
 
-In figuur 8 is weergegeven hoe een scharnieroplegging gemodelleerd kan worden. Dit is hetzelfde voor een roloplegging.
+In {numref}`Figuur_8` is weergegeven hoe een scharnieroplegging gemodelleerd kan worden. Dit is hetzelfde voor een roloplegging.
 
-<img src="figures/image8.png" width="500" height="200"> \
-*Figuur 8: Modelleren van en scharnieroplegging (Van der Wulp, 2023)*
-<br><br><br>
+```{figure} figures/image8.png
+---
+width: 400
+name: Figuur_8
+align: center
+---
+Modelleren van en scharnieroplegging {cite:p}`vanderwulp_2023`
+```
 
-***Scharnier***\
+***Scharnier***
 Scharnierende verbindingen in constructies kunnen worden beschreven met singulariteitsfuncties van orde -3. Dit valt te beredeneren uit het feit dat scharnieren een sprong in de krommingslijn geven, en daar dus orde 0 hebben. Terug differentiëren naar de belasting vergelijking geeft een singulariteitsfunctie van orde -3. Een scharnier gelegen op punt $a$ wordt gemodelleerd als $EI\ \varphi{< x - a >}^{- 3}$. De $\varphi$ staat hier voor de rotatie van het scharnier, ofwel de grote van de sprong in de krommingslijn.
 
 Een scharnier introduceert ook een randvoorwaarde. Ter plaatse van het scharnier is het moment ($M$) gelijk aan 0.
 
-In figuur 9 is weergegeven hoe een scharnier gemodelleerd kan worden.
+In {numref}`Figuur_9` is weergegeven hoe een scharnier gemodelleerd kan worden.
 
-<img src="figures/image9.png" width="300" height="200">\
-*Figuur 9: Modelleren van een scharnier (Van der Wulp, 2023), correctie (Van Gelder, 2024)*
-<br><br><br>
+```{figure} figures/image9.png
+---
+width: 300
+name: Figuur_9
+align: center
+---
+MModelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
+```
 
-***Schuifscharnier***\
+
+***Schuifscharnier***
 Schuifscharnieren in een constructie kunnen worden beschreven met singulariteitsfuncties van orde -4. Zoals roterende scharnieren een sprong geven in de krommingslijn, geven schuifscharnieren een sprong in de doorbuigingslijn. Hieruit volgt dat schuifscharnieren in de belasting vergelijking beschreven worden met een singulariteitsfunctie van orde -4. Een schuifscharnier gelegen op punt $a$ wordt gemodelleerd als $EI\ w_{b}{< x - a >}^{- 4}$. Met $w_{b}$ de grote van de sprong in de doorbuigingslijn.
 
 Een schuifscharnier introduceert ook een randvoorwaarde. Ter plaatse van het schuifscharnier is de dwarskracht ($V$) gelijk aan 0.
 
-In figuur 10 is weergegeven hoe een schuifscharnier gemodelleerd kan worden.
+In {numref}`Figuur_10` is weergegeven hoe een schuifscharnier gemodelleerd kan worden.
 
-<img src="figures/image10.png" width="300" height="200">\
-*Figuur 10: Modelleren van een schuifscharnier (Van der Wulp, 2023), correctie (Van Gelder, 2024)*
-<br><br><br>
+```{figure} figures/image10.png
+---
+width: 300
+name: Figuur_10
+align: center
+---
+MModelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
+```
 
 
 ***Verende opleggingen***\
