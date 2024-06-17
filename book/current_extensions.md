@@ -12,7 +12,7 @@ Dit rapport bestaat uit 4 hoofdstukken:
 
 4.  Oplossen van 2D constructies
 
-In dit rapport wordt er gerefereerd naar de werken van {cite:ts}`vanderwulp_2023`, {cite:ts}`jankie_2023`, {cite:ts}`alex_2024` en {cite:ts}`mark_2023` en wordt er hevig gebruik gemaakt van citaties en parafraseringen.
+In dit rapport wordt er gerefereerd naar de werken van {cite:ts}`vanderwulp_2023`, {cite:ts}`jankie_2023`, {cite:ts}`alex_2024` en {cite:ts}`mark_2024` en wordt er hevig gebruik gemaakt van citaties en parafraseringen.
 
 ## 1.  De methode van Macaulay
 
