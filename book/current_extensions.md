@@ -12,7 +12,7 @@ Dit rapport bestaat uit 4 hoofdstukken:
 
 4.  Oplossen van 2D constructies
 
-In dit rapport wordt er gerefereerd naar de werken van Van der Wulp (2023), Jankie (2023), Baudoin (2024) en Van Gelder (2024) en wordt er hevig gebruik gemaakt van citaties en parafraseringen.
+In dit rapport wordt er gerefereerd naar de werken van {cite:ts}`vanderwulp_2023`, Jankie (2023), Baudoin (2024) en Van Gelder (2024) en wordt er hevig gebruik gemaakt van citaties en parafraseringen.
 
 ## 1.  De methode van Macaulay
 
@@ -63,59 +63,54 @@ $\int_{}^{}{(x - a)^{n}dx} = \left\{ \begin{array}{r}
 
 De meest voorkomende ordes voor de singulariteitsfunctie zijn van -2 tot 2, waarbij iedere orde een specifieke functie benaming heeft. Deze benamingen zijn in volgorde 'unit doublet', 'unit impulse (Dirac-delta)', 'unit step (Heaviside)', 'unit ramp' en 'unit parabolic'. Deze functies kunnen als volgt worden gevisualiseerd.
 
-***Unit doublet***\
+***Unit doublet***
 ```{figure} figures/image1.png
 ---
-height: 300
-width: 500
+width: 400
 name: Figuur_1
 align: center
 ---
-Unit doublet functie (Van der Wulp, 2023)
+Unit doublet functie {cite:ts}`vanderwulp_2023`
 ```
 
-***Dirac-delta (Unit impulse)***\
+***Dirac-delta (Unit impulse)***
 ```{figure} figures/image2.png
 ---
-height: 300
-width: 500
+width: 400
 name: Figuur_2
 align: center 
 ---
-Dirac-delta functie (Van der Wulp, 2023)
+Dirac-delta functie {cite:ts}`vanderwulp_2023`
 ```
 
-***Unit step (Heaviside)***\
+***Unit step (Heaviside)***
 ```{figure} figures/image3.png
 ---
-height: 300
-width: 500
+width: 400
 name: Figuur_3
 align: center
 ---
-Unit step functie (Van der Wulp, 2023)
+Unit step functie {cite:ts}`vanderwulp_2023`
 ```
 
-***Unit ramp***\
+***Unit ramp***
 ```{figure} figures/image4.png
 ---
-height: 300
-width: 500
+width: 400
 name: Figuur_4
 align: center 
 ---
-Unit ramp functie (Van der Wulp, 2023)
+Unit ramp functie {cite:ts}`vanderwulp_2023`
 ```
 
-***Unit parabolic***\
+***Unit parabolic***
 ```{figure} figures/image5.png
 ---
-height: 300
-width: 500
+width: 400
 name: Figuur_5
 align: center
 ---
-Unit parabolic functie (Van der Wulp, 2023)
+Unit parabolic functie {cite:ts}`vanderwulp_2023`
 ```
 
 ### 1.3  Oplossingsstrategie
