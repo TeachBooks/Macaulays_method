@@ -212,7 +212,7 @@ width: 300
 name: Figuur_9
 align: center
 ---
-MModelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
+Modelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
 ```
 
 
@@ -229,7 +229,7 @@ width: 300
 name: Figuur_10
 align: center
 ---
-MModelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
+Modelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
 ```
 
 
