@@ -56,29 +56,60 @@ $\int_{}^{}{(x - a)^{n}dx} = \left\{ \begin{array}{r}
 De meest voorkomende ordes voor de singulariteitsfunctie zijn van -2 tot 2, waarbij iedere orde een specifieke functie benaming heeft. Deze benamingen zijn in volgorde 'unit doublet', 'unit impulse (Dirac-delta)', 'unit step (Heaviside)', 'unit ramp' en 'unit parabolic'. Deze functies kunnen als volgt worden gevisualiseerd.
 
 ***Unit doublet***\
-<img src="figures/image1.png" width="500" height="300">\
-*Figuur 1: Unit doublet functie (Van der Wulp, 2023)*
-<br><br>
+```{figure} figures/image1.png
+---
+height: 300
+width: 500
+name: Figuur_1
+align: center
+---
+Unit doublet functie (Van der Wulp, 2023)
+```
 
 ***Dirac-delta (Unit impulse)***\
-<img src="figures/image2.png" width="500" height="300">\
-*Figuur 2: Dirac-delta functie (Van der Wulp, 2023)*
-<br><br>
+```{figure} figures/image2.png
+---
+height: 300
+width: 500
+name: Figuur_2
+align: center 
+---
+Dirac-delta functie (Van der Wulp, 2023)
+```
 
 ***Unit step (Heaviside)***\
-<img src="figures/image3.png" width="500" height="300">\
-*Figuur 3: Unit step functie (Van der Wulp, 2023)*
-<br><br>
+```{figure} figures/image3.png
+---
+height: 300
+width: 500
+name: Figuur_3
+align: center
+---
+Unit step functie (Van der Wulp, 2023)
+```
 
 ***Unit ramp***\
-<img src="figures/image4.png" width="500" height="300">\
-*Figuur 4: Unit ramp functie (Van der Wulp, 2023)*
-<br><br>
+```{figure} figures/image4.png
+---
+height: 300
+width: 500
+name: Figuur_4
+align: center 
+---
+Unit ramp functie (Van der Wulp, 2023)
+```
 
 ***Unit parabolic***\
-<img src="figures/image5.png" width="500" height="300">\
-*Figuur 5: Unit parabolic functie (Van der Wulp, 2023)*
-<br><br>
+```{figure} figures/image5.png
+---
+height: 300
+width: 500
+name: Figuur_5
+align: center
+---
+Unit parabolic functie (Van der Wulp, 2023)
+```
+
 ### 1.3  Oplossingsstrategie
 
 De eerste stap bij het oplossen van een probleem met de methode van Macaulay is het opstellen van de belastingvergelijking. Hiervoor wordt de hele constructie gemodelleerd in één vergelijking. Deze vergelijking kan vervolgens ingevuld worden als $q$ in de differentiaalvergelijkingen in hoofdstuk 1.1 Belastingvergelijking. Hoe verschillende onderdelen van een constructie gemodelleerd kunnen worden in deze vergelijking is beschreven in hoofdstuk 2 Modelleren van belastingen, opleggingen en verbindingen.
