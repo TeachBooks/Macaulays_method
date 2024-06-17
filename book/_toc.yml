@@ -59,7 +59,7 @@ parts:
         title: Code example 10
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_11.ipynb
         title: Code example 11
-      - file: theses/BEP_examples/3pin_example.ipynb
+      - file: theses/Beam-examples/3pin_example.ipynb
         title: Code calculation 3 pin
   - caption: Appendices
     chapters:
