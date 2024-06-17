@@ -28,7 +28,6 @@ sphinx:
           thebe: true
   extra_extensions:
     - sphinx.ext.imgconverter
-    - jupyterbook_patches
 
 bibtex_bibfiles: 
   - references.bib
