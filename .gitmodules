@@ -7,3 +7,12 @@
 [submodule "book/theses/De-methode-van-Macaulay"]
 	path = book/theses/De-methode-van-Macaulay
 	url = https://github.com/Ezzat1998/De-methode-van-Macaulay
+[submodule "book/theses/Beam-examples"]
+	path = book/theses/Beam-examples
+	url = https://github.com/mvg2002/Beam-examples.git
+[submodule "book/theses/BEP_examples_SymPy_1.14.dev"]
+	path = book/theses/BEP_examples_SymPy_1.14.dev
+	url = https://github.com/mvg2002/BEP_examples_SymPy_1.14.dev.git
+[submodule "book/theses/BEP_examples_SymPy_1.12"]
+	path = book/theses/BEP_examples_SymPy_1.12
+	url = https://github.com/mvg2002/BEP_examples_SymPy_1.12.git
