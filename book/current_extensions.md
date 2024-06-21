@@ -43,10 +43,10 @@ Voor $n\  \geq \ 0$:
 
 ```{math}
 :label: vgl_3
-f(x) \equiv < x - a >^{n} = \left\{ \begin{array}{r}
-(x - a)^{n}\ \ \ x \geq a \\
-0\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x < a
-\end{array} \right.\
+f\left( x \right) \equiv {\left\langle {x - a} \right\rangle ^n} = \left\{ \begin{array}{l}
+{\left( {x - a} \right)^n} & x \ge a\\
+0 &  x < a
+\end{array} \right.
 ```
 
 Voor $n < \ 0$:
