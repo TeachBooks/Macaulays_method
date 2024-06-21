@@ -53,13 +53,12 @@ Voor $n < \ 0$:
 
 ```{math}
 :label: vgl_4
-f(x) \equiv < x - a >^{n} = \left\{ \begin{array}{r}
-0\ \ \ \ x \neq a \\
-\infty\ \ \ x = a
-\end{array} \right.\ 
+\[f\left( x \right) \equiv {\left\langle {x - a} \right\rangle ^n} = 0\]
 ```
 
 Hierin geeft $a$ de positie aan waar de singulariteit voorkomt, en is $n$ de orde van de functie.
+
+Hierbij is {eq}`vgl_4` aangepast waarbij er origineel op $x=a$ geldt $f\left(x\right)=\infty$. Dit heeft echter geen betekening voor het balkmodel.
 
 Het integreren van de singulariteitsfunctie is afhankelijk van zijn orde en is als volgt gedefinieerd:
 
@@ -67,13 +66,13 @@ Het integreren van de singulariteitsfunctie is afhankelijk van zijn orde en is a
 :label: vgl_5
 \int {{{\left\langle {x - a} \right\rangle }^n}{\rm{d}}x}  = \left\{ \begin{array}{l}
 {\left( {x - a} \right)^{n + 1}} & n < 0\\
-\frac{{{{\left( {x - a} \right)}^{n + 1}}}}{{n + 1}} & n \ge 0
+\cfrac{{{{\left( {x - a} \right)}^{n + 1}}}}{{n + 1}} & n \ge 0
 \end{array} \right.
 ```
 
 De meest voorkomende ordes voor de singulariteitsfunctie zijn van -2 tot 2, waarbij iedere orde een specifieke functie benaming heeft. Deze benamingen zijn in volgorde 'unit doublet', 'unit impulse (Dirac-delta)', 'unit step (Heaviside)', 'unit ramp' en 'unit parabolic'. Deze functies kunnen als volgt worden gevisualiseerd.
 
-***Unit doublet***
+#### Unit doublet
 ```{figure} figures/image1.png
 ---
 width: 400
@@ -83,7 +82,7 @@ align: center
 Unit doublet functie {cite:p}`vanderwulp_2023`
 ```
 
-***Dirac-delta (Unit impulse)***
+#### Dirac-delta (Unit impulse)
 ```{figure} figures/image2.png
 ---
 width: 400
@@ -93,7 +92,7 @@ align: center
 Dirac-delta functie {cite:p}`vanderwulp_2023`
 ```
 
-***Unit step (Heaviside)***
+#### Unit step (Heaviside)
 ```{figure} figures/image3.png
 ---
 width: 400
@@ -103,7 +102,7 @@ align: center
 Unit step functie {cite:p}`vanderwulp_2023`
 ```
 
-***Unit ramp***
+#### Unit ramp
 ```{figure} figures/image4.png
 ---
 width: 400
@@ -113,7 +112,7 @@ align: center
 Unit ramp functie {cite:p}`vanderwulp_2023`
 ```
 
-***Unit parabolic***
+#### Unit parabolic
 ```{figure} figures/image5.png
 ---
 width: 400
@@ -142,13 +141,13 @@ Voor het modeleren van belastingen op de constructie wordt gebruik gemaakt van s
 
 Belastingen kunnen worden beschreven door de een singulariteitsfunctie van bijbehorende orde te vermenigvuldigen met de waarde van de kracht of verbinding. Naar aanleiding van het assenstelsel wordt een kracht positief of negatief gemodelleerd.
 
-***Puntlast***
+#### Puntlast
 Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $a$ wordt gemodelleerd in de krachtvergelijking als $F{< x - a >}^{- 1}$.
 
-***Koppel***
+#### Koppel
 Een koppel werkt ook op een enkel punt in de constructie. Een koppel wordt beschreven door de unit doublet in de krachtenvergelijking. Een koppel met waarde $T$ gelegen op punt $a$ wordt gemodelleerd als $T{< x - a >}^{- 2}$.
 
-***Uniform verdeelde belasting***
+#### Uniform verdeelde belasting
 Belasting die gelijkmatig verdeeld is over de constructie kan beschreven worden met de Heaviside functie. Een uniform verdeelde belasting met waarde $q_{z}$, beginpunt $a$ en eindpunt $b$ kan dan in de krachtvergelijking gemodelleerd worden als $q_{z}{< x - a >}^{0} - q_{z}{< x - b >}^{0}$. Hierbij werkt de waarde van $q_{z}$ vanaf $b$ in tegengestelde richting, dit geeft een totaal van 0. Deze werking is in {numref}`Figuur_6` weergegeven. Wanneer een uniform verdeelde belasting tot het einde van een constructie werkt is het niet nodig om de kracht nog te compenseren. In dat geval kan de kracht gemodelleerd worden als $q_{z}{< x - a >}^{0}$.
 
 ```{figure} figures/image6.png
@@ -160,18 +159,18 @@ align: center
 Modelleren van een uniform verdeelde belasting {cite:p}`vanderwulp_2023`
 ```
 
-***Lineair en parabolisch verdeelde belastingen*** 
+#### Lineair en parabolisch verdeelde belastingen
 Belastingen die niet uniform maar lineair of parabolisch verdeeld zijn kunnen op eenzelfde manier gemodelleerd worden als de uniform verdeelde belasting.
 
-
+(hoofdstuk_2.2)=
 ### 2.2 Modelleren van opleggingen en verbindingen voor buiging
 
-Naast belastingen kunnen ook opleggingen en verbindingen worden gemodelleerd door middel van singulariteitsfuncties. Op de plek waar een oplegging of verbinding wordt toegevoegd gelden ook randvoorwaarden. Deze randvoorwaarden worden gebruikt om de vergelijkingen uiteindelijk op te lossen. Er zal nu worden toegelicht hoe verschillende opleggingen en verbindingen kunnen worden beschreven door middel van singulariteitsfuncties en welke randvoorwaarden daarbij horen. Er wordt in dit hoofdstuk alleen gekeken naar krachten loodrecht op de staaf en momenten. Krachten evenwijdig aan de staaf worden behandeld in het hoofdstuk 2.3 Modelleren van opleggingen en verbindingen voor extensie.
+Naast belastingen kunnen ook opleggingen en verbindingen worden gemodelleerd door middel van singulariteitsfuncties. Op de plek waar een oplegging of verbinding wordt toegevoegd gelden ook randvoorwaarden. Deze randvoorwaarden worden gebruikt om de vergelijkingen uiteindelijk op te lossen. Er zal nu worden toegelicht hoe verschillende opleggingen en verbindingen kunnen worden beschreven door middel van singulariteitsfuncties en welke randvoorwaarden daarbij horen. Er wordt in dit hoofdstuk alleen gekeken naar krachten loodrecht op de staaf en momenten. Krachten evenwijdig aan de staaf worden behandeld in het `ref`(hoofdstuk_2.3)Modelleren van opleggingen en verbindingen voor extensie.
 
-***Inklemming***\
-Bij een inklemming kunnen een verticale oplegreactie en een inklemmingsmoment optreden. Zoals beschreven in het hoofdstuk modelleren van belastingen, kunnen deze beschreven worden met singulariteitsfuncties van respectievelijk orde -1 en -2.
+#### Inklemming
+Bij een inklemming kunnen een verticale oplegreactie en een inklemmingsmoment optreden. Zoals beschreven in het hoofdstuk modelleren van belastingen, kunnen deze beschreven worden met singulariteitsfuncties van respectievelijk orde $-1$ en $-2$.
 
-Daarnaast introduceert een inklemming ook twee randvoorwaarden. Ter plaatse van een inklemming is de zakking ($w$) en de rotatie ($\varphi$) van de staaf gelijk aan 0.
+Daarnaast introduceert een inklemming ook twee randvoorwaarden. Ter plaatse van een inklemming is de zakking ($w$) en de rotatie ($\varphi$) van de staaf gelijk aan $0$.
 In {numref}`Figuur_7` is weergegeven hoe een inklemming gemodelleerd kan worden.
 
 ```{figure} figures/image7.png
@@ -183,10 +182,10 @@ align: center
 Modelleren van een inklemming {cite:p}`vanderwulp_2023`
 ```
 
-***Scharnier- en roloplegging***
-Aangezien krachten in de richting van de staaf nog niet worden meegenomen, kunnen scharnier- en rolopleggingen op dezelfde manier worden gemodelleerd. Bij een scharnier- of roloplegging speelt een verticale oplegreactie. Deze oplegreactie kan worden gemodelleerd met een singulariteitsfunctie van orde -1.
+#### Scharnier- en roloplegging
+Aangezien krachten in de richting van de staaf nog niet worden meegenomen, kunnen scharnier- en rolopleggingen op dezelfde manier worden gemodelleerd. Bij een scharnier- of roloplegging speelt een verticale oplegreactie. Deze oplegreactie kan worden gemodelleerd met een singulariteitsfunctie van orde $-1$.
 
-Een scharnier- of roloplegging introduceert ook een randvoorwaarde. Ter plaatse van de oplegging is de zakking ($w$) gelijk aan 0.
+Een scharnier- of roloplegging introduceert ook een randvoorwaarde. Ter plaatse van de oplegging is de zakking ($w$) gelijk aan $0$.
 
 In {numref}`Figuur_8` is weergegeven hoe een scharnieroplegging gemodelleerd kan worden. Dit is hetzelfde voor een roloplegging.
 
@@ -199,10 +198,10 @@ align: center
 Modelleren van en scharnieroplegging {cite:p}`vanderwulp_2023`
 ```
 
-***Scharnier***
-Scharnierende verbindingen in constructies kunnen worden beschreven met singulariteitsfuncties van orde -3. Dit valt te beredeneren uit het feit dat scharnieren een sprong in de krommingslijn geven, en daar dus orde 0 hebben. Terug differentiëren naar de belasting vergelijking geeft een singulariteitsfunctie van orde -3. Een scharnier gelegen op punt $a$ wordt gemodelleerd als $EI\ \varphi{< x - a >}^{- 3}$. De $\varphi$ staat hier voor de rotatie van het scharnier, ofwel de grote van de sprong in de krommingslijn.
+#### Scharnier\
+Scharnierende verbindingen in constructies kunnen worden beschreven met singulariteitsfuncties van orde $-3$. Dit valt te beredeneren uit het feit dat scharnieren een sprong in de krommingslijn geven, en daar dus orde 0 hebben. Terug differentiëren naar de belasting vergelijking geeft een singulariteitsfunctie van orde $-3$. Een scharnier gelegen op punt $a$ wordt gemodelleerd als $EI\ \varphi{< x - a >}^{- 3}$. De $\varphi$ staat hier voor de rotatie van het scharnier, ofwel de grote van de sprong in de krommingslijn.
 
-Een scharnier introduceert ook een randvoorwaarde. Ter plaatse van het scharnier is het moment ($M$) gelijk aan 0.
+Een scharnier introduceert ook een randvoorwaarde. Ter plaatse van het scharnier is het moment ($M$) gelijk aan $0$.
 
 In {numref}`Figuur_9` is weergegeven hoe een scharnier gemodelleerd kan worden.
 
@@ -216,10 +215,10 @@ Modelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_
 ```
 
 
-***Schuifscharnier***
-Schuifscharnieren in een constructie kunnen worden beschreven met singulariteitsfuncties van orde -4. Zoals roterende scharnieren een sprong geven in de krommingslijn, geven schuifscharnieren een sprong in de doorbuigingslijn. Hieruit volgt dat schuifscharnieren in de belasting vergelijking beschreven worden met een singulariteitsfunctie van orde -4. Een schuifscharnier gelegen op punt $a$ wordt gemodelleerd als $EI\ w_{b}{< x - a >}^{- 4}$. Met $w_{b}$ de grote van de sprong in de doorbuigingslijn.
+#### Schuifscharnier
+Schuifscharnieren in een constructie kunnen worden beschreven met singulariteitsfuncties van orde $-4$. Zoals roterende scharnieren een sprong geven in de krommingslijn, geven schuifscharnieren een sprong in de doorbuigingslijn. Hieruit volgt dat schuifscharnieren in de belasting vergelijking beschreven worden met een singulariteitsfunctie van orde $-4$. Een schuifscharnier gelegen op punt $a$ wordt gemodelleerd als $EI\ w_{b}{< x - a >}^{- 4}$. Met $w_{b}$ de grote van de sprong in de doorbuigingslijn.
 
-Een schuifscharnier introduceert ook een randvoorwaarde. Ter plaatse van het schuifscharnier is de dwarskracht ($V$) gelijk aan 0.
+Een schuifscharnier introduceert ook een randvoorwaarde. Ter plaatse van het schuifscharnier is de dwarskracht ($V$) gelijk aan $0$.
 
 In {numref}`Figuur_10` is weergegeven hoe een schuifscharnier gemodelleerd kan worden.
 
@@ -233,7 +232,7 @@ Modelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_
 ```
 
 
-***Verende opleggingen***\
+#### Verende opleggingen
 Er zijn twee soorten verende opleggingen: verende opleggingen die verticale verplaatsing tegengaan en verende opleggingen die rotatie tegen gaan. In beide gevallen wordt de veer gemodelleerd als kracht ter plaatse van de oplegging in de belasting vergelijking.
 
 Een verende oplegging die verticale verplaatsing tegengaat wordt gemodelleerd als puntlast met een grote van $F_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $w(a) = - \frac{F_{veer}}{K_{w}}.$
@@ -244,90 +243,141 @@ Een verende oplegging die rotatie tegengaat wordt gemodelleerd als koppel met ee
 
 Waarin $\varphi(a)$ de rotatie is ter plaatse van $a$ en $K_{\varphi}$ de veerconstante.
 
-In figuur 11 is weergegeven hoe beide veren gemodelleerd kunnen worden.
+In figuur {numref}`Figuur_11` en {numref}`Figuur_12` is weergegeven hoe beide veren gemodelleerd kunnen worden.
 
-<img src="figures/image11.png" width="350" height="150">\
-<img src="figures/image12.png" width="350" height="150">\
-*Figuur 11: Modeleren van verende opleggingen (Van der Wulp, 2023)*
-<br><br><br>
+```{figure} figures/image11.png
+---
+width: 300
+name: Figuur_11
+align: center
+---
+Modelleren van een translerende verende oplegging {cite:p}`vanderwulp_2023`
+```
 
-***Verende verbindingen***\
+```{figure} figures/image12.png
+---
+width: 300
+name: Figuur_12
+align: center
+---
+Modelleren van een roterende verende oplegging {cite:p}`vanderwulp_2023`
+```
+
+#### Verende verbindingen
 Verende verbindingen worden gemodelleerd als de verbinding waar het om gaat met een andere 
 randvoorwaarde.
 
-Voor verende scharnierverbindingen is dit: $𝑀(𝑎) = 𝐾_𝜑 \ 𝜑_𝑣$, met $𝑀(𝑎)$ het moment ter plaatse van punt $𝑎$, $𝐾_𝜑$ de veerconstante en $𝜑_𝑣$ de rotatie van het scharnier.
+Voor verende scharnierverbindingen is dit: $M \left( a \right) = K_\varphi \cdot \varphi_v$, met $M \left(a \right)$ het moment ter plaatse van punt $a$, $K_\varphi$ de veerconstante en $\varphi_v$ de rotatie van het scharnier.
 
 Voor verende schuifscharnieren is dit: $V(a) = \ K_{w}  \ w_{v}$ , met $V(a)$ de dwarskracht ter plaatse van punt $a$, $\ K_{w}$ de veerconstante en $w_{v}$ verplaatsing ter plaatse van het scharnier.
 
-In figuur 12 is weergegeven hoe beide verende verbindingen gemodelleerd kunnen worden.
+In figuur {numref}`Figuur_15` en {numref}`Figuur_14` is weergegeven hoe beide verende verbindingen gemodelleerd kunnen worden.
 
-<img src="figures/image14.png" width="300" height="200">
-<img src="figures/image13.png" width="300" height="200">
+```{figure} figures/image14.png
+---
+width: 300
+name: Figuur_14
+align: center
+---
+Modelleren van een roterende verende verbinding {cite:p},`vanderwulp_2023`, correctie {cite:p}`mark_2024`
+```
 
-*Figuur 12: Modelleren van verende verbindingen (Van der Wulp, 2023), correctie (Van Gelder, 2024)*
-<br><br><br>
+```{figure} figures/image13.png
+---
+width: 300
+name: Figuur_13
+align: center
+---
+Modelleren van een translerende verende verbinding {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
+```
 
+`ref`(hoofdstuk_2.3)
 ### 2.3 Modelleren van opleggingen en verbindingen voor extensie
-
-In het hoofdstuk 2.2 Modelleren van opleggingen en verbindingen voor buiging is gekeken naar hoe opleggingen en verbindingen die spelen bij krachten loodrecht op de staaf en momenten gemodelleerd kunnen worden. In dit hoofdstuk zal gekeken worden hoe opleggingen en verbindingen gemodelleerd kunnen worden bij krachten evenwijdig aan de staaf.
+In het hoofdstuk `ref`(hoofdstuk_2.2) Modelleren van opleggingen en verbindingen voor buiging is gekeken naar hoe opleggingen en verbindingen die spelen bij krachten loodrecht op de staaf en momenten gemodelleerd kunnen worden. In dit hoofdstuk zal gekeken worden hoe opleggingen en verbindingen gemodelleerd kunnen worden bij krachten evenwijdig aan de staaf.
 
 Belastingen kunnen bij extensie op dezelfde manier gemodelleerd worden als bij buiging.
 
-***Opleggingen***\
+#### Opleggingen
 Bij krachten evenwijdig aan de staaf worden alleen opleggingen gemodelleerd die een oplegreactie kunnen hebben in die richting. Een inklemming en scharnieropleggingen kunnen altijd een oplegreactie in die richting hebben en worden dus altijd gemodelleerd. Een roloplegging wordt enkel gemodelleerd als de rol niet kan verplaatsen in de richting evenwijdig aan de staaf.
 
-De oplegreactie evenwijdig aan de staaf wordt gemodelleerd als puntlast. Bij de oplegging speelt een extra randvoorwaarde, namelijk dat de axiale verplaatsing $(u)$ gelijk is aan 0.
+De oplegreactie evenwijdig aan de staaf wordt gemodelleerd als puntlast. Bij de oplegging speelt een extra randvoorwaarde, namelijk dat de axiale verplaatsing $(u)$ gelijk is aan $0$.
 
-In figuur 13 is weergegeven hoe een scharnieropleggingen gemodelleerd kan worden. Voor andere opleggingen met een oplegreactie evenwijdig aan de staaf gaat dit op dezelfde manier.
+In figuur {numref}`Figuur_15` is weergegeven hoe een scharnieropleggingen gemodelleerd kan worden. Voor andere opleggingen met een oplegreactie evenwijdig aan de staaf gaat dit op dezelfde manier.
 
-<img src="figures/image15.png" width="600" height="200">\
-*Figuur 13: Modelleren van een scharnieroplegging bij extensie (Van der Wulp, 2023)*
-<br><br>
+```{figure} figures/image15.png
+---
+width: 300
+name: Figuur_15
+align: center
+---
+Modelleren van een scharnieroplegging bij extensie {cite:p}`vanderwulp_2023`
+```
 
-***Telescoopscharnieren***\
-Deze scharnieren hebben axiale verplaatsing als vrijheidsgraad. Dit geeft een sprong in de vergelijking voor axiale verplaatsing ter plaatse van het scharnier. Deze spong kan gemodelleerd worden met de Heaviside functie. Terug differentiëren naar de belastingvergelijking geeft dan een singulariteitsfunctie met orde -2.
+#### Telescoopscharnieren
+Deze scharnieren hebben axiale verplaatsing als vrijheidsgraad. Dit geeft een sprong in de vergelijking voor axiale verplaatsing ter plaatse van het scharnier. Deze spong kan gemodelleerd worden met de Heaviside functie. Terug differentiëren naar de belastingvergelijking geeft dan een singulariteitsfunctie met orde $-2$.
 
-Het telescoopscharnier introduceert ook een extra randvoorwaarde. Ter plaatse van het telescoopscharnier is de normaalkracht $(N)$ gelijk aan 0.
+Het telescoopscharnier introduceert ook een extra randvoorwaarde. Ter plaatse van het telescoopscharnier is de normaalkracht $(N)$ gelijk aan $0$.
 
-In figuur 14 is weergegeven hoe een telescoopscharnier gemodelleerd kan worden.
+In figuur {numref}`Figuur_16` is weergegeven hoe een telescoopscharnier gemodelleerd kan worden.
 
-<img src="figures/image16.png" width="400" height="200">\
-*Figuur 14: Modelleren van telescoop scharnieren (Van der Wulp, 2023)*
-<br><br>
+```{figure} figures/image16.png
+---
+width: 300
+name: Figuur_16
+align: center
+---
+Modelleren van telescoop scharnieren {cite:p}`vanderwulp_2023`
+```
 
-***Verende opleggingen***\
+#### Verende opleggingen
 Net als gewone opleggingen bij normaalkracht worden verende opleggingen gemodelleerd met een puntlast. De randvoorwaarde die hierbij speelt veranderd.
 Een verende oplegging die axiale verplaatsing tegengaat wordt gemodelleerd als puntlast met een grote van $F_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $u(a) = - \frac{F_{veer}}{K_{u}}.$
 
 Waarin $u(a)$ de axiale verplaatsing is ter plaatse van $a$ en $K_{u}$ de veerconstante.
 
-In figuur 15 is weergegeven hoe een verende scharnieropleggingen gemodelleerd kan worden. Andere verende opleggingen die axiale verplaatsing tegengaan kunnen op dezelfde manier worden gemodelleerd.
+In figuur {numref}`Figuur_17` is weergegeven hoe een verende scharnieropleggingen gemodelleerd kan worden. Andere verende opleggingen die axiale verplaatsing tegengaan kunnen op dezelfde manier worden gemodelleerd.
 
-<img src="figures/image17.png" width="400" height="200">\
-*Figuur 15: Modelleren van een verende scharnieroplegging bij extensie (Van der Wulp, 2023)*
-<br><br>
+```{figure} figures/image17.png
+---
+width: 300
+name: Figuur_16
+align: center
+---
+Modelleren van een verende scharnieroplegging bij extensie {cite:p}`vanderwulp_2023`
+```
 
-***Verende verbinding***\
-Een telescoopscharnier kan verend gedrag hebben. Het kan dan gemodelleerd worden als verende verbinding. Hierbij wordt het scharnier nogsteeds gemodelleerd als singulariteitsfunctie van orde -2. De randvoorwaarde veranderd wel.
+
+#### Verende verbinding
+Een telescoopscharnier kan verend gedrag hebben. Het kan dan gemodelleerd worden als verende verbinding. Hierbij wordt het scharnier nogsteeds gemodelleerd als singulariteitsfunctie van orde $-2$/ De randvoorwaarde verandert wel.
 
 Voor verende telescoopscharnieren wordt deze randvoorwaarde: $N(a) = \ K_{u} \ u_{v}$ , met $N(a)$ de normaalkracht ter plaatse van punt $a$, $\ K_{u}$ de veerconstante en $u_{v}$ de axiale verplaatsing in het scharnier.
 
-In figuur 16 is weergegeven hoe een verend telescoopscharnier gemodelleerd kan worden.
+In figuur {numref}`Figuur_18` is weergegeven hoe een verend telescoopscharnier gemodelleerd kan worden.
 
-<img src="figures/image18.png" width="400" height="200">\
-*Figuur 16: Modelleren van verende telescoopscharnieren (Van der Wulp, 2023)*
-<br><br>
+```{figure} figures/image18.png
+---
+width: 300
+name: Figuur_18
+align: center
+---
+Modelleren van verende telescoopscharnieren {cite:p}`vanderwulp_2023`
+```
 
 ## 3.  Invloedslijnen met Macaulay
 
 De methode van Macaulay kan worden gebruikt om invloedslijnen te berekenen. In dit hoofdstuk zal worden toegelicht hoe de methode hierbij kan worden ingezet. Hierbij zal de focus liggen op de basis van invloedslijnen met Macaulay, door te beschrijven hoe invloedslijnen berekend kunnen worden voor eendimensionale constructies.
 
-***Methode***\
-De eerste stap voor het berekenen van invloedslijnen met de methode van Macaulay is het beschrijven van de krachtsverdeling op de ligger. Hierbij worden alle krachten die op de ligger spelen gedefinieerd op een positie $x$, waarin $x$ de variabele is die de positie op de ligger beschrijft. De puntlast waarvoor de invloedslijnen worden bepaald wordt gedefinieerd op een positie $x = a$. Deze methode is weergegeven in figuur 17.
+### Methode
+De eerste stap voor het berekenen van invloedslijnen met de methode van Macaulay is het beschrijven van de krachtsverdeling op de ligger. Hierbij worden alle krachten die op de ligger spelen gedefinieerd op een positie $x$, waarin $x$ de variabele is die de positie op de ligger beschrijft. De puntlast waarvoor de invloedslijnen worden bepaald wordt gedefinieerd op een positie $x = a$. Deze methode is weergegeven in figuur {numref}`Figuur_19`.
 
-<img src="figures/image19.png" width="400" height="400">\
-*Figuur 17: Methode voor invloedslijnen met Macaulay (Jankie, 2023)*
-<br>
+```{figure} figures/image19.png
+---
+width: 300
+name: Figuur_18
+align: center
+---
+Methode voor invloedslijnen met Macaulay  {cite:p}`jankie_2023`
+```
 
 Vervolgens kan de belastingvergelijking worden geïntegreerd naar $x$. Dit zal resulteren in vergelijkingen met onbekende reactiekrachten en integratieconstanten.
 
@@ -341,13 +391,18 @@ De Macaulay methode kan worden uitgebreid zodat het ook toepasbaar is op tweedim
 
 ### 4.1 Assenstelsel
 
-Het model maakt gebruik van een globaal en een lokaal assenstelsel. Het globale assenstelsel bestaat uit een horizontale en een verticale as waarbij de positieve richtingen naar rechts en naar beneden wijzen. Het lokale assenstelsel bestaat uit een x-as en een z-as. De positieve x-as wordt afgebeeld met een blauwe pijl zichtbaar in Figuur 18 en de positieve z-as is altijd een kwartslag met de klok mee t.o.v. de positieve x-as.
+Het model maakt gebruik van een globaal en een lokaal assenstelsel. Het globale assenstelsel bestaat uit een horizontale en een verticale as waarbij de positieve richtingen naar rechts en naar beneden wijzen. Het lokale assenstelsel bestaat uit een $x$-as en een $z$-as. De positieve $x$-as wordt afgebeeld met een blauwe pijl zichtbaar in Figuur 18 en de positieve $z$-as is altijd een kwartslag met de klok mee t.o.v. de positieve $x$-as.
 
 De externe krachten en de verplaatsingen worden globaal genoteerd en de snedekracht-diagrammen lokaal. Er zijn twee vergelijkingen die de lokale as volgen. $q_{z}(x)$ is voor de krachten loodrecht op de staaf en integreert naar de dwarskrachtenvergelijking, enz. en $q_{x}(x)$ is voor de krachten parallel aan de staaf en integreert naar de normaalkrachtenvergelijking, enz.
 
-<img src="figures/image20.png" width="400" height="400">\
-*Figuur 18: Positieve assen in constructie (Baudoin, 2024)*
-<br><br>
+```{figure} figures/image20.png
+---
+width: 300
+name: Figuur_20
+align: center
+---
+Positieve assen in constructie  {cite:p}`alex_2024`
+```
 
 ### 4.2 Modelleren van belastingen
 
@@ -355,57 +410,72 @@ De belastingen worden in 2D anders gemodelleerd dan in 1D. Er wordt in het model
 
 In het volgende stuk is $b$ de afstand langs de x-as tot het begin-/aangrijppunt van de belasting, $a_{i}$de afstand langs de x-as tot hoekpunt $i$, $\theta_{b}$ de hoek van de positieve horizontale as naar de positieve x-as op punt $b$ en $\theta_{i}$ op punt $i$.
 
-***Koppel***\
-Een koppel heeft geen invloed op de normaal- en dwarskrachten. Verder blijft het buigend moment van een koppel onveranderd bij een knikpunt. Daarom volgen vgl. 1 en 2.
+#### Koppel
+Een koppel heeft geen invloed op de normaal- en dwarskrachten. Verder blijft het buigend moment van een koppel onveranderd bij een knikpunt. Daarom volgen vgl. {eq}`vgl_Tqz` en {eq}`vgl_Tqx`.
 
-$q_{z}(x) = T\left\langle x - b \right\rangle^{- 2}$ (1)
+```{math}
+:label: vgl_Tqz
+q_{z}(x) = T\left\langle x - b \right\rangle^{- 2}
+```
 
-$q_{x}(x) = 0$ (2)
+```{math}
+:label: vgl_Tqx
+q_{x}(x) = 0
+```
 
 ***Puntlast***\
-Bij de normaal- en dwarskrachtenlijn van een puntlast ontstaat een sprong als de functie een hoekpunt passeert. Tegelijkertijd ontstaat er een knik in de momentenlijn als de functie een hoekpunt passeert. Deze sprong en knik ontstaan door de verandering van de projectie van de puntlast. Daarom volgen vgl. 3 t/m 6.
+Bij de normaal- en dwarskrachtenlijn van een puntlast ontstaat een sprong als de functie een hoekpunt passeert. Tegelijkertijd ontstaat er een knik in de momentenlijn als de functie een hoekpunt passeert. Deze sprong en knik ontstaan door de verandering van de projectie van de puntlast. Daarom volgen vgl. {eq}`vgl_Fvqz`, {eq}`vgl_Fhqz`, {eq}`vgl_Fvqx` en {eq}`vgl_Fhqx`.
 
-$q_{z}(x) = F_{v}\left( \left\langle x - b \right\rangle^{- 1}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b$ (3)
+```{math}
+:label: vgl_Fvqz
+q_{z}(x) = F_{v}\left( \left\langle x - b \right\rangle^{- 1}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
+```
 
-$q_{z}(x) = F_{h}\left( \left\langle x - b \right\rangle^{- 1}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b$ (4)
+```{math}
+:label: vgl_Fhqz
+q_{z}(x) = F_{h}\left( \left\langle x - b \right\rangle^{- 1}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
+```
 
-$q_{x}(x) = - F_{v}\left( \left\langle x - b \right\rangle^{- 1}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b$ (5)
+```{math}
+:label: vgl_Fvqx
+q_{x}(x) = - F_{v}\left( \left\langle x - b \right\rangle^{- 1}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
+```
 
-$q_{x}(x) = F_{h}\left( \left\langle x - b \right\rangle^{- 1}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b$ (6)
+```{math}
+:label: vgl_Fhqx
+q_{x}(x) = F_{h}\left( \left\langle x - b \right\rangle^{- 1}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
+```
 
-***Gelijkmatig verdeelde belasting***\
-Bij de normaal- en dwarskrachtenlijn van een uniform verdeelde belasting ontstaat zowel een sprong als een knik als de functie een hoekpunt passeert. De knik ontstaat door de verandering van de projectie van de verdeelde belasting. De sprong daarentegen ontstaat door een verandering in de projectie van de arbitrale belasting vervangend puntlast. Daarom volgen vgl. 7 t/m 10.
+#### Gelijkmatig verdeelde belasting
+Bij de normaal- en dwarskrachtenlijn van een uniform verdeelde belasting ontstaat zowel een sprong als een knik als de functie een hoekpunt passeert. De knik ontstaat door de verandering van de projectie van de verdeelde belasting. De sprong daarentegen ontstaat door een verandering in de projectie van de arbitrale belasting vervangend puntlast. Daarom volgen vgl. {eq}`vgl_qvqz`, {eq}`vgl_qhqz`, {eq}`vgl_qvqx` en {eq}`vgl_qhqx`.
 
-$$q_{z}(x) = q_{v}\left( \left\langle x - b \right\rangle^{0}\cos\left( \theta_{b} \right)\  + \sum_{}^{}\left( \left( {\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right);\ \ voor\ a_{i} > b$$
+```{math}
+:label: vgl_qvqz
+q_{z}(x) = q_{v}\left( \left\langle x - b \right\rangle^{0}\cos\left( \theta_{b} \right)\  + \sum_{}^{}\left( \left( {\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right);\ \ voor\ a_{i} > b
+```
 
-\(7\)
+```{math}
+:label: vgl_qhqz
+q_{z}(x) = q_{h}\left( \left\langle x - b \right\rangle^{0}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ \ ;\ \ voor\ a_{i} > b
+```
 
-$$q_{z}(x) = q_{h}\left( \left\langle x - b \right\rangle^{0}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ \ ;\ \ voor\ a_{i} > b$$
+```{math}
+:label: vgl_qvqx
+q_{x}(x) = - q_{v}\left( \left\langle x - b \right\rangle^{0}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ \ ;\ \ voor\ a_{i} > b
+```
 
-\(8\)
-
-$$q_{x}(x) = - q_{v}\left( \left\langle x - b \right\rangle^{0}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ \ ;\ \ voor\ a_{i} > b$$
-
-\(9\)
-
-$$q_{x}(x) = q_{h}\left( \left\langle x - b \right\rangle^{0}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ \ ;\ \ voor\ a_{i} > b$$
-
-\(10\)
-
-***Scharnier***\
-Een scharnier heeft geen directe invloed op de snedekrachtdiagrammen, maar zorgt voor een sprong in de hoekverdraaiingsdiagram en een knik in de doorbuigingsdiagram. Daarom gelden vgl. 11 en 12. Hierin is $\varphi_{s}$ een onbekende. Om voor deze onbekende op te lossen moet gesteld worden dat $M(b) = 0$.
-
-$q_{z}(x) = EI\varphi_{s}\left\langle x - b \right\rangle^{- 3}$ (11)
-
-$q_{x}(x) = 0$ (12)
+```{math}
+:label: vgl_qhqx
+q_{x}(x) = q_{h}\left( \left\langle x - b \right\rangle^{0}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ \ ;\ \ voor\ a_{i} > b
+```
 
 
 ### 4.3 Vergelijking voor horizontale en verticale verplaatsingen
 
 De doorbuiging ($u_{z}(x)$) en extensie ($u_{x}(x)$) zijn voor tweedimensionale constructies hele abstracte termen die niet bruikbaar zijn voor de oplossingsvoorwaarden. Daarom moeten ze worden gebruikt als invoer voor de vergelijkingen van de horizontale en verticale verplaatsing van de constructie ($u_{h}(x)$ en $u_{v}(x)$). De vergelijkingen stellen telkens dat de invloed van de doorbuiging en extensie van een staaf $ij$ ($u_{z,ij}(x)$ en $u_{x,ij}(x)$) op $u_{z}(x)$ en $u_{z}(x)$ gelijk aan nul is als $x < a_{i}$, een functie is als $a_{i} \leq x < a_{j}$ en constant is als $a_{j} \leq x$. Dit wordt afgebeeld in Figuur 19 en Figuur 20. Vervolgens worden $u_{z,ij}(x)$ en $u_{x,ij}(x)$ vermenigvuldigd met een functie van de hoek van de staaf wat tot slot voor alle staven wordt opgesomd. Hieruit ontstaan vgl. 13 en 14.
 
-$u_{v}(x) = u_{z}(0)\cos\left( \theta_{0} \right) - u_{x}(0)\sin\left( \theta_{0} \right) +$
-$\sum_{i = 0}^{i = n}\begin{pmatrix}\left( \left( u_{z}(x) - u_{z}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{z}(x) - u_{z}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\cos\left( \theta_{i} \right) \\ - \left( \left( u_{x}(x) - u_{x}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{x}(x) - u_{x}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\sin\left( \theta_{i} \right) \end{pmatrix}$ (13)
+$u_{v}(x) = u_{z}(0)\cos\left( \theta_{0} \right) - u_{x}(0)\sin\left( \theta_{0} \right) +
+\sum_{i = 0}^{i = n}\begin{pmatrix}\left( \left( u_{z}(x) - u_{z}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{z}(x) - u_{z}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\cos\left( \theta_{i} \right) \\ - \left( \left( u_{x}(x) - u_{x}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{x}(x) - u_{x}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\sin\left( \theta_{i} \right) \end{pmatrix}$ (13)
 
 $u_{h}(x) = u_{z}(0)\sin\left( \theta_{0} \right) + u_{x}(0)\cos\left( \theta_{0} \right) +$
 $\sum_{i = 0}^{i = n}\begin{pmatrix} \left( \left( u_{z}(x) - u_{z}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{z}(x) - u_{z}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\sin\left( \theta_{i} \right) \\+ \left( \left( u_{x}(x) - u_{x}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{x}(x) - u_{x}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\cos\left( \theta_{i} \right)
