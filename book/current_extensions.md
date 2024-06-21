@@ -243,7 +243,7 @@ Een verende oplegging die rotatie tegengaat wordt gemodelleerd als koppel met ee
 
 Waarin $\varphi(a)$ de rotatie is ter plaatse van $a$ en $K_{\varphi}$ de veerconstante.
 
-In figuur {numref}`Figuur_11` en {numref}`Figuur_12` is weergegeven hoe beide veren gemodelleerd kunnen worden.
+In {numref}`Figuur_11` en {numref}`Figuur_12` is weergegeven hoe beide veren gemodelleerd kunnen worden.
 
 ```{figure} figures/image11.png
 ---
@@ -271,7 +271,7 @@ Voor verende scharnierverbindingen is dit: $M \left( a \right) = K_\varphi \cdot
 
 Voor verende schuifscharnieren is dit: $V(a) = \ K_{w}  \ w_{v}$ , met $V(a)$ de dwarskracht ter plaatse van punt $a$, $\ K_{w}$ de veerconstante en $w_{v}$ verplaatsing ter plaatse van het scharnier.
 
-In figuur {numref}`Figuur_15` en {numref}`Figuur_14` is weergegeven hoe beide verende verbindingen gemodelleerd kunnen worden.
+In {numref}`Figuur_15` en {numref}`Figuur_14` is weergegeven hoe beide verende verbindingen gemodelleerd kunnen worden.
 
 ```{figure} figures/image14.png
 ---
@@ -279,7 +279,7 @@ width: 300
 name: Figuur_14
 align: center
 ---
-Modelleren van een roterende verende verbinding {cite:p},`vanderwulp_2023`, correctie {cite:p}`mark_2024`
+Modelleren van een roterende verende verbinding {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
 ```
 
 ```{figure} figures/image13.png
@@ -302,7 +302,7 @@ Bij krachten evenwijdig aan de staaf worden alleen opleggingen gemodelleerd die 
 
 De oplegreactie evenwijdig aan de staaf wordt gemodelleerd als puntlast. Bij de oplegging speelt een extra randvoorwaarde, namelijk dat de axiale verplaatsing $(u)$ gelijk is aan $0$.
 
-In figuur {numref}`Figuur_15` is weergegeven hoe een scharnieropleggingen gemodelleerd kan worden. Voor andere opleggingen met een oplegreactie evenwijdig aan de staaf gaat dit op dezelfde manier.
+In {numref}`Figuur_15` is weergegeven hoe een scharnieropleggingen gemodelleerd kan worden. Voor andere opleggingen met een oplegreactie evenwijdig aan de staaf gaat dit op dezelfde manier.
 
 ```{figure} figures/image15.png
 ---
@@ -318,7 +318,7 @@ Deze scharnieren hebben axiale verplaatsing als vrijheidsgraad. Dit geeft een sp
 
 Het telescoopscharnier introduceert ook een extra randvoorwaarde. Ter plaatse van het telescoopscharnier is de normaalkracht $(N)$ gelijk aan $0$.
 
-In figuur {numref}`Figuur_16` is weergegeven hoe een telescoopscharnier gemodelleerd kan worden.
+In {numref}`Figuur_16` is weergegeven hoe een telescoopscharnier gemodelleerd kan worden.
 
 ```{figure} figures/image16.png
 ---
@@ -335,12 +335,12 @@ Een verende oplegging die axiale verplaatsing tegengaat wordt gemodelleerd als p
 
 Waarin $u(a)$ de axiale verplaatsing is ter plaatse van $a$ en $K_{u}$ de veerconstante.
 
-In figuur {numref}`Figuur_17` is weergegeven hoe een verende scharnieropleggingen gemodelleerd kan worden. Andere verende opleggingen die axiale verplaatsing tegengaan kunnen op dezelfde manier worden gemodelleerd.
+In {numref}`Figuur_17` is weergegeven hoe een verende scharnieropleggingen gemodelleerd kan worden. Andere verende opleggingen die axiale verplaatsing tegengaan kunnen op dezelfde manier worden gemodelleerd.
 
 ```{figure} figures/image17.png
 ---
 width: 300
-name: Figuur_16
+name: Figuur_17
 align: center
 ---
 Modelleren van een verende scharnieroplegging bij extensie {cite:p}`vanderwulp_2023`
@@ -352,7 +352,7 @@ Een telescoopscharnier kan verend gedrag hebben. Het kan dan gemodelleerd worden
 
 Voor verende telescoopscharnieren wordt deze randvoorwaarde: $N(a) = \ K_{u} \ u_{v}$ , met $N(a)$ de normaalkracht ter plaatse van punt $a$, $\ K_{u}$ de veerconstante en $u_{v}$ de axiale verplaatsing in het scharnier.
 
-In figuur {numref}`Figuur_18` is weergegeven hoe een verend telescoopscharnier gemodelleerd kan worden.
+In {numref}`Figuur_18` is weergegeven hoe een verend telescoopscharnier gemodelleerd kan worden.
 
 ```{figure} figures/image18.png
 ---
@@ -373,7 +373,7 @@ De eerste stap voor het berekenen van invloedslijnen met de methode van Macaulay
 ```{figure} figures/image19.png
 ---
 width: 300
-name: Figuur_18
+name: Figuur_19
 align: center
 ---
 Methode voor invloedslijnen met Macaulay  {cite:p}`jankie_2023`
