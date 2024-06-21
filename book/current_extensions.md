@@ -65,10 +65,10 @@ Het integreren van de singulariteitsfunctie is afhankelijk van zijn orde en is a
 
 ```{math}
 :label: vgl_5
-\int_{}^{}{(x - a)^{n}dx} = \left\{ \begin{array}{r}
-(x - a)^{n + 1},\ \ n < 0 \\
-\frac{(x - a)^{n + 1}}{n + 1}\ \ \ \ \ ,\ \ n \geq 0
-\end{array} \right.\
+\int {{{\left\langle {x - a} \right\rangle }^n}{\rm{d}}x}  = \left\{ \begin{array}{l}
+{\left( {x - a} \right)^{n + 1}} & n < 0\\
+\frac{{{{\left( {x - a} \right)}^{n + 1}}}}{{n + 1}} & n \ge 0
+\end{array} \right.
 ```
 
 De meest voorkomende ordes voor de singulariteitsfunctie zijn van -2 tot 2, waarbij iedere orde een specifieke functie benaming heeft. Deze benamingen zijn in volgorde 'unit doublet', 'unit impulse (Dirac-delta)', 'unit step (Heaviside)', 'unit ramp' en 'unit parabolic'. Deze functies kunnen als volgt worden gevisualiseerd.
