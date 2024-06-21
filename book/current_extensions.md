@@ -526,8 +526,6 @@ De functie kan ook een sprong maken in het globale assenstelsel. Hiervoor gelden
 
 In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden als lokale afstand $a_{i}$ de benoemde eigenschap heeft. Hierbij is $a_{j}$ de afstand waarbij de functie lokaal voor het eerst langs het globaal zelfde punt komt als afstand $a_{i}$ of $a_{i} + 2dx$. Afstand $a_{i}$ kan meerdere eigenschappen tegelijk hebben, zoals het zijn van een aansluitpunt en sprongpunt waarop een scharnierverbinding plaats vindt.
 
-
-
 ```{table} Oplossingsvoorwaarden voor tweedimensionale constructie 
 :header-rows: 1
 :name: table_twee
@@ -536,13 +534,13 @@ In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossing
 | ---  | --------------------- |
 | Beginpunt functie | $N\left(a_i^-\right) = 0$ <br> $V\left(a_i^-\right) = 0$ <br> $M\left(a_i^-\right) = 0$ <br> |
 | Eindpunt functie | $N\left(a_i^+\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> |
-| Sprongpunt functie in vertrakte constructie * | $N\left(a_i^+\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> \varphi\left( a_i^+ \right) = \varphi \left( a_j \right) <br> u_v\left( a_i^+ \right) = u_v \left( a_j \right) <br> u_h\left( a_i^+ \right) = u_h \left( a_j \right)
-| Aansluitpunt functie  in gesloten constructie * | $N\left(a_i^+\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> \varphi\left( a_i \right) = \varphi \left( a_j \right) <br> u_v\left( a_i \right) = u_v \left( a_j \right) <br> u_h\left( a_i \right) = u_h \left( a_j \right)
-| Scharnierverbinding | $M \left(a_i^+\right) = 0|
-| Verticale roloplegging | $u_v \left(a_i\right) = 0 |
-| Horizontale roloplegging | $u_h \left(a_i \right) = 0 |
-| Scharnierende oplegging | $u_v \left(a_i\right) = 0 <br> $u_h \left(a_i\right) = 0 |
-| Inklemming | $\varphi \left( a_i \right) = 0 <br> $u_v \left(a_i\right) = 0 <br> $u_h \left(a_i\right) = 0 |
+| Sprongpunt functie in vertrakte constructie * | $N\left(a_i^+\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> $\varphi\left( a_i^+ \right) = \varphi \left( a_j \right)$ <br> $u_v\left( a_i^+ \right) = u_v \left( a_j \right)$ <br> $u_h\left( a_i^+ \right) = u_h \left( a_j \right)$
+| Aansluitpunt functie  in gesloten constructie * | $N\left(a_i^+\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> $\varphi\left( a_i \right) = \varphi \left( a_j \right)$ <br>$u_v\left( a_i \right) = u_v \left( a_j \right)$ <br>$ u_h\left( a_i \right) = u_h \left( a_j \right)$
+| Scharnierverbinding | $M \left(a_i^+\right) = 0$|
+| Verticale roloplegging | $u_v \left(a_i\right) = 0$ |
+| Horizontale roloplegging | $u_h \left(a_i \right) = 0$ |
+| Scharnierende oplegging | $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ |
+| Inklemming | $\varphi \left( a_i \right) = 0$ <br> $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ |
 ```
 
-* Als de functie springt naar een scharnierend verbonden staaf of scharnierend aansluit op een knooppunt, dan kunnen de oplosvergelijkingen voor de hoekverdraaiing weggelaten worden. Er hoeven dan ook geen alternatieve voorwaarden worden gesteld.
+Als de functie springt naar een scharnierend verbonden staaf of scharnierend aansluit op een knooppunt, dan kunnen de oplosvergelijkingen voor de hoekverdraaiing weggelaten worden. Er hoeven dan ook geen alternatieve voorwaarden worden gesteld.
