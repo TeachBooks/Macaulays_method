@@ -529,3 +529,13 @@ In Tabel 1 wordt voorgeschreven welke oplossingsvoorwaarden gelden als lokale af
 *Tabel 1: Oplossingsvoorwaarden voor tweedimensionale constructie (Baudoin, 2024)*
 <img src="figures/image23.png" width="700" height="300">\
 \* Als de functie springt naar een scharnierend verbonden staaf of scharnierend aansluit op een knooppunt, dan kunnen de oplosvergelijkingen voor de hoekverdraaiing weggelaten worden. Er hoeven dan ook geen alternatieve voorwaarden worden gesteld.
+
+```{table} Table title
+:header-rows: 1
+:name: label-to-reference
+
+| $a_i$| Oplossingsvoorwaarden |
+| ---  | --------------------- |
+| Beginpunt functie | $N\left(a_i^-\right) = 0$ <br> $V\left(a_i^-\right) = 0$ <br> $M\left(a_i^-\right) = 0$ <br> |
+| Eindpunt functie | $N\left(a_i^+\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> |
+```
