@@ -53,7 +53,7 @@ Voor $n < \ 0$:
 
 ```{math}
 :label: vgl_4
-\[f\left( x \right) \equiv {\left\langle {x - a} \right\rangle ^n} = 0\]
+f\left( x \right) \equiv {\left\langle {x - a} \right\rangle ^n} = 0
 ```
 
 Hierin geeft $a$ de positie aan waar de singulariteit voorkomt, en is $n$ de orde van de functie.
@@ -391,7 +391,7 @@ De Macaulay methode kan worden uitgebreid zodat het ook toepasbaar is op tweedim
 
 ### 4.1 Assenstelsel
 
-Het model maakt gebruik van een globaal en een lokaal assenstelsel. Het globale assenstelsel bestaat uit een horizontale en een verticale as waarbij de positieve richtingen naar rechts en naar beneden wijzen. Het lokale assenstelsel bestaat uit een $x$-as en een $z$-as. De positieve $x$-as wordt afgebeeld met een blauwe pijl zichtbaar in Figuur 18 en de positieve $z$-as is altijd een kwartslag met de klok mee t.o.v. de positieve $x$-as.
+Het model maakt gebruik van een globaal en een lokaal assenstelsel. Het globale assenstelsel bestaat uit een horizontale en een verticale as waarbij de positieve richtingen naar rechts en naar beneden wijzen. Het lokale assenstelsel bestaat uit een $x$-as en een $z$-as. De positieve $x$-as wordt afgebeeld met een blauwe pijl zichtbaar in {numref}`Figuur_20`en de positieve $z$-as is altijd een kwartslag met de klok mee t.o.v. de positieve $x$-as.
 
 De externe krachten en de verplaatsingen worden globaal genoteerd en de snedekracht-diagrammen lokaal. Er zijn twee vergelijkingen die de lokale as volgen. $q_{z}(x)$ is voor de krachten loodrecht op de staaf en integreert naar de dwarskrachtenvergelijking, enz. en $q_{x}(x)$ is voor de krachten parallel aan de staaf en integreert naar de normaalkrachtenvergelijking, enz.
 
@@ -472,31 +472,46 @@ q_{x}(x) = q_{h}\left( \left\langle x - b \right\rangle^{0}\cos\left( \theta_{b}
 
 ### 4.3 Vergelijking voor horizontale en verticale verplaatsingen
 
-De doorbuiging ($u_{z}(x)$) en extensie ($u_{x}(x)$) zijn voor tweedimensionale constructies hele abstracte termen die niet bruikbaar zijn voor de oplossingsvoorwaarden. Daarom moeten ze worden gebruikt als invoer voor de vergelijkingen van de horizontale en verticale verplaatsing van de constructie ($u_{h}(x)$ en $u_{v}(x)$). De vergelijkingen stellen telkens dat de invloed van de doorbuiging en extensie van een staaf $ij$ ($u_{z,ij}(x)$ en $u_{x,ij}(x)$) op $u_{z}(x)$ en $u_{z}(x)$ gelijk aan nul is als $x < a_{i}$, een functie is als $a_{i} \leq x < a_{j}$ en constant is als $a_{j} \leq x$. Dit wordt afgebeeld in Figuur 19 en Figuur 20. Vervolgens worden $u_{z,ij}(x)$ en $u_{x,ij}(x)$ vermenigvuldigd met een functie van de hoek van de staaf wat tot slot voor alle staven wordt opgesomd. Hieruit ontstaan vgl. 13 en 14.
+De doorbuiging ($u_{z}(x)$) en extensie ($u_{x}(x)$) zijn voor tweedimensionale constructies hele abstracte termen die niet bruikbaar zijn voor de oplossingsvoorwaarden. Daarom moeten ze worden gebruikt als invoer voor de vergelijkingen van de horizontale en verticale verplaatsing van de constructie ($u_{h}(x)$ en $u_{v}(x)$). De vergelijkingen stellen telkens dat de invloed van de doorbuiging en extensie van een staaf $ij$ ($u_{z,ij}(x)$ en $u_{x,ij}(x)$) op $u_{z}(x)$ en $u_{z}(x)$ gelijk aan nul is als $x < a_{i}$, een functie is als $a_{i} \leq x < a_{j}$ en constant is als $a_{j} \leq x$. Dit wordt afgebeeld in Figuur {numref}`Figuur_21` en {numref}`Figuur_22`. Vervolgens worden $u_{z,ij}(x)$ en $u_{x,ij}(x)$ vermenigvuldigd met een functie van de hoek van de staaf wat tot slot voor alle staven wordt opgesomd. Hieruit ontstaan vgl. {eq}`vgl_uv` en {eq}`vgl_uh`.
 
-$u_{v}(x) = u_{z}(0)\cos\left( \theta_{0} \right) - u_{x}(0)\sin\left( \theta_{0} \right) +
-\sum_{i = 0}^{i = n}\begin{pmatrix}\left( \left( u_{z}(x) - u_{z}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{z}(x) - u_{z}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\cos\left( \theta_{i} \right) \\ - \left( \left( u_{x}(x) - u_{x}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{x}(x) - u_{x}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\sin\left( \theta_{i} \right) \end{pmatrix}$ (13)
+```{math}
+:label: vgl_uv
+u_{v}(x) = u_{z}(0)\cos\left( \theta_{0} \right) - u_{x}(0)\sin\left( \theta_{0} \right) +
+\sum_{i = 0}^{i = n}\begin{pmatrix}\left( \left( u_{z}(x) - u_{z}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{z}(x) - u_{z}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\cos\left( \theta_{i} \right) \\ - \left( \left( u_{x}(x) - u_{x}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{x}(x) - u_{x}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\sin\left( \theta_{i} \right) \end{pmatrix}
+```
 
-$u_{h}(x) = u_{z}(0)\sin\left( \theta_{0} \right) + u_{x}(0)\cos\left( \theta_{0} \right) +$
-$\sum_{i = 0}^{i = n}\begin{pmatrix} \left( \left( u_{z}(x) - u_{z}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{z}(x) - u_{z}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\sin\left( \theta_{i} \right) \\+ \left( \left( u_{x}(x) - u_{x}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{x}(x) - u_{x}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\cos\left( \theta_{i} \right)
- \end{pmatrix}$ (14)
+```{math}
+:label: vgl_uh
+u_{h}(x) = u_{z}(0)\sin\left( \theta_{0} \right) + u_{x}(0)\cos\left( \theta_{0} \right) + \sum_{i = 0}^{i = n}\begin{pmatrix} \left( \left( u_{z}(x) - u_{z}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{z}(x) - u_{z}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\sin\left( \theta_{i} \right) \\+ \left( \left( u_{x}(x) - u_{x}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{x}(x) - u_{x}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\cos\left( \theta_{i} \right)
+ \end{pmatrix}
+```
 
-<img src="figures/image21.png" width="500" height="250">\
-*Figuur 19: De invloed van $𝑢_{𝑥,𝑖𝑗}(𝑥)$ op $𝑢_𝑥(𝑥)$ (Baudoin, 2024)*
-<br>
+```{figure} figures/image21.png
+---
+width: 300
+name: Figuur_21
+align: center
+---
+De invloed van $u_{x,ij}\left(x\right)$ op $u_{x}\left(x\right)$  {cite:p}`alex_2024`
+```
 
-<img src="figures/image22.png" width="500" height="250">\
-*Figuur 20: De invloed van $𝑢_{𝑧,𝑖𝑗}(𝑥)$ op $𝑢_𝑧(𝑥)$ (Baudoin, 2024)*
-<br><br>
+```{figure} figures/image22.png
+---
+width: 300
+name: Figuur_22
+align: center
+---
+De invloed van $u_{z,ij}\left(x\right)$ op $u_{z}\left(x\right)$  {cite:p}`alex_2024`
+```
 
 ### 4.4 Vertakte en gesloten constructies
 
 Met de tot nu toe in dit hoofdstuk verstreken informatie kunnen geknikte constructies worden gemodelleerd met de Macaulay methode. Om vertakte en gesloten constructies te kunnen modelleren komt er wat benodigde informatie bij, zoals het modelleren van een knooppunt, sprongpunt en aansluitpunt. Dit wordt hier uitgelegd.
 
-***Knooppunt***\
+#### Knooppunt
 Stel de functie van $x$ gaat over een knooppunt $i$ dan moeten er per staaf waar de functie niet direct overheen gaat drie belastingen ($V^{ij}$, $H^{ij}$ en $T^{ij}$) toegevoegd worden. Hierin vertegenwoordigd $V^{ij}$ de verticale kracht, $H^{ij}$ de horizontale kracht en $T^{ij}$ de koppel voortkomend uit staaf $ij$ werkend op knooppunt $i$. Als staaf $ij$ scharnierend is verbonden aan knooppunt $i$, dan hoeft $T^{ij}$ niet toegevoegd te worden. Deze belastingen worden later weer verwijderd als de functie over de staaf gaat op het knooppunt. Het maakt niet uit of de richting van de functie van knooppunt naar staaf is (zoals bij vertakt) of andersom (zoals bij gesloten).
 
-***Sprongpunt***\
+#### Sprongpunt
 De functie kan ook een sprong maken in het globale assenstelsel. Hiervoor gelden de volgende regels:
 
 -   De functie kan alleen een sprong maken als alle drie de snedekrachtdiagrammen gelijk zijn aan nul en ook nul zouden blijven als er geen sprong wordt gemaakt. Dit is het geval op een eindpunt van een vertakking en de afsluiting van een gesloten sectie nadat $V^{ij}$, $H^{ij}$ en $T^{ij}$ zijn weggehaald.
