@@ -524,15 +524,15 @@ De functie kan ook een sprong maken in het globale assenstelsel. Hiervoor gelden
 
 ### 4.5 Oplossingsvoorwaarden
 
-In {numref}`tablee_twee` wordt voorgeschreven welke oplossingsvoorwaarden gelden als lokale afstand $a_{i}$ de benoemde eigenschap heeft. Hierbij is $a_{j}$ de afstand waarbij de functie lokaal voor het eerst langs het globaal zelfde punt komt als afstand $a_{i}$ of $a_{i} + 2dx$. Afstand $a_{i}$ kan meerdere eigenschappen tegelijk hebben, zoals het zijn van een aansluitpunt en sprongpunt waarop een scharnierverbinding plaats vindt.
+In {numref}`tablee_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden als lokale afstand $a_{i}$ de benoemde eigenschap heeft. Hierbij is $a_{j}$ de afstand waarbij de functie lokaal voor het eerst langs het globaal zelfde punt komt als afstand $a_{i}$ of $a_{i} + 2dx$. Afstand $a_{i}$ kan meerdere eigenschappen tegelijk hebben, zoals het zijn van een aansluitpunt en sprongpunt waarop een scharnierverbinding plaats vindt.
 
 
 
-```{table} Oplossingsvoorwaarden voor tweedimensionale constructie {cite:p}`alex_2024`
+```{table} Oplossingsvoorwaarden voor tweedimensionale constructie 
 :header-rows: 1
 :name: table_twee
 
-| $a_i$| Oplossingsvoorwaarden |
+| Situatie op $a_i$| Oplossingsvoorwaarden |
 | ---  | --------------------- |
 | Beginpunt functie | $N\left(a_i^-\right) = 0$ <br> $V\left(a_i^-\right) = 0$ <br> $M\left(a_i^-\right) = 0$ <br> |
 | Eindpunt functie | $N\left(a_i^+\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> |
