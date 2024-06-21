@@ -488,7 +488,7 @@ u_{h}(x) = u_{z}(0)\sin\left( \theta_{0} \right) + u_{x}(0)\cos\left( \theta_{0}
 
 ```{figure} figures/image21.png
 ---
-width: 300
+width: 400
 name: Figuur_21
 align: center
 ---
@@ -497,7 +497,7 @@ De invloed van $u_{x,ij}\left(x\right)$ op $u_{x}\left(x\right)$  {cite:p}`alex_
 
 ```{figure} figures/image22.png
 ---
-width: 300
+width: 400
 name: Figuur_22
 align: center
 ---
@@ -524,18 +524,18 @@ De functie kan ook een sprong maken in het globale assenstelsel. Hiervoor gelden
 
 ### 4.5 Oplossingsvoorwaarden
 
-In Tabel 1 wordt voorgeschreven welke oplossingsvoorwaarden gelden als lokale afstand $a_{i}$ de benoemde eigenschap heeft. Hierbij is $a_{j}$ de afstand waarbij de functie lokaal voor het eerst langs het globaal zelfde punt komt als afstand $a_{i}$ of $a_{i} + 2dx$. Afstand $a_{i}$ kan meerdere eigenschappen tegelijk hebben, zoals het zijn van een aansluitpunt en sprongpunt waarop een scharnierverbinding plaats vindt.
+In {numref}`tablee_twee` wordt voorgeschreven welke oplossingsvoorwaarden gelden als lokale afstand $a_{i}$ de benoemde eigenschap heeft. Hierbij is $a_{j}$ de afstand waarbij de functie lokaal voor het eerst langs het globaal zelfde punt komt als afstand $a_{i}$ of $a_{i} + 2dx$. Afstand $a_{i}$ kan meerdere eigenschappen tegelijk hebben, zoals het zijn van een aansluitpunt en sprongpunt waarop een scharnierverbinding plaats vindt.
 
-*Tabel 1: Oplossingsvoorwaarden voor tweedimensionale constructie (Baudoin, 2024)*
-<img src="figures/image23.png" width="700" height="300">\
-\* Als de functie springt naar een scharnierend verbonden staaf of scharnierend aansluit op een knooppunt, dan kunnen de oplosvergelijkingen voor de hoekverdraaiing weggelaten worden. Er hoeven dan ook geen alternatieve voorwaarden worden gesteld.
 
-```{table} Table title
+
+```{table} Oplossingsvoorwaarden voor tweedimensionale constructie {cite:p}`alex_2024`
 :header-rows: 1
-:name: label-to-reference
+:name: table_twee
 
 | $a_i$| Oplossingsvoorwaarden |
 | ---  | --------------------- |
 | Beginpunt functie | $N\left(a_i^-\right) = 0$ <br> $V\left(a_i^-\right) = 0$ <br> $M\left(a_i^-\right) = 0$ <br> |
 | Eindpunt functie | $N\left(a_i^+\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> |
 ```
+
+* Als de functie springt naar een scharnierend verbonden staaf of scharnierend aansluit op een knooppunt, dan kunnen de oplosvergelijkingen voor de hoekverdraaiing weggelaten worden. Er hoeven dan ook geen alternatieve voorwaarden worden gesteld.
