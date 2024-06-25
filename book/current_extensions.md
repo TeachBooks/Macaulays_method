@@ -527,7 +527,6 @@ De functie kan ook een sprong maken in het globale assenstelsel. Hiervoor gelden
 In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden als lokale afstand $a_{i}$ de benoemde eigenschap heeft. Hierbij is $a_{j}$ de afstand waarbij de functie lokaal voor het eerst langs het globaal zelfde punt komt als afstand $a_{i}$ of $a_{i} + 2dx$. Afstand $a_{i}$ kan meerdere eigenschappen tegelijk hebben, zoals het zijn van een aansluitpunt en sprongpunt waarop een scharnierverbinding plaats vindt.
 
 ```{table} Oplossingsvoorwaarden voor tweedimensionale constructie 
-:header-rows: 1
 :name: table_twee
 
 | Situatie op $a_i$| Oplossingsvoorwaarden |
