@@ -33,34 +33,24 @@ parts:
     - file: theses/alex
     - file: theses/mark
       sections:
-      - file: theses/BEP_examples_SymPy_1.12/BEP_calculation_1.ipynb
-        title: Code calculation 1
-      - file: theses/BEP_examples_SymPy_1.14.dev/BEP_calculation_2.ipynb
-        title: Code calculation 2
-      - file: theses/BEP_examples_SymPy_1.12/BEP_example_1.ipynb
-        title: Code example 1
+      - file: theses/BEP_examples_SymPy_1.14.dev/BEP_equations_1.ipynb.ipynb
+      - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_1.ipynb
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_2.ipynb
-        title: Code example 2
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_3.ipynb
-        title: Code example 3
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_4.ipynb
-        title: Code example 4
+      - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_5.ipynb
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_5.ipynb
-        title: Code example 5
+      - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_5.ipynb
+      - file: theses/BEP_examples_SymPy_1.12/BEP_example_6.ipynb
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_6.ipynb
-        title: Code example 6
+      - file: theses/BEP_examples_SymPy_1.12/BEP_example_7.ipynb
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_7.ipynb
-        title: Code example 7
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_8.ipynb
-        title: Code example 8
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_9.ipynb
-        title: Code example 9
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_10.ipynb
-        title: Code example 10
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_11.ipynb
-        title: Code example 11
+      - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_12.ipynb
       - file: theses/Beam-examples/3pin_example.ipynb
-        title: Code calculation 3 pin
   - caption: Appendices
     chapters:
     - file: references.md
