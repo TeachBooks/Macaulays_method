@@ -31,6 +31,14 @@ parts:
       - file: theses/De-methode-van-Macaulay/Voorbeelden-4-en-5.ipynb
         title: Code example 4 and 5
     - file: theses/alex
+      sections:
+      - file: theses/Macaulay-2D/BEP v1.ipynb
+      - file: theses/Macaulay-2D/BEP v2.ipynb
+      - file: theses/Macaulay-2D/BEP v3.ipynb
+      - file: theses/Macaulay-2D/BEP v4.ipynb
+      - file: theses/Macaulay-2D/BEP v5.ipynb
+      - file: theses/Macaulay-2D/BEP v6.ipynb
+      - file: theses/Macaulay-2D/BEP v7.ipynb
     - file: theses/mark
       sections:
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_equations_1.ipynb.ipynb

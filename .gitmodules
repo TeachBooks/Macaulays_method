@@ -16,3 +16,6 @@
 [submodule "book/theses/BEP_examples_SymPy_1.12"]
 	path = book/theses/BEP_examples_SymPy_1.12
 	url = https://github.com/mvg2002/BEP_examples_SymPy_1.12.git
+[submodule "book/theses/Macaulay-2D"]
+	path = book/theses/Macaulay-2D
+	url = https://github.com/AJDBaudoin/Macaulay-2D.git
