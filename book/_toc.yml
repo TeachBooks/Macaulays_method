@@ -41,17 +41,15 @@ parts:
       - file: theses/Macaulay-2D/BEP v7.ipynb
     - file: theses/mark
       sections:
-      - file: theses/BEP_examples_SymPy_1.14.dev/BEP_equations_1.ipynb.ipynb
+      - file: theses/BEP_examples_SymPy_1.14.dev/BEP_equations_1.ipynb
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_1.ipynb
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_2.ipynb
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_3.ipynb
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_4.ipynb
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_4.ipynb
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_5.ipynb
-      - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_5.ipynb
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_6.ipynb
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_6.ipynb
-      - file: theses/BEP_examples_SymPy_1.12/BEP_example_7.ipynb
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_7.ipynb
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_8.ipynb
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_9.ipynb
