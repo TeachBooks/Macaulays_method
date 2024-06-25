@@ -38,7 +38,7 @@ parts:
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_2.ipynb
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_3.ipynb
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_4.ipynb
-      - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_5.ipynb
+      - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_4.ipynb
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_5.ipynb
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_5.ipynb
       - file: theses/BEP_examples_SymPy_1.12/BEP_example_6.ipynb
