@@ -8,46 +8,73 @@
 > 
 > **koppel**
 > 
-> $q_{z}(x) = T\left\langle x - b \right\rangle^{- 2}$ (1)
+> ```{math}
+> q_{z}(x) = T\left\langle x - b \right\rangle^{- 2}
+> ```
 > 
-> $q_{x}(x) = 0$ (2)
+> ```{math}
+> q_{x}(x) = 0
+> ```
 > 
 > **Verticale Puntlast**
 > 
-> $q_{z}(x) = F_{v}\left( \left\langle x - b \right\rangle^{- 1}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b$ (3)
-> 
-> $q_{x}(x) = - F_{v}\left( \left\langle x - b \right\rangle^{- 1}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b$ (4)
+> ```{math}
+> q_{z}(x) = F_{v}\left( \left\langle x - b \right\rangle^{- 1}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
+> ```
+>
+> ```{math}
+> q_{x}(x) = - F_{v}\left( \left\langle x - b \right\rangle^{- 1}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
+> ```
 > 
 > **Horizontale puntlast**
 > 
-> $q_{z}(x) = F_{h}\left( \left\langle x - b \right\rangle^{- 1}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b$ (5)
-> 
-> $q_{x}(x) = F_{h}\left( \left\langle x - b \right\rangle^{- 1}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b$ (6)
+> ```{math}
+> q_{z}(x) = F_{h}\left( \left\langle x - b \right\rangle^{- 1}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
+> ```
+>
+> ```{math}
+> q_{x}(x) = F_{h}\left( \left\langle x - b \right\rangle^{- 1}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
+> ```
 > 
 > **Verticale Gelijkmatig Verdeelde Belasting**
 > 
-> $q_{z}(x) = q_{v}\begin{pmatrix} \left\langle x - b \right\rangle^{0}\cos\left( \theta_{b} \right) + \\ \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \\ \end{pmatrix}\ \ ;\ \ voor\ a_{i} > b$ (7)
->
+> ```{math}
+> q_{z}(x) = q_{v}\begin{pmatrix} \left\langle x - b \right\rangle^{0}\cos\left( \theta_{b} \right) + \\ \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \\ \end{pmatrix}\ \ ;\ \ voor\ a_{i} > b
+> ```
 > 
-> $q_{x}(x) = - q_{v}\begin{pmatrix} \left\langle x - b \right\rangle^{0}\sin\left( \theta_{b} \right) + \\ \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \\ \end{pmatrix}\ \ ;\ \ voor\ a_{i} > b$ (8)
+> ```{math}
+> q_{x}(x) = - q_{v}\begin{pmatrix} \left\langle x - b \right\rangle^{0}\sin\left( \theta_{b} \right) + \\ \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \\ \end{pmatrix}\ \ ;\ \ voor\ a_{i} > b
+> ```
 > 
 > **Horizontaal Gelijkmatig Verdeelde Belasting**
 > 
-> $q_{z}(x) = q_{h}\begin{pmatrix} \left\langle x - b \right\rangle^{0}\sin\left( \theta_{b} \right) + \\ \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \\ \end{pmatrix}\ \ ;\ \ voor\ a_{i} > b$ (9)
-> 
-> $q_{x}(x) = q_{h}\begin{pmatrix} \left\langle x - b \right\rangle^{0}\cos\left( \theta_{b} \right) + \\ \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \\ \end{pmatrix}\ \ ;\ \ voor\ a_{i} > b$ (10)
-> 
+> ```{math}
+> q_{z}(x) = q_{h}\begin{pmatrix} \left\langle x - b \right\rangle^{0}\sin\left( \theta_{b} \right) + \\ \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \\ \end{pmatrix}\ \ ;\ \ voor\ a_{i} > b
+> ```
+>
+> ```{math}
+> q_{x}(x) = q_{h}\begin{pmatrix} \left\langle x - b \right\rangle^{0}\cos\left( \theta_{b} \right) + \\ \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \\ \end{pmatrix}\ \ ;\ \ voor\ a_{i} > b
+> ``` 
+>
 > **Scharnier**
 > 
-> $q_{z}(x) = EI\varphi_{s}\left\langle x - b \right\rangle^{- 3}$ (11)
-> 
-> $q_{x}(x) = 0$ (12)
+> ```{math}
+> q_{z}(x) = EI\varphi_{s}\left\langle x - b \right\rangle^{- 3}
+> ``` 
+>
+> ```{math}
+> q_{x}(x) = 0
+> ``` 
 > 
 > De doorbuiging ($u_{z}(x)$) en extensie ($u_{x}(x)$) zijn voor tweedimensionale constructies hele abstracte termen die niet bruikbaar zijn voor de oplossingsvoorwaarden. Daarom moeten ze worden gebruikt als invoer voor de vergelijkingen van de horizontale en verticale verplaatsing van de constructie ($u_{h}(x)$ en $u_{v}(x)$). Deze vergelijkingen zijn als volgt:
 > 
-> $u_{v}(x) = u_{z}\left( a_{0} \right)\cos\left( \theta_{0} \right) - u_{x}\left( a_{0} \right)\sin\left( \theta_{0} \right) + \sum_{i = 0}^{i = n}\begin{pmatrix} \left( \left( u_{z}(x) - u_{z}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{z}(x) - u_{z}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\cos\left( \theta_{i} \right) \\ - \left( \left( u_{x}(x) - u_{x}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{x}(x) - u_{x}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\sin\left( \theta_{i} \right) \\ \end{pmatrix}$ (13)
+> ```{math}
+> u_{v}(x) = u_{z}\left( a_{0} \right)\cos\left( \theta_{0} \right) - u_{x}\left( a_{0} \right)\sin\left( \theta_{0} \right) + \sum_{i = 0}^{i = n}\begin{pmatrix} \left( \left( u_{z}(x) - u_{z}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{z}(x) - u_{z}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\cos\left( \theta_{i} \right) \\ - \left( \left( u_{x}(x) - u_{x}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{x}(x) - u_{x}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\sin\left( \theta_{i} \right) \\ \end{pmatrix}
+> ``` 
 > 
-> $u_{h}(x) = u_{z}\left( a_{0} \right)\sin\left( \theta_{0} \right) + u_{x}\left( a_{0} \right)\cos\left( \theta_{0} \right) + \sum_{i = 0}^{i = n}\begin{matrix} \begin{pmatrix} \left( \left( u_{z}(x) - u_{z}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{z}(x) - u_{z}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\sin\left( \theta_{i} \right) \\ + \left( \left( u_{x}(x) - u_{x}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{x}(x) - u_{x}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\cos\left( \theta_{i} \right) \\ \end{pmatrix} \\ \end{matrix}$ (14)
+> ```{math}
+> u_{h}(x) = u_{z}\left( a_{0} \right)\sin\left( \theta_{0} \right) + u_{x}\left( a_{0} \right)\cos\left( \theta_{0} \right) + \sum_{i = 0}^{i = n}\begin{matrix} \begin{pmatrix} \left( \left( u_{z}(x) - u_{z}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{z}(x) - u_{z}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\sin\left( \theta_{i} \right) \\ + \left( \left( u_{x}(x) - u_{x}\left( a_{i} \right) \right)\left\langle x - a_{i} \right\rangle^{0} - \left( u_{x}(x) - u_{x}\left( a_{j} \right) \right)\left\langle x - a_{j} \right\rangle^{0} \right)\cos\left( \theta_{i} \right) \\ \end{pmatrix} \\ \end{matrix}
+> ``` 
 >
 > Hierbij is $a_{i}$ het beginpunt, $a_{j}$ het eindpunt en $\theta_{i}$
 de hoek van staaf $ij$.
@@ -58,9 +85,13 @@ de hoek van staaf $ij$.
 > 
 > Het sprongpunt, (zie figuur 1) is het punt waar de functie van $x$ in het globale assenstelsel een sprong maakt van punt $I$, wat een uiteinde of afsluiting is van een vertakking, naar punt $J$, wat een knoopverbinding is waar de functie van $x$ al eerder langs is geweest. Belastingen werkende op punt $I$ moeten gemodelleerd worden op $a_{s}^{-}$ en op punt $J$ op $a_{s}^{+}$. Op $a_{s}^{+}$ moeten ook de onbekende krachten $- V^{JK}$, $- H^{JK}$ en $- T^{JK}$ worden toegevoegd voor staaf $JK$ waarnaar de functie na de sprong de weg vervolgd. Verder moeten op $a_{s}^{+}$ de sprongconstanten $\varphi^{IJ}$, $u_{z}^{IJ}$ en $u_{x}^{IJ}$ toegevoegd worden voor de sprong in vervormingen tussen punt $I$ en $J$. Deze worden als volgt gemodelleerd:
 >
-> $q_{z}(x) = EI\varphi^{ij}\left\langle x - a_{s}^{+} \right\rangle^{- 3} + EIu_{z}^{ij}\left\langle x - a_{s}^{+} \right\rangle^{- 4}$ (15)
+> ```{math}
+> q_{z}(x) = EI\varphi^{ij}\left\langle x - a_{s}^{+} \right\rangle^{- 3} + EIu_{z}^{ij}\left\langle x - a_{s}^{+} \right\rangle^{- 4}
+> ``` 
 > 
-> $q_{x}(x) = EAu_{x}^{ij}\left\langle x - a_{s}^{+} \right\rangle^{- 2}$ (16)
+> ```{math}
+> q_{x}(x) = EAu_{x}^{ij}\left\langle x - a_{s}^{+} \right\rangle^{- 2}
+> ``` 
 > 
 >![Afbeelding met tekst, lijn, Lettertype, diagram Automatisch
 gegenereerde
