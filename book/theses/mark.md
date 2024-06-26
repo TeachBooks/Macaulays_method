@@ -16,6 +16,8 @@ in SymPy.
 >
 > In the end it can be concluded that the implementation of Macaulay’s method can be extended in Python by first taking a look at the mechanics calculations. In these calculations the method of Macaulay should be used in the most optimal way. After changing these calculations, the software design can be adjusted to be able to make these calculations. With the implementation of these new mechanics calculations the software can calculate and analyse more complicated beams and structures.
 
+{cite:ts}`mark_2024`
+
 ## Documenten
 - [GitHub repository old code](https://github.com/mvg2002/BEP_examples_SymPy_1.12), also shown in this book
 - [GitHub repository new code](https://github.com/mvg2002/BEP_examples_SymPy_1.14.dev), also shown in this book
