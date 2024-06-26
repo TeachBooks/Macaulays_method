@@ -124,5 +124,7 @@ constructies.
 >
 > Een staaf $JK$ kan ook scharnierend verbonden zijn aan een knoop. Het modelleren ervan verschilt voor een knoop-, sprong en aansluitpunt. In Tabel 2 staat een overzicht van welke onbekenden en voorwaarden moeten worden toegevoegd en/of wegelaten voor elke situatie t.o.v. een star verbonden staaf. Als alle staven scharnieren verbonden zijn in de knoop, dan moet voor $n$ staven $n - 1$ staven een scharnierverbinding worden gemodelleerd in de knoop.
 
+{cite:ts}`alex_2024`
+
 ## Documenten
 - [GitHub repository ](https://github.com/AJDBaudoin/Macaulay-2D), also shown in this book
