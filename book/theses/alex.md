@@ -79,111 +79,17 @@ beschrijving](figures/image2_alex.png)
 > 
 > Tabel 1: Oplossingsvoorwaarden voor tweedimensionale starre
 constructies.
-> 
-+----------------+----------------+----------------+-----------------+
-| $$a_{i}$$      | Oplossi        | $$a_{i}$$      | Oploss          |
-|                | ngsvoorwaarden |                | ingsvoorwaarden |
-+================+================+================+=================+
-
-| Lokaal         | $$N\l          | Schar          | $$M\left( a_{i  |
-| beginpunt      | eft( a_{i}^{-} | nierverbinding | } \right) = 0$$ |
-|                |  \right) = 0$$ |                |                 |
-|                |                |                |                 |
-|                | $$V\l          |                |                 |
-|                | eft( a_{i}^{-} |                |                 |
-|                |  \right) = 0$$ |                |                 |
-|                |                |                |                 |
-|                | $$M\l          |                |                 |
-|                | eft( a_{i}^{-} |                |                 |
-|                |  \right) = 0$$ |                |                 |
-+----------------+----------------+----------------+-----------------+
-|                |                | Verticale      | $$u             |
-|                |                | roloplegging   | _{v}\left( a_{i |
-|                |                |                | } \right) = 0$$ |
-+----------------+----------------+----------------+-----------------+
-|                |                | Horizontale    | $$u             |
-|                |                | roloplegging   | _{h}\left( a_{i |
-|                |                |                | } \right) = 0$$ |
-+----------------+----------------+----------------+-----------------+
-| Lokaal         | $              | Scha           | $$u             |
-| eindpunt       | $N\left( a_{i} | rnieroplegging | _{v}\left( a_{i |
-|                |  \right) = 0$$ |                | } \right) = 0$$ |
-|                |                |                |                 |
-|                | $              |                | $$u             |
-|                | $V\left( a_{i} |                | _{h}\left( a_{i |
-|                |  \right) = 0$$ |                | } \right) = 0$$ |
-|                |                |                |                 |
-|                | $              |                |                 |
-|                | $M\left( a_{i} |                |                 |
-|                |  \right) = 0$$ |                |                 |
-+----------------+----------------+----------------+-----------------+
-|                |                | Inklemming     | $$\va           |
-|                |                |                | rphi\left( a_{i |
-|                |                |                | } \right) = 0$$ |
-|                |                |                |                 |
-|                |                |                | $$u             |
-|                |                |                | _{v}\left( a_{i |
-|                |                |                | } \right) = 0$$ |
-|                |                |                |                 |
-|                |                |                | $$u             |
-|                |                |                | _{h}\left( a_{i |
-|                |                |                | } \right) = 0$$ |
-+----------------+----------------+----------------+-----------------+
-| Globaal        | Zie lokaal     |                |                 |
-| eindpunt /     | eindpunt +     |                |                 |
-| sprongpunt     |                |                |                 |
-|                | $$\varphi\lef  |                |                 |
-| (Vertakte      | t( a_{i}^{+} \ |                |                 |
-| constructie)   | right) - \varp |                |                 |
-|                | hi\left( a_{k} |                |                 |
-|                |  \right) = 0$$ |                |                 |
-|                |                |                |                 |
-|                | $$u_{v}\l      |                |                 |
-|                | eft( a_{i}^{+} |                |                 |
-|                |  \right) - u_{ |                |                 |
-|                | v}\left( a_{k} |                |                 |
-|                |  \right) = 0$$ |                |                 |
-|                |                |                |                 |
-|                | $$u_{h}\l      |                |                 |
-|                | eft( a_{i}^{+} |                |                 |
-|                |  \right) - u_{ |                |                 |
-|                | h}\left( a_{k} |                |                 |
-|                |  \right) = 0$$ |                |                 |
-+----------------+----------------+----------------+-----------------+
-|                |                |                |                 |
-+----------------+----------------+----------------+-----------------+
-| Aansluitpunt   | Zie lokaal     |                |                 |
-|                | eindpunt +     |                |                 |
-| (Gesloten      |                |                |                 |
-| constructie)   | $$\varphi      |                |                 |
-|                | \left( a_{i} \ |                |                 |
-|                | right) - \varp |                |                 |
-|                | hi\left( a_{k} |                |                 |
-|                |  \right) = 0$$ |                |                 |
-|                |                |                |                 |
-|                | $$u_{          |                |                 |
-|                | v}\left( a_{i} |                |                 |
-|                |  \right) - u_{ |                |                 |
-|                | v}\left( a_{k} |                |                 |
-|                |  \right) = 0$$ |                |                 |
-|                |                |                |                 |
-|                | $$u_{          |                |                 |
-|                | h}\left( a_{i} |                |                 |
-|                |  \right) - u_{ |                |                 |
-|                | h}\left( a_{k} |                |                 |
-|                |  \right) = 0$$ |                |                 |
-+----------------+----------------+----------------+-----------------+
-| Situatie op $a_i$| Oplossingsvoorwaarden |
-| ---  | --------------------- |
-| Lokaal beginpunt | $N\left(a_i^-\right) = 0$ <br> $V\left(a_i^-\right) = 0$ <br> $M\left(a_i^-\right) = 0$ <br> |
-| Lokaal eindpunt | $N\left(a_i\right) = 0$ <br> $V\left(a_i\right) = 0$ <br> $M\left(a_i\right) = 0$ <br> |
-| Globaal eindpunt / sprongpunt (vertakte constructie) | Zie lokaal eindpunt + <br> $\varphi\left( a_i^+ \right) - \varphi \left( a_k \right) = 0$ <br> $u_v\left( a_i^+ \right) - u_v \left( a_k \right) = 0$ <br> $u_h\left( a_i^+ \right) - u_h \left( a_k \right)=0$
-| Aansluitpunt (gesloten constructie) | Zie lokaal eindpunt <br> $\varphi\left( a_i \right) - \varphi \left( a_k \right) = 0$ <br>$u_v\left( a_i \right) - u_v \left( a_k \right) = 0$ <br>$ u_h\left( a_i \right) - u_h \left( a_j \right) = 0$
-| Scharnierverbinding | $M \left(a_i^+\right) = 0$|
-| Verticale roloplegging | $u_v \left(a_i\right) = 0$ |
-| Horizontale roloplegging | $u_h \left(a_i \right) = 0$ |
-| Scharnierende oplegging | $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ |
-| Inklemming | $\varphi \left( a_i \right) = 0$ <br> $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ |
+> | Situatie op $a_i$| Oplossingsvoorwaarden |
+> | ---  | --------------------- |
+> | Lokaal beginpunt | $N\left(a_i^-\right) = 0$ <br> $V\left(a_i^-\right) = 0$ <br> $M\left(a_i^-\right) = 0$ <br> |
+> | Lokaal eindpunt | $N\left(a_i\right) = 0$ <br> $V\left(a_i\right) = 0$ <br> $M\left(a_i\right) = 0$ <br> |
+> | Globaal eindpunt / sprongpunt (vertakte constructie) | Zie lokaal eindpunt + <br> $\varphi\left( a_i^+ \right) - \varphi \left( a_k \right) = 0$ <br> $u_v\left( a_i^+ \right) - u_v \left( a_k \right) = 0$ <br> $u_h\left( a_i^+ \right) - u_h \left( a_k \right)=0$
+> | Aansluitpunt (gesloten constructie) | Zie lokaal eindpunt <br> $\varphi\left( a_i \right) - \varphi \left( a_k \right) = 0$ <br>$u_v\left( a_i \right) - u_v \left( a_k \right) = 0$ <br>$ u_h\left( a_i \right) - u_h \left( a_j \right) = 0$
+> | Scharnierverbinding | $M \left(a_i^+\right) = 0$|
+> | Verticale roloplegging | $u_v \left(a_i\right) = 0$ |
+> | Horizontale roloplegging | $u_h \left(a_i \right) = 0$ |
+> | Scharnierende oplegging | $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ |
+> | Inklemming | $\varphi \left( a_i \right) = 0$ <br> $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ |
 >
 > Een staaf $JK$ kan ook scharnierend verbonden zijn aan een knoop. Het modelleren ervan verschilt voor een knoop-, sprong en aansluitpunt. In Tabel 2 staat een overzicht van welke onbekenden en voorwaarden moeten worden toegevoegd en/of wegelaten voor elke situatie t.o.v. een star verbonden staaf. Als alle staven scharnieren verbonden zijn in de knoop, dan moet voor $n$ staven $n - 1$ staven een scharnierverbinding worden gemodelleerd in de knoop.
 
