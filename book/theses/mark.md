@@ -1,4 +1,4 @@
-# Mark: Expanding the implementation of Macaulay’s method in Python
+# Mark: Hinges and influence lines in SymPy
 
 > The method of Macaulay is a method to determine force and deflection properties of structures. The method makes it possible to describe discontinuous beams with a single equation. The fact that the entire beam can be described in a single equation makes this method well-suited for use in programming. In past Bachelor End Projects students from the TU Delft have made advancements in the application of the method of Macaulay, making it able do be used for more complicated structures.
 > 
