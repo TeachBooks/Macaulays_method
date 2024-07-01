@@ -43,9 +43,9 @@ Voor $n\  \geq \ 0$:
 
 ```{math}
 :label: vgl_3
-f\left( x \right) \equiv {\left\langle {x - a} \right\rangle ^n} = \left\{ \begin{array}{l}
-{\left( {x - a} \right)^n} & x \ge a\\
-0 &  x < a
+f\left( x \right) \equiv {\left\langle {x - \bar x} \right\rangle ^n} = \left\{ \begin{array}{l}
+{\left( {x - \bar x} \right)^n} & x \ge \bar x \\
+0 &  x < \bar x
 \end{array} \right.
 ```
 
@@ -53,46 +53,32 @@ Voor $n < \ 0$:
 
 ```{math}
 :label: vgl_4
-f\left( x \right) \equiv {\left\langle {x - a} \right\rangle ^n} = 0
+f\left( x \right) \equiv {\left\langle {x - \bar x} \right\rangle ^n} = 0
 ```
 
-Hierin geeft $a$ de positie aan waar de singulariteit voorkomt, en is $n$ de orde van de functie.
+Hierin geeft $\bar x$ de positie aan waar de singulariteit voorkomt, en is $n$ de orde van de functie.
 
-Hierbij is {eq}`vgl_4` aangepast waarbij er origineel op $x=a$ geldt $f\left(x\right)=\infty$. Dit heeft echter geen betekening voor het balkmodel.
+Hierbij is {eq}`vgl_4` aangepast waarbij er origineel op $x=\bar x$ geldt $f\left(x\right)=\infty$. Dit heeft echter geen betekening voor het balkmodel.
 
 Het integreren van de singulariteitsfunctie is afhankelijk van zijn orde en is als volgt gedefinieerd:
 
 ```{math}
 :label: vgl_5
-\int {{{\left\langle {x - a} \right\rangle }^n}{\rm{d}}x}  = \left\{ \begin{array}{l}
-{\left( {x - a} \right)^{n + 1}} & n < 0\\
-\cfrac{{{{\left( {x - a} \right)}^{n + 1}}}}{{n + 1}} & n \ge 0
+\int {{{\left\langle {x - \bar x} \right\rangle }^n}{\rm{d}}x}  = \left\{ \begin{array}{l}
+{\left( {x - \bar x} \right)^{n + 1}} & n < 0\\
+\cfrac{{{{\left( {x - \bar x} \right)}^{n + 1}}}}{{n + 1}} & n \ge 0
 \end{array} \right.
 ```
 
-De meest voorkomende ordes voor de singulariteitsfunctie zijn van -2 tot 2, waarbij iedere orde een specifieke functie benaming heeft. Deze benamingen zijn in volgorde 'unit doublet', 'unit impulse (Dirac-delta)', 'unit step (Heaviside)', 'unit ramp' en 'unit parabolic'. Deze functies kunnen als volgt worden gevisualiseerd.
+Een aantal voorbeelden zijn hieronder weergegeven
 
-#### Unit doublet
-```{figure} figures/image1.png
----
-width: 400
-name: Figuur_1
-align: center
----
-Unit doublet functie {cite:p}`vanderwulp_2023`
-```
+#### $n = -1$
 
-#### Dirac-delta (Unit impulse)
-```{figure} figures/image2.png
----
-width: 400
-name: Figuur_2
-align: center 
----
-Dirac-delta functie {cite:p}`vanderwulp_2023`
-```
+Voor $n = -1$ evalueert de functie {eq}`vgl_4` voor het gehele domein naar 0. Als de originele definitie wordt aangehouden met $f\left(x\right)=\infty$ op $x=\bar x$ staat deze functie ook wel bekend als de Dirac-Delta functie.
 
-#### Unit step (Heaviside)
+#### $n = 0$
+
+Voor $n=0$ evalueert de functie {eq}`vgl_4` tot een stapfunctie, ook wel bekend als de Heaviside.
 ```{figure} figures/image3.png
 ---
 width: 400
@@ -102,7 +88,8 @@ align: center
 Unit step functie {cite:p}`vanderwulp_2023`
 ```
 
-#### Unit ramp
+#### $n = 1$
+Voor $n=0$ geeft de functie {eq}`vgl_4` een linear verband na $\bar x$.
 ```{figure} figures/image4.png
 ---
 width: 400
@@ -112,21 +99,12 @@ align: center
 Unit ramp functie {cite:p}`vanderwulp_2023`
 ```
 
-#### Unit parabolic
-```{figure} figures/image5.png
----
-width: 400
-name: Figuur_5
-align: center
----
-Unit parabolic functie {cite:p}`vanderwulp_2023`
-```
 
 ### 1.3  Oplossingsstrategie
 
-De eerste stap bij het oplossen van een probleem met de methode van Macaulay is het opstellen van de belastingvergelijking. Hiervoor wordt de hele constructie gemodelleerd in één vergelijking. Deze vergelijking kan vervolgens ingevuld worden als $q$ in de differentiaalvergelijkingen in `ref`(hoofdstuk_1_1). Hoe verschillende onderdelen van een constructie gemodelleerd kunnen worden in deze vergelijking is beschreven in `ref`(hoofdstuk_2).
+De eerste stap bij het oplossen van een probleem met de methode van Macaulay is het opstellen van de belastingvergelijking in de langs- en loodrechte richting. Hiervoor wordt de hele constructie gemodelleerd in één vergelijking per richting. Deze vergelijking kan vervolgens ingevuld worden als $q$ in de differentiaalvergelijkingen in `ref`(hoofdstuk_1_1). Hoe verschillende onderdelen van een constructie gemodelleerd kunnen worden in deze vergelijking is beschreven in `ref`(hoofdstuk_2).
 
-Als de belastingvergelijking is gevonden kan deze geïntegreerd worden. Dit geeft vergelijkingen die de dwarskracht, het moment, de rotatie en de doorbuiging van de staaf beschrijven. In deze vergelijkingen staan nog onbekende reactiekrachten en integratieconstanten.
+Als de belastingvergelijking is gevonden kan deze geïntegreerd worden. Dit geeft vergelijkingen die de normaalkrachten, dwarskracht, het moment, de rotatie, de doorbuiging en extensie van de staaf beschrijven. In deze vergelijkingen staan nog onbekende reactiekrachten en integratieconstanten.
 
 Om deze onbekende reactiekrachten en integratieconstanten op te lossen kunnen de randvoorwaarden worden opgesteld. Met deze randvoorwaarden kunnen de onbekende waardes worden gevonden.
 
@@ -137,18 +115,18 @@ De gevonden waardes voor de reactiekrachten en integratieconstanten kunnen worde
 
 ### 2.1 Modelleren van belastingen
 
-Voor het modeleren van belastingen op de constructie wordt gebruik gemaakt van singulariteitsfuncties. Dit maakt het mogelijk om de volledige constructie in één regel te beschrijven en daarmee de differentiaalvergelijking op te lossen. Er zal nu toegelicht worden hoe verschillende krachten beschreven kunnen worden met singulariteitsfuncties.
+Voor het modeleren van belastingen op de constructie wordt gebruik gemaakt van singulariteitsfuncties. Dit maakt het mogelijk om de volledige constructie in één regel (per richting) te beschrijven en daarmee de differentiaalvergelijking op te lossen. Er zal nu toegelicht worden hoe verschillende krachten beschreven kunnen worden met singulariteitsfuncties.
 
 Belastingen kunnen worden beschreven door de een singulariteitsfunctie van bijbehorende orde te vermenigvuldigen met de waarde van de kracht of verbinding. Naar aanleiding van het assenstelsel wordt een kracht positief of negatief gemodelleerd.
 
 #### Puntlast
-Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $a$ wordt gemodelleerd in de krachtvergelijking als $F{< x - a >}^{- 1}$.
+Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $\bar x$ wordt gemodelleerd in de krachtvergelijking als $F{< x - \bar x >}^{- 1}$. Afhankelijk van de richting van de kracht wordt deze in de langs- of loodrechte belastingsvergelijking ingevuld.
 
 #### Koppel
-Een koppel werkt ook op een enkel punt in de constructie. Een koppel wordt beschreven door de unit doublet in de krachtenvergelijking. Een koppel met waarde $T$ gelegen op punt $a$ wordt gemodelleerd als $T{< x - a >}^{- 2}$.
+Een koppel werkt ook op een enkel punt in de constructie. Een koppel wordt beschreven door de orde $-2$ in de krachtenvergelijking van de loodrechte richting aangezien dit koppel geen invloed heeft op de langsrichting. Een koppel met waarde $T$ gelegen op punt $\bar x$ wordt dus gemodelleerd als $T{< x - \bar x >}^{- 2}$.
 
 #### Uniform verdeelde belasting
-Belasting die gelijkmatig verdeeld is over de constructie kan beschreven worden met de Heaviside functie. Een uniform verdeelde belasting met waarde $q_{z}$, beginpunt $a$ en eindpunt $b$ kan dan in de krachtvergelijking gemodelleerd worden als $q_{z}{< x - a >}^{0} - q_{z}{< x - b >}^{0}$. Hierbij werkt de waarde van $q_{z}$ vanaf $b$ in tegengestelde richting, dit geeft een totaal van 0. Deze werking is in {numref}`Figuur_6` weergegeven. Wanneer een uniform verdeelde belasting tot het einde van een constructie werkt is het niet nodig om de kracht nog te compenseren. In dat geval kan de kracht gemodelleerd worden als $q_{z}{< x - a >}^{0}$.
+Belasting die gelijkmatig verdeeld is over de constructie kan beschreven worden met de Heaviside functie. Een uniform verdeelde belasting met waarde $q_{z}$, beginpunt $\bar x_1$ en eindpunt $\bar x_2$ kan dan in de krachtvergelijking gemodelleerd worden als $q_{z}{< x - \bar x_1 >}^{0} - q_{z}{< x - \bar x+2 >}^{0}$. Hierbij werkt de waarde van $q_{z}$ vanaf $b$ in tegengestelde richting, dit geeft een totaal van 0. Deze werking is in {numref}`Figuur_6` weergegeven.
 
 ```{figure} figures/image6.png
 ---
@@ -199,7 +177,7 @@ Modelleren van en scharnieroplegging {cite:p}`vanderwulp_2023`
 ```
 
 #### Scharnier
-Scharnierende verbindingen in constructies kunnen worden beschreven met singulariteitsfuncties van orde $-3$. Dit valt te beredeneren uit het feit dat scharnieren een sprong in de krommingslijn geven, en daar dus orde 0 hebben. Terug differentiëren naar de belasting vergelijking geeft een singulariteitsfunctie van orde $-3$. Een scharnier gelegen op punt $a$ wordt gemodelleerd als $EI\ \varphi{< x - a >}^{- 3}$. De $\varphi$ staat hier voor de rotatie van het scharnier, ofwel de grote van de sprong in de krommingslijn.
+Scharnierende verbindingen in constructies kunnen worden beschreven met singulariteitsfuncties van orde $-3$. Dit valt te beredeneren uit het feit dat scharnieren een sprong in de krommingslijn geven, en daar dus orde $0$ hebben. Terug differentiëren naar de belasting vergelijking geeft een singulariteitsfunctie van orde $-3$. Een scharnier gelegen op punt $\bar x$ wordt gemodelleerd als $EI\ \Delta \varphi{< x - \bar x >}^{- 3}$. De $\Delta \varphi$ staat hier voor de rotatie van het scharnier, ofwel de grote van de sprong in de krommingslijn.
 
 Een scharnier introduceert ook een randvoorwaarde. Ter plaatse van het scharnier is het moment ($M$) gelijk aan $0$.
 
@@ -216,7 +194,7 @@ Modelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_
 
 
 #### Schuifscharnier
-Schuifscharnieren in een constructie kunnen worden beschreven met singulariteitsfuncties van orde $-4$. Zoals roterende scharnieren een sprong geven in de krommingslijn, geven schuifscharnieren een sprong in de doorbuigingslijn. Hieruit volgt dat schuifscharnieren in de belasting vergelijking beschreven worden met een singulariteitsfunctie van orde $-4$. Een schuifscharnier gelegen op punt $a$ wordt gemodelleerd als $EI\ w_{b}{< x - a >}^{- 4}$. Met $w_{b}$ de grote van de sprong in de doorbuigingslijn.
+Schuifscharnieren in een constructie kunnen worden beschreven met singulariteitsfuncties van orde $-4$. Zoals roterende scharnieren een sprong geven in de krommingslijn, geven schuifscharnieren een sprong in de doorbuigingslijn. Hieruit volgt dat schuifscharnieren in de belasting vergelijking beschreven worden met een singulariteitsfunctie van orde $-4$. Een schuifscharnier gelegen op punt $\bar x$ wordt gemodelleerd als $EI\ \Delta w{< x - \bar x >}^{- 4}$. Met $\Delta w$ de grote van de sprong in de doorbuigingslijn.
 
 Een schuifscharnier introduceert ook een randvoorwaarde. Ter plaatse van het schuifscharnier is de dwarskracht ($V$) gelijk aan $0$.
 
@@ -235,13 +213,13 @@ Modelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_
 #### Verende opleggingen
 Er zijn twee soorten verende opleggingen: verende opleggingen die verticale verplaatsing tegengaan en verende opleggingen die rotatie tegen gaan. In beide gevallen wordt de veer gemodelleerd als kracht ter plaatse van de oplegging in de belasting vergelijking.
 
-Een verende oplegging die verticale verplaatsing tegengaat wordt gemodelleerd als puntlast met een grote van $F_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $w(a) = - \frac{F_{veer}}{K_{w}}.$
+Een verende oplegging die verticale verplaatsing tegengaat wordt gemodelleerd als puntlast met een grote van $F_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $w(\bar x) = - \frac{F_{veer}}{K_{w}}.$
 
-Waarin $w(a)$ de zakking is ter plaatse van $a$ en $K_{w}$ de veerconstante.
+Waarin $w \left(\bar x\right)$ de zakking is ter plaatse van $a$ en $K_{w}$ de veerconstante.
 
-Een verende oplegging die rotatie tegengaat wordt gemodelleerd als koppel met een grote van $M_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $\varphi(a) = - \frac{M_{veer}}{K_{\varphi}}$
+Een verende oplegging die rotatie tegengaat wordt gemodelleerd als koppel met een grote van $M_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $\varphi(\bar x) = - \frac{M_{veer}}{K_{\varphi}}$
 
-Waarin $\varphi(a)$ de rotatie is ter plaatse van $a$ en $K_{\varphi}$ de veerconstante.
+Waarin $\varphi \left(\bar x\right)$ de rotatie is ter plaatse van $\bar x$ en $K_{\varphi}$ de veerconstante.
 
 In {numref}`Figuur_11` en {numref}`Figuur_12` is weergegeven hoe beide veren gemodelleerd kunnen worden.
 
@@ -267,9 +245,9 @@ Modelleren van een roterende verende oplegging {cite:p}`vanderwulp_2023`
 Verende verbindingen worden gemodelleerd als de verbinding waar het om gaat met een andere 
 randvoorwaarde.
 
-Voor verende scharnierverbindingen is dit: $M \left( a \right) = K_\varphi \cdot \varphi_v$, met $M \left(a \right)$ het moment ter plaatse van punt $a$, $K_\varphi$ de veerconstante en $\varphi_v$ de rotatie van het scharnier.
+Voor verende scharnierverbindingen is dit: $M \left( \bar x \right) = K_\varphi \cdot \Delta \varphi$, met $M \left(\bar x \right)$ het moment ter plaatse van punt $\bar x$, $K_\varphi$ de veerconstante en $\Delta \varphi$ de rotatie van het scharnier.
 
-Voor verende schuifscharnieren is dit: $V(a) = \ K_{w}  \ w_{v}$ , met $V(a)$ de dwarskracht ter plaatse van punt $a$, $\ K_{w}$ de veerconstante en $w_{v}$ verplaatsing ter plaatse van het scharnier.
+Voor verende schuifscharnieren is dit: $V(\bar x) = \ K_{w}  \ \Delta w$ , met $V(\bar x)$ de dwarskracht ter plaatse van punt $bar x$, $\ K_{w}$ de veerconstante en $\Delta w$ verplaatsing ter plaatse van het scharnier.
 
 In {numref}`Figuur_15` en {numref}`Figuur_14` is weergegeven hoe beide verende verbindingen gemodelleerd kunnen worden.
 
@@ -331,9 +309,9 @@ Modelleren van telescoop scharnieren {cite:p}`vanderwulp_2023`
 
 #### Verende opleggingen
 Net als gewone opleggingen bij normaalkracht worden verende opleggingen gemodelleerd met een puntlast. De randvoorwaarde die hierbij speelt veranderd.
-Een verende oplegging die axiale verplaatsing tegengaat wordt gemodelleerd als puntlast met een grote van $F_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $u(a) = - \frac{F_{veer}}{K_{u}}.$
+Een verende oplegging die axiale verplaatsing tegengaat wordt gemodelleerd als puntlast met een grote van $F_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $u(\bar x) = - \frac{F_{veer}}{K_{u}}.$
 
-Waarin $u(a)$ de axiale verplaatsing is ter plaatse van $a$ en $K_{u}$ de veerconstante.
+Waarin $u(\bar x)$ de axiale verplaatsing is ter plaatse van $\bar x$ en $K_{u}$ de veerconstante.
 
 In {numref}`Figuur_17` is weergegeven hoe een verende scharnieropleggingen gemodelleerd kan worden. Andere verende opleggingen die axiale verplaatsing tegengaan kunnen op dezelfde manier worden gemodelleerd.
 
@@ -350,7 +328,7 @@ Modelleren van een verende scharnieroplegging bij extensie {cite:p}`vanderwulp_2
 #### Verende verbinding
 Een telescoopscharnier kan verend gedrag hebben. Het kan dan gemodelleerd worden als verende verbinding. Hierbij wordt het scharnier nogsteeds gemodelleerd als singulariteitsfunctie van orde $-2$/ De randvoorwaarde verandert wel.
 
-Voor verende telescoopscharnieren wordt deze randvoorwaarde: $N(a) = \ K_{u} \ u_{v}$ , met $N(a)$ de normaalkracht ter plaatse van punt $a$, $\ K_{u}$ de veerconstante en $u_{v}$ de axiale verplaatsing in het scharnier.
+Voor verende telescoopscharnieren wordt deze randvoorwaarde: $N(\bar x) = \ K_{u} \ \Delta u$ , met $N(a)$ de normaalkracht ter plaatse van punt $\bar x$, $\ K_{u}$ de veerconstante en $\Delta u$ de axiale verplaatsing in het scharnier.
 
 In {numref}`Figuur_18` is weergegeven hoe een verend telescoopscharnier gemodelleerd kan worden.
 
@@ -368,7 +346,7 @@ Modelleren van verende telescoopscharnieren {cite:p}`vanderwulp_2023`
 De methode van Macaulay kan worden gebruikt om invloedslijnen te berekenen. In dit hoofdstuk zal worden toegelicht hoe de methode hierbij kan worden ingezet. Hierbij zal de focus liggen op de basis van invloedslijnen met Macaulay, door te beschrijven hoe invloedslijnen berekend kunnen worden voor eendimensionale constructies.
 
 ### Methode
-De eerste stap voor het berekenen van invloedslijnen met de methode van Macaulay is het beschrijven van de krachtsverdeling op de ligger. Hierbij worden alle krachten die op de ligger spelen gedefinieerd op een positie $x$, waarin $x$ de variabele is die de positie op de ligger beschrijft. De puntlast waarvoor de invloedslijnen worden bepaald wordt gedefinieerd op een positie $x = a$. Deze methode is weergegeven in figuur {numref}`Figuur_19`.
+De eerste stap voor het berekenen van invloedslijnen met de methode van Macaulay is het beschrijven van de krachtsverdeling op de ligger. Hierbij worden alle krachten die op de ligger spelen gedefinieerd op een positie $x$, waarin $x$ de variabele is die de positie op de ligger beschrijft. De puntlast waarvoor de invloedslijnen worden bepaald wordt gedefinieerd op een positie $x = \bar x_F$. Deze methode is weergegeven in figuur {numref}`Figuur_19`.
 
 ```{figure} figures/image19.png
 ---
@@ -383,7 +361,7 @@ Vervolgens kan de belastingvergelijking worden geïntegreerd naar $x$. Dit zal r
 
 De randvoorwaarden kunnen worden opgesteld. Deze worden gebruikt om de onbekende reactiekrachten en integratieconstanten uit de vergelijkingen op te lossen.
 
-Invullen van de gevonden waardes voor de onbekenden in de geïntegreerde belastingvergelijking resulteert in de gewenste functies. Deze functies hangen af van $x$ en $a$. Waarin voor $x$ een positie op de ligger ingevuld kan worden en $a$ de locatie van de puntlast beschrijft. Zo kan de invloed van een puntlast op locatie $a$ op de staafeigenschappen op locatie $x$ worden bepaald.
+Invullen van de gevonden waardes voor de onbekenden in de geïntegreerde belastingvergelijking resulteert in de gewenste functies. Deze functies hangen af van $x$ en $\bar x_F$. Waarin voor $x$ een positie op de ligger ingevuld kan worden en $\bar x_F$ de locatie van de puntlast beschrijft. Zo kan de invloed van een puntlast op locatie $\bar x_F$ op de staafeigenschappen op locatie $x$ worden bepaald.
 
 ## 4.  Oplossen van geknikte, vertakte en gesloten constructies
 
@@ -410,14 +388,14 @@ Positieve assen in constructie  {cite:p}`alex_2024`
 
 De belastingen worden in 2D anders gemodelleerd dan in 1D. Er wordt in het model onderscheid gemaakt tussen een scharnier ($\varphi_{s}$), koppel ($T$), horizontale en verticale puntlast ($F_{h}\ en\ F_{v}$) en horizontale en verticale gelijkmatig verdeelde belasting ($q_{h}\ en\ q_{v}$). De vergelijking voor elke belasting is anders voor $q_{z}(x)$ en $q_{x}(x)$ en bestaan telkens uit een beginterm voor het aangrijppunt van de belasting en een systematische reeks hoektermen voor elke hoek waar de functie van $x$ langs gaat na het aangrijppunt van de belasting. De beginterm is telkens vergelijkbaar met de term voor 1D en de hoektermen zijn bepaald door te analyseren wat de invloed is van een hoek op de snedekrachtdiagrammen van een belasting.
 
-In het volgende stuk is $b$ de afstand langs de x-as tot het begin-/aangrijppunt van de belasting, $a_{i}$de afstand langs de x-as tot hoekpunt $i$, $\theta_{b}$ de hoek van de positieve horizontale as naar de positieve x-as op punt $b$ en $\theta_{i}$ op punt $i$.
+In het volgende stuk is $\bar x$ de afstand langs de x-as tot het begin-/aangrijppunt van de belasting, de afstand langs de x-as tot hoekpunt $i$, $\theta$ de hoek van de positieve horizontale as naar de positieve x-as.
 
 #### Koppel
 Een koppel heeft geen invloed op de normaal- en dwarskrachten. Verder blijft het buigend moment van een koppel onveranderd bij een knikpunt. Daarom volgen vgl. {eq}`vgl_Tqz` en {eq}`vgl_Tqx`.
 
 ```{math}
 :label: vgl_Tqz
-q_{z}(x) = T\left\langle x - b \right\rangle^{- 2}
+q_{z}(x) = T\left\langle x - \bar x \right\rangle^{- 2}
 ```
 
 ```{math}
@@ -430,7 +408,7 @@ Bij de normaal- en dwarskrachtenlijn van een puntlast ontstaat een sprong als de
 
 ```{math}
 :label: vgl_Fvqz
-q_{z}(x) = F_{v}\left( \left\langle x - b \right\rangle^{- 1}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
+q_{z}(x) = F_{v}\left( \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) + \sum\limits_{i}^{n} \left\langle \bar x_i - \bar x_{F} \right\rangle^{0} \left\langle x - \bar x_{i} \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_{i} \right) \right) - \cos\left( \theta \left( \bar x_{i-1} \right) \right) \right) \right)
 ```
 
 ```{math}
@@ -557,12 +535,11 @@ Het aansluitpunt is het punt waarbij de functie van x opnieuw langs een knoop ga
 
 ## Overzicht modellering discontinuïteiten
 
-In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden voor starre onstructies als lokale afstand $a_i$ de benoemde eigenschap heeft met krachten op afstand $b$ en $\theta_i$ de hoek van een segment waarop $a_i$ aangrijpt. Afstand $a_i$ kan meerdere eigenschappen tegelijk hebben. Hierbij is $a_k$ het knooppunt waarbij de functie voor het eerst langs de knoop komt
+In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden voor starre onstructies als lokale afstand $\bar x$ de benoemde eigenschap.
 
 ````{div} full-width
 ```{table} Onbekenden en vergelijkingen discontinuïteiten
 :label: table_twee
-
 
 | Situatie op $\bar x$| Belastingsvergelijing | Vergelijkingen | Onbekenden | 
 | ---  | --------------------- | --------------------- | -------------------- |
@@ -584,7 +561,7 @@ In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossing
 | Inklemming | $q_z\left(x\right) : R_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) + R_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) + T \left\langle x - \bar x \right\rangle^{- 2}$<br> $q_x\left(x\right) : R_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) - R_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) $ | $\varphi \left( \bar x \right) = 0$ <br> $u_v \left(\bar x\right) = 0$ <br> $u_h \left(\bar x\right) = 0$ | $R_h$, $R_v$, $T$ |
 | Aansluitpunt | $q_z\left(x\right) : \Delta V \left\langle x - \bar x_1  \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) - \Delta V \left\langle x - \bar x  \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right)$ <br> $ \qquad + \Delta H\left\langle x - \bar x_1 \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) - \Delta H\left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right)$ <br> $\qquad +\Delta T \left\langle x - \bar x_1 \right\rangle^{- 2}  - \Delta T \left\langle x - \bar x \right\rangle^{- 2} $ <br> $q_x\left(x\right) : -\Delta V \left\langle x - \bar x_1  \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) + \Delta V \left\langle x - \bar x  \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right)$<br>$\qquad + \Delta H\left\langle x - \bar x_1 \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right)  - \Delta H\left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right)$  <br> met $\bar x_1$ de coordinaat van de eerste keer dat langs de vertakking is gegaan| $\varphi\left( \bar x \right) = \varphi \left( \bar x_1 \right)$ <br>$u_v\left( \bar x \right) = u_v \left( \bar x_1 \right)$ <br>$ u_h\left( \bar x \right) = u_h \left( \bar x_1 \right)$ | $\Delta H$, $\Delta V$, $\Delta T$ ||
 | Sprongpunt naar andere vertakking | $q_z\left(x\right) : \Delta V \left\langle x - \bar x_1  \right\rangle^{- 1}\cos\left( \theta \left( \bar x_1 \right) \right) - \Delta V \left\langle x - \bar x_2  \right\rangle^{- 1}\cos\left( \theta \left( \bar x_2 \right) \right)$ <br> $ \qquad + \Delta H\left\langle x - \bar x_1 \right\rangle^{- 1}\sin\left( \theta \left( \bar x_1 \right) \right) - \Delta H\left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x_2 \right) \right)$ <br> $\qquad +\Delta T \left\langle x - \bar x_1 \right\rangle^{- 2}  - \Delta T \left\langle x - \bar x_2 \right\rangle^{- 2}$ <br> $ \qquad + EI \Delta \varphi \left\langle x - \bar x_2 \right\rangle^{- 3} + EI \Delta u_z \left\langle x - \bar x_3 \right\rangle^{- 4}$ <br> $q_x\left(x\right) : -\Delta V \left\langle x - \bar x_1  \right\rangle^{- 1}\sin\left( \theta \left( \bar x_1 \right) \right) + \Delta V \left\langle x - \bar x_2  \right\rangle^{- 1}\sin\left( \theta \left( \bar x_2 \right) \right)$<br>$\qquad + \Delta H\left\langle x - \bar x_1 \right\rangle^{- 1}\cos\left( \theta \left( \bar x_1 \right) \right)  - \Delta H\left\langle x - \bar x_2 \right\rangle^{- 1}\cos\left( \theta \left( \bar x_2 \right) \right)$ <br> $\qquad + EI \Delta u_x \left\langle x - \bar x_2 \right\rangle^{- 2}$ <br> met $\bar x_1$ en $\bar x_2$ de coordinaat van de respectievelijk eerste en tweede keer dat langs de vertakking is gegaan en $\bar x_\text{sprong}$ de coordinaat voor de sprong.| $N\left(\bar x_\text{sprong}^{+}\right) = 0$ <br> $V\left(\bar x_\text{sprong}^{+}\right) = 0$ <br> $M\left(\bar x_\text{sprong}^{+}\right) = 0$ <br> $\varphi\left( \bar x_1 \right) = \varphi \left( \bar x_2 \right)$ <br> $u_v\left( \bar x_1 \right) = u_v \left( \bar x_2 \right)$ <br> $u_h\left( \bar x_1 \right) = u_h \left( \bar x_2 \right)$ <br> met $\bar x_1$ en $\bar x_2$ de coordinaat van de respectievelijk eerste en tweede keer dat langs de vertakking is gegaan en $\bar x_\text{sprong}$ de coordinaat voor de sprong.| $\Delta H$, $\Delta V$, $\Delta T$<br> $\Delta u_z$, $\Delta u_x$, $\Delta \varphi$ ||
-| Knikpunt | $ q_z \left( x\right) : \sum\limits_{j}\sum\limits_{i}^{n} \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_i^- \right) \right)  \right) $ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0}F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_i^- \right) \right) \right) $ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_i^- \right) \right) \right)$ <br> $ \qquad + \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_i^- \right) \right) \right) $ <br> $ q_x \left( x\right) : \sum\limits_{j}\sum\limits_{i}^{n} \left(-\left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_i^- \right) \right)  \right) \right)$ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0}F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_i^- \right) \right) \right) $ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left( -\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_i^- \right) \right) \right) \right)$ <br> $ \qquad + \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_i^- \right) \right) \right) $ <br> NOG TOEVOEGEN VERPLAATSINGEN <br> met $n$ het aantal knikken met voor elke knik $i$ een bijbehorende hoek $\theta_i$ en voor elke $F_j$ en $q_j$ inclusing $H$, $V$ en $R$.|||
+| Knikpunt | $ q_z \left( x\right) : \sum\limits_{j}\sum\limits_{i}^{n} \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right)  \right) $ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0}F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) $ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right)$ <br> $ \qquad + \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) $ <br> $ q_x \left( x\right) : \sum\limits_{j}\sum\limits_{i}^{n} \left(-\left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right)  \right) \right)$ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0}F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) $ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left( -\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \right)$ <br> $ \qquad + \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) $ <br> NOG TOEVOEGEN VERPLAATSINGEN <br> met $n$ het aantal knikken met voor elke knik $i$ een bijbehorende hoek $\theta_i$ en voor elke $F_j$ en $q_j$ inclusing $H$, $V$ en $R$.|||
 
 
 ```
