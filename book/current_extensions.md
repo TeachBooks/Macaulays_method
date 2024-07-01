@@ -408,23 +408,15 @@ Bij de normaal- en dwarskrachtenlijn van een puntlast ontstaat een sprong als de
 
 ```{math}
 :label: vgl_Fvqz
-q_{z}(x) = F_{v}\left( \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) + \sum\limits_{i}^{n} \left\langle \bar x_i - \bar x_{F} \right\rangle^{0} \left\langle x - \bar x_{i} \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_{i} \right) \right) - \cos\left( \theta \left( \bar x_{i-1} \right) \right) \right) \right)
-```
-
-```{math}
-:label: vgl_Fhqz
-q_{z}(x) = F_{h}\left( \left\langle x - b \right\rangle^{- 1}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
+q_{z}\left(x\right) = F_{v}\left( \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) + \sum\limits_{i}^{n} \left\langle \bar x_i - \bar x \right\rangle^{0} \left\langle x - \bar x_{i} \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_{i} \right) \right) - \cos\left( \theta \left( \bar x_{i-1} \right) \right) \right) \right) + F_{h}\left( \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) + \sum\limits_{i}^{n} \left\langle \bar x_i - \bar x \right\rangle^{0} \left\langle x - \bar x_{i} \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_{i} \right) \right) - \sin\left( \theta \left( \bar x_{i-1} \right) \right) \right) \right)
 ```
 
 ```{math}
 :label: vgl_Fvqx
-q_{x}(x) = - F_{v}\left( \left\langle x - b \right\rangle^{- 1}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
+q_{x}\left(x\right) = -F_{v}\left( \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) + \sum\limits_{i}^{n} \left\langle \bar x_i - \bar x \right\rangle^{0} \left\langle x - \bar x_{i} \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_{i} \right) \right) - \sin\left( \theta \left( \bar x_{i-1} \right) \right) \right) \right) + F_{h}\left( \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) + \sum\limits_{i}^{n} \left\langle \bar x_i - \bar x \right\rangle^{0} \left\langle x - \bar x_{i} \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_{i} \right) \right) - \cos\left( \theta \left( \bar x_{i-1} \right) \right) \right) \right)
 ```
 
-```{math}
-:label: vgl_Fhqx
-q_{x}(x) = F_{h}\left( \left\langle x - b \right\rangle^{- 1}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left\langle x - a_{i} \right\rangle^{- 1}\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ ;\ \ voor\ a_{i} > b
-```
+Met $\bar x$ de locatie van de kracht, en $n$ het aantal knikken met voor elke knik $i$ een bijbehorende coordinaat $\bar x_i$ en hoek $\theta left( \bar x_i \right)$.
 
 #### Gelijkmatig verdeelde belasting
 Bij de normaal- en dwarskrachtenlijn van een uniform verdeelde belasting ontstaat zowel een sprong als een knik als de functie een hoekpunt passeert. De knik ontstaat door de verandering van de projectie van de verdeelde belasting. De sprong daarentegen ontstaat door een verandering in de projectie van de arbitrale belasting vervangend puntlast. Daarom volgen vgl. {eq}`vgl_qvqz`, {eq}`vgl_qhqz`, {eq}`vgl_qvqx` en {eq}`vgl_qhqx`.
