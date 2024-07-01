@@ -198,7 +198,7 @@ align: center
 Modelleren van en scharnieroplegging {cite:p}`vanderwulp_2023`
 ```
 
-#### Scharnier\
+#### Scharnier
 Scharnierende verbindingen in constructies kunnen worden beschreven met singulariteitsfuncties van orde $-3$. Dit valt te beredeneren uit het feit dat scharnieren een sprong in de krommingslijn geven, en daar dus orde 0 hebben. Terug differentiëren naar de belasting vergelijking geeft een singulariteitsfunctie van orde $-3$. Een scharnier gelegen op punt $a$ wordt gemodelleerd als $EI\ \varphi{< x - a >}^{- 3}$. De $\varphi$ staat hier voor de rotatie van het scharnier, ofwel de grote van de sprong in de krommingslijn.
 
 Een scharnier introduceert ook een randvoorwaarde. Ter plaatse van het scharnier is het moment ($M$) gelijk aan $0$.
@@ -393,9 +393,11 @@ De Macaulay methode kan worden uitgebreid zodat het ook toepasbaar is op tweedim
 
 Het model maakt gebruik van een globaal en een lokaal assenstelsel. Het globale assenstelsel bestaat uit een horizontale en een verticale as waarbij de positieve richtingen naar rechts en naar beneden wijzen. Het lokale assenstelsel bestaat uit een $x$-as en een $z$-as. De positieve $x$-as wordt afgebeeld met een blauwe pijl zichtbaar in {numref}`Figuur_20`en de positieve $z$-as is altijd een kwartslag met de klok mee t.o.v. de positieve $x$-as.
 
+Alle belastingen werken langs de globale assen, verdeelde belastingen werken langs de lengte van de staaf (zoals eigengewicht) en hoeken worden gemeten van de positieve h-as naar de positieve x-as
+
 De externe krachten en de verplaatsingen worden globaal genoteerd en de snedekracht-diagrammen lokaal. Er zijn twee vergelijkingen die de lokale as volgen. $q_{z}(x)$ is voor de krachten loodrecht op de staaf en integreert naar de dwarskrachtenvergelijking, enz. en $q_{x}(x)$ is voor de krachten parallel aan de staaf en integreert naar de normaalkrachtenvergelijking, enz.
 
-```{figure} figures/image20.png
+```{figure} figures/image20_2.svg
 ---
 width: 300
 name: Figuur_20
@@ -423,7 +425,7 @@ q_{z}(x) = T\left\langle x - b \right\rangle^{- 2}
 q_{x}(x) = 0
 ```
 
-***Puntlast***\
+#### Puntlast
 Bij de normaal- en dwarskrachtenlijn van een puntlast ontstaat een sprong als de functie een hoekpunt passeert. Tegelijkertijd ontstaat er een knik in de momentenlijn als de functie een hoekpunt passeert. Deze sprong en knik ontstaan door de verandering van de projectie van de puntlast. Daarom volgen vgl. {eq}`vgl_Fvqz`, {eq}`vgl_Fhqz`, {eq}`vgl_Fvqx` en {eq}`vgl_Fhqx`.
 
 ```{math}
@@ -486,7 +488,7 @@ u_{h}(x) = u_{z}(0)\sin\left( \theta_{0} \right) + u_{x}(0)\cos\left( \theta_{0}
  \end{pmatrix}
 ```
 
-```{figure} figures/image21.png
+```{figure} figures/image21.svg
 ---
 width: 400
 name: Figuur_21
@@ -495,7 +497,7 @@ align: center
 De invloed van $u_{x,ij}\left(x\right)$ op $u_{x}\left(x\right)$  {cite:p}`alex_2024`
 ```
 
-```{figure} figures/image22.png
+```{figure} figures/image22.svg
 ---
 width: 400
 name: Figuur_22
@@ -506,40 +508,73 @@ De invloed van $u_{z,ij}\left(x\right)$ op $u_{z}\left(x\right)$  {cite:p}`alex_
 
 ### 4.4 Vertakte en gesloten constructies
 
-Met de tot nu toe in dit hoofdstuk verstreken informatie kunnen geknikte constructies worden gemodelleerd met de Macaulay methode. Om vertakte en gesloten constructies te kunnen modelleren komt er wat benodigde informatie bij, zoals het modelleren van een knooppunt, sprongpunt en aansluitpunt. Dit wordt hier uitgelegd.
+Met de tot nu toe in dit hoofdstuk verstreken informatie kunnen geknikte constructies worden gemodelleerd met de Macaulay methode. Voor vertakte en gesloten constructies bestaan er drie bijzondere punten met unieke eigenschappen. Dit zijn het knooppunt ($a_k$), sprongpunt ($a_s$) en aansluitpunt ($a_a$).
+
+```{figure} figures/Figuur_vertakt.svg
+---
+width: 300
+name: Figuur_vertakt
+align: center
+---
+Vertakte constructie {cite:p}`alex_2024`
+```
+
+```{figure} figures/Figuur_gesloten.svg
+---
+width: 300
+name: Figuur_gesloten
+align: center
+---
+Gesloten constructie {cite:p}`alex_2024`
+```
 
 #### Knooppunt
-Stel de functie van $x$ gaat over een knooppunt $i$ dan moeten er per staaf waar de functie niet direct overheen gaat drie belastingen ($V^{ij}$, $H^{ij}$ en $T^{ij}$) toegevoegd worden. Hierin vertegenwoordigd $V^{ij}$ de verticale kracht, $H^{ij}$ de horizontale kracht en $T^{ij}$ de koppel voortkomend uit staaf $ij$ werkend op knooppunt $i$. Als staaf $ij$ scharnierend is verbonden aan knooppunt $i$, dan hoeft $T^{ij}$ niet toegevoegd te worden. Deze belastingen worden later weer verwijderd als de functie over de staaf gaat op het knooppunt. Het maakt niet uit of de richting van de functie van knooppunt naar staaf is (zoals bij vertakt) of andersom (zoals bij gesloten).
+Het knooppunt is het punt waarbij de functie van $x$ voor het eerst langs een knoop gaat (zoals pijl 1 op knoop B in {numref}`Figuur_vertakt`). Op $a_k$ moet voor elke staaf $IJ$ waarnaar de functie niet direct de weg vervolgd drie onbekende krachten worden toegevoegd $V^{IJ}$, $H^{IJ}$ en $T^{IJ}$. Hierin vertegenwoordigd $V^{IJ}$ de verticale kracht, $H^{IJ}$ de horizontale kracht en $T^{IJ}$ de koppel voortkomend uit staaf $IJ$ werkend op knoop $I$.
 
 #### Sprongpunt
-De functie kan ook een sprong maken in het globale assenstelsel. Hiervoor gelden de volgende regels:
+Het sprongpunt, (zie {numref}`Figuur_sprongpunt`) is het punt waar de functie van $x$ in het globale assenstelsel een sprong maakt van punt $I$, wat een uiteinde of afsluiting is van een vertakking, naar punt $J$, wat een knoop is waar de functie van $x$ al eerder langs is geweest (zoals van punt C naar knoop B in figuur {numref}`Figuur_vertakt`). In het lokale assenstelsel verloopt de functie echter continue. Belastingen werkende op punt $I$ moeten gemodelleerd worden op $a_s^-$ en op punt $J$ op $a_s^+$. Op $a_s^+$ moeten ook de onbekende krachten $-V^{JK}$, $-H^{JK}$ en $-T^{JK}$ worden toegevoegd voor staaf $JK$ waarnaar de functie na de sprong de weg vervolgd. Verder moeten op $a_s^+$ de sprongconstanten $\varphi^{IJ}$, $u_z^{IJ}$ en $u_x^{IJ}$ toegevoegd worden voor de sprong in vervormingen tussen punt $I$ en $J$. Deze worden als volgt gemodelleerd:
 
--   De functie kan alleen een sprong maken als alle drie de snedekrachtdiagrammen gelijk zijn aan nul en ook nul zouden blijven als er geen sprong wordt gemaakt. Dit is het geval op een eindpunt van een vertakking en de afsluiting van een gesloten sectie nadat $V^{ij}$, $H^{ij}$ en $T^{ij}$ zijn weggehaald.
+```{math}
+:label: vgl_sprong_phi_uz
+$q_z\left(x\right)=EI\varphi^{ij}x-as+-3+EIuzijx-as+-4$
+```
+```{math}
+:label: vgl_sprong_ux
+$q_x\left(x\right)=EAu_x^{ij}x-as+-2$
+```
 
--   De functie kan alleen springen naar een willekeurig knooppunt waar het al eerder langs is geweest.
+```{figure} figures/sprongpunt.svg
+---
+width: 300
+name: Figuur_sprongpunt
+align: center
+---
+Modelleren van een sprongpunt {cite:p}`alex_2024`
+```
 
--   De functie kan maar één keer over dezelfde staaf verlopen.
+#### Aansluitpunt
+Het aansluitpunt is het punt waarbij de functie van x opnieuw langs een knoop gaat (zoals knoop B vanuit punt E in figuur {numref}`Figuur_gesloten`). $Op a_a^-$ moeten de drie onbekende krachten $-V^{IJ}$, ${-H}^{IJ}$ en $-T^{IJ}$ voor de staaf $IJ$  dat aansluit op punt $I$. Het aansluitpunt kan het einde zijn van de functie, maar de functie kan ook direct de weg vervolgen of een sprong maken. In dat geval gelden dezelfde regels als voor het sprongpunt (met of zonder sprongconstanten voor weg vervolgen of sprong maken)
 
--   Bij elke sprong moeten er drie sprongconstanten ($\varphi^{ij}$, $u_{v}^{ij}$ en $u_{h}^{ij}$) worden bijgevoegd om het verschil in vervorming tussen twee punten te overbruggen. Hierbij werkt $\varphi^{ij}$ op $q_{z}(x)$ en werken $u_{v}^{ij}$ en $u_{h}^{ij}$ respectievelijk op $u_{v}(x)$ en $u_{h}(x)$. Als staaf $jk$ scharnieren is verbonden aan punt $j$, dan hoeft $\varphi^{ij}$ niet toegevoegd te worden.
+### 5 Oplossingsvoorwaarden
 
-### 4.5 Oplossingsvoorwaarden
+In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden voor starre onstructies als lokale afstand $a_i$ de benoemde eigenschap heeft. Afstand $a_i$ kan meerdere eigenschappen tegelijk hebben. Hierbij is $a_k$ het knooppunt waarbij de functie voor het eerst langs de knoop komt
 
-In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden als lokale afstand $a_{i}$ de benoemde eigenschap heeft. Hierbij is $a_{j}$ de afstand waarbij de functie lokaal voor het eerst langs het globaal zelfde punt komt als afstand $a_{i}$ of $a_{i} + 2dx$. Afstand $a_{i}$ kan meerdere eigenschappen tegelijk hebben, zoals het zijn van een aansluitpunt en sprongpunt waarop een scharnierverbinding plaats vindt.
-
-```{table} Oplossingsvoorwaarden voor tweedimensionale constructie 
+```{table} Onbekenden en vergelijkingen
 :name: table_twee
 
-| Situatie op $a_i$| Oplossingsvoorwaarden |
-| ---  | --------------------- |
-| Beginpunt functie | $N\left(a_i^-\right) = 0$ <br> $V\left(a_i^-\right) = 0$ <br> $M\left(a_i^-\right) = 0$ <br> |
-| Eindpunt functie | $N\left(a_i^+\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> |
-| Sprongpunt functie in vertrakte constructie * | $N\left(a_i^+\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> $\varphi\left( a_i^+ \right) = \varphi \left( a_j \right)$ <br> $u_v\left( a_i^+ \right) = u_v \left( a_j \right)$ <br> $u_h\left( a_i^+ \right) = u_h \left( a_j \right)$
-| Aansluitpunt functie  in gesloten constructie * | $N\left(a_i^+\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> $\varphi\left( a_i \right) = \varphi \left( a_j \right)$ <br>$u_v\left( a_i \right) = u_v \left( a_j \right)$ <br>$ u_h\left( a_i \right) = u_h \left( a_j \right)$
-| Scharnierverbinding | $M \left(a_i^+\right) = 0$|
-| Verticale roloplegging | $u_v \left(a_i\right) = 0$ |
-| Horizontale roloplegging | $u_h \left(a_i \right) = 0$ |
-| Scharnierende oplegging | $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ |
-| Inklemming | $\varphi \left( a_i \right) = 0$ <br> $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ |
+| Situatie op $a_i$| Vergelijkingen | Onbekenden | 
+| ---  | --------------------- | --------------------- |
+| Beginpunt constructie | $N\left(a_i^-\right) = 0$ <br> $V\left(a_i^-\right) = 0$ <br> $M\left(a_i^-\right) = 0$ <br> | Integratieconstantes $C_V$, $C_M$, $C_N$ | 
+| Eindpunt constructie | $N\left(a_i\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> | Integratieconstantes $C_w$, $C_{\varphi}$, $C_u$ | 
+| Scharnierverbinding | $M \left(a_i\right) = 0$| $\varphi_S$ |
+| Schuifverbinding | $V \left(a_i\right) = 0$| $\u_z$ |
+| Telescoopverbinding | $N \left(a_i\right) = 0$| $\u_x$ |
+| Verticale roloplegging | $u_v \left(a_i\right) = 0$ | $R_h$ |
+| Horizontale roloplegging | $u_h \left(a_i \right) = 0$ | $R_v$ |
+| Scharnierende oplegging | $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ | $R_h$, $R_v$ |
+| Inklemming | $\varphi \left( a_i \right) = 0$ <br> $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ | $R_h$, $R_v$, $T$ |
+| Aansluitpunt | $\varphi\left( a_i \right) = \varphi \left( a_k \right)$ <br>$u_v\left( a_i \right) = u_v \left( a_k \right)$ <br>$ u_h\left( a_i \right) = u_h \left( a_k \right)$ | $H^{IK}$, $V^{IK}$, $T^{IK}$ |
+| Sprongpunt in naar andere vertakking | $N\left(a_i^{+}\right) = 0$ <br> $V\left(a_i^{+}\right) = 0$ <br> $M\left(a_i^{+}\right) = 0$ <br> $\varphi\left( a_i \right) = \varphi \left( a_k \right)$ <br> $u_v\left( a_i \right) = u_v \left( a_k \right)$ <br> $u_h\left( a_i \right) = u_h \left( a_k \right)$ | $H^{IK}$, $V^{IK}$, $T^{IK}$<br> $u_z^{ik}$, $u_x^{ik}$, $\varphi^{ik}$ |
 ```
 
 Als de functie springt naar een scharnierend verbonden staaf of scharnierend aansluit op een knooppunt, dan kunnen de oplosvergelijkingen voor de hoekverdraaiing weggelaten worden. Er hoeven dan ook geen alternatieve voorwaarden worden gesteld.
