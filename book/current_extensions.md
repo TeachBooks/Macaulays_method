@@ -555,7 +555,7 @@ Modelleren van een sprongpunt {cite:p}`alex_2024`
 #### Aansluitpunt
 Het aansluitpunt is het punt waarbij de functie van x opnieuw langs een knoop gaat (zoals knoop B vanuit punt E in figuur {numref}`Figuur_gesloten`). $Op a_a^-$ moeten de drie onbekende krachten $-V^{IJ}$, ${-H}^{IJ}$ en $-T^{IJ}$ voor de staaf $IJ$  dat aansluit op punt $I$. Het aansluitpunt kan het einde zijn van de functie, maar de functie kan ook direct de weg vervolgen of een sprong maken. In dat geval gelden dezelfde regels als voor het sprongpunt (met of zonder sprongconstanten voor weg vervolgen of sprong maken)
 
-### 5 Oplossingsvoorwaarden
+## Oplossingsvoorwaarden
 
 In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden voor starre onstructies als lokale afstand $a_i$ de benoemde eigenschap heeft. Afstand $a_i$ kan meerdere eigenschappen tegelijk hebben. Hierbij is $a_k$ het knooppunt waarbij de functie voor het eerst langs de knoop komt
 
