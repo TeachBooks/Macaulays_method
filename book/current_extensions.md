@@ -328,7 +328,7 @@ Modelleren van een verende scharnieroplegging bij extensie {cite:p}`vanderwulp_2
 #### Verende verbinding
 Een telescoopscharnier kan verend gedrag hebben. Het kan dan gemodelleerd worden als verende verbinding. Hierbij wordt het scharnier nogsteeds gemodelleerd als singulariteitsfunctie van orde $-2$/ De randvoorwaarde verandert wel.
 
-Voor verende telescoopscharnieren wordt deze randvoorwaarde: $N(\bar x) = \ K_{u} \ \Delta u$ , met $N(a)$ de normaalkracht ter plaatse van punt $\bar x$, $\ K_{u}$ de veerconstante en $\Delta u$ de axiale verplaatsing in het scharnier.
+Voor verende telescoopscharnieren wordt deze randvoorwaarde: $N(\bar x) = \ K_{u} \ \Delta u$ , met $N\left( \bar x \right)$ de normaalkracht ter plaatse van punt $\bar x$, $\ K_{u}$ de veerconstante en $\Delta u$ de axiale verplaatsing in het scharnier.
 
 In {numref}`Figuur_18` is weergegeven hoe een verend telescoopscharnier gemodelleerd kan worden.
 
