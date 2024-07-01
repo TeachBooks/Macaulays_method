@@ -567,8 +567,8 @@ In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossing
 | Beginpunt constructie | $N\left(a_i^-\right) = 0$ <br> $V\left(a_i^-\right) = 0$ <br> $M\left(a_i^-\right) = 0$ <br> | Integratieconstantes $C_V$, $C_M$, $C_N$ | 
 | Eindpunt constructie | $N\left(a_i\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> | Integratieconstantes $C_w$, $C_{\varphi}$, $C_u$ | 
 | Scharnierverbinding | $M \left(a_i\right) = 0$| $\varphi_S$ |
-| Schuifverbinding | $V \left(a_i\right) = 0$| $\u_z$ |
-| Telescoopverbinding | $N \left(a_i\right) = 0$| $\u_x$ |
+| Schuifverbinding | $V \left(a_i\right) = 0$| $u_z$ |
+| Telescoopverbinding | $N \left(a_i\right) = 0$| $u_x$ |
 | Verticale roloplegging | $u_v \left(a_i\right) = 0$ | $R_h$ |
 | Horizontale roloplegging | $u_h \left(a_i \right) = 0$ | $R_v$ |
 | Scharnierende oplegging | $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ | $R_h$, $R_v$ |
