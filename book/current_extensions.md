@@ -561,7 +561,7 @@ In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossing
 
 ````{div} full-width
 ```{table} Onbekenden en vergelijkingen discontinuïteiten
-:class: full-width
+:label: table_twee
 
 
 | Situatie op $\bar x$| Belastingsvergelijing | Vergelijkingen | Onbekenden | 
