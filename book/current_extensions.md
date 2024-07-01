@@ -555,26 +555,35 @@ Modelleren van een sprongpunt {cite:p}`alex_2024`
 #### Aansluitpunt
 Het aansluitpunt is het punt waarbij de functie van x opnieuw langs een knoop gaat (zoals knoop B vanuit punt E in figuur {numref}`Figuur_gesloten`). $Op a_a^-$ moeten de drie onbekende krachten $-V^{IJ}$, ${-H}^{IJ}$ en $-T^{IJ}$ voor de staaf $IJ$  dat aansluit op punt $I$. Het aansluitpunt kan het einde zijn van de functie, maar de functie kan ook direct de weg vervolgen of een sprong maken. In dat geval gelden dezelfde regels als voor het sprongpunt (met of zonder sprongconstanten voor weg vervolgen of sprong maken)
 
-## Oplossingsvoorwaarden
+## Oplossingsvoorwaarden discontinuïteiten
 
-In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden voor starre onstructies als lokale afstand $a_i$ de benoemde eigenschap heeft. Afstand $a_i$ kan meerdere eigenschappen tegelijk hebben. Hierbij is $a_k$ het knooppunt waarbij de functie voor het eerst langs de knoop komt
+In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden voor starre onstructies als lokale afstand $a_i$ de benoemde eigenschap heeft met krachten op afstand $b$ en $\theta_j$ de hoek van een segment j. Afstand $a_i$ kan meerdere eigenschappen tegelijk hebben. Hierbij is $a_k$ het knooppunt waarbij de functie voor het eerst langs de knoop komt
 
-```{table} Onbekenden en vergelijkingen
+```{table} Onbekenden en vergelijkingen discontinuïteiten
 :name: table_twee
 
-| Situatie op $a_i$| Vergelijkingen | Onbekenden | 
-| ---  | --------------------- | --------------------- |
-| Beginpunt constructie | $N\left(a_i^-\right) = 0$ <br> $V\left(a_i^-\right) = 0$ <br> $M\left(a_i^-\right) = 0$ <br> | Integratieconstantes $C_V$, $C_M$, $C_N$ | 
-| Eindpunt constructie | $N\left(a_i\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> | Integratieconstantes $C_w$, $C_{\varphi}$, $C_u$ | 
-| Scharnierverbinding | $M \left(a_i\right) = 0$| $\varphi_S$ |
-| Schuifverbinding | $V \left(a_i\right) = 0$| $u_z$ |
-| Telescoopverbinding | $N \left(a_i\right) = 0$| $u_x$ |
-| Verticale roloplegging | $u_v \left(a_i\right) = 0$ | $R_h$ |
-| Horizontale roloplegging | $u_h \left(a_i \right) = 0$ | $R_v$ |
-| Scharnierende oplegging | $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ | $R_h$, $R_v$ |
-| Inklemming | $\varphi \left( a_i \right) = 0$ <br> $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ | $R_h$, $R_v$, $T$ |
-| Aansluitpunt | $\varphi\left( a_i \right) = \varphi \left( a_k \right)$ <br>$u_v\left( a_i \right) = u_v \left( a_k \right)$ <br>$ u_h\left( a_i \right) = u_h \left( a_k \right)$ | $H^{IK}$, $V^{IK}$, $T^{IK}$ |
-| Sprongpunt in naar andere vertakking | $N\left(a_i^{+}\right) = 0$ <br> $V\left(a_i^{+}\right) = 0$ <br> $M\left(a_i^{+}\right) = 0$ <br> $\varphi\left( a_i \right) = \varphi \left( a_k \right)$ <br> $u_v\left( a_i \right) = u_v \left( a_k \right)$ <br> $u_h\left( a_i \right) = u_h \left( a_k \right)$ | $H^{IK}$, $V^{IK}$, $T^{IK}$<br> $u_z^{ik}$, $u_x^{ik}$, $\varphi^{ik}$ |
+| Situatie op $a_i$| Belastingsvergelijing | Vergelijkingen | Onbekenden | 
+| ---  | --------------------- | --------------------- | -------------------- |
+| Beginpunt constructie | | $N\left(a_i^-\right) = 0$ <br> $V\left(a_i^-\right) = 0$ <br> $M\left(a_i^-\right) = 0$ <br> | Integratieconstantes $C_V$, $C_M$, $C_N$ | 
+| Eindpunt constructie | | $N\left(a_i\right) = 0$ <br> $V\left(a_i^+\right) = 0$ <br> $M\left(a_i^+\right) = 0$ <br> | Integratieconstantes $C_w$, $C_{\varphi}$, $C_u$ |
+| Verticale kracht | $q_z\left(x\right) : F_{v} \left\langle x - a_i \right\rangle^{- 1}\cos\left( \theta_{j} \right) $ <br> $q_x\left(x\right) : - F_{v} \left\langle x - a_i \right\rangle^{- 1}\sin\left( \theta_{j} \right) $ <br> met $j$ het segment waar $F_v$ op aangrijpt. | | |
+| Horizontale kracht | $q_z\left(x\right) : F_{h} \left\langle x - a_i \right\rangle^{- 1}\sin\left( \theta_{j} \right) $<br> $q_x\left(x\right) : F_{h} \left\langle x - a_i \right\rangle^{- 1}\cos\left( \theta_{j} \right) $ <br> met $j$ het segment waar $F_h$ op aangrijpt. | ||
+| Koppel | $q_z\left(x\right) : T \left\langle x - a_i \right\rangle^{- 2}$ | | | 
+| Scharnierverbinding | $q_z\left(x\right) : EI \varphi \left\langle x - a_i \right\rangle^{- 3}$ | $M \left(a_i\right) = 0$| $\varphi_S$ |
+| Schuifverbinding | $q_z\left(x\right): EI u_z \left\langle x - a_i \right\rangle^{- 4}$ | $V \left(a_i\right) = 0$| $u_z$ |
+| Telescoopverbinding | $q_x\left(x\right) :EA u_x \left\langle x - a_i \right\rangle^{- 2}$ | $N \left(a_i\right) = 0$| $u_x$ |
+| Verticale roloplegging | $q_z\left(x\right) : R_{h} \left\langle x - a_i \right\rangle^{- 1}\sin\left( \theta_{j} \right) $<br> $q_x\left(x\right) : R_{h} \left\langle x - a_i \right\rangle^{- 1}\cos\left( \theta_{j} \right) $ <br> met $j$ het segment waar $R_h$ op aangrijpt. | $u_v \left(a_i\right) = 0$ | $R_h$ |
+| Horizontale roloplegging | $q_z\left(x\right) : R_{v} \left\langle x - a_i \right\rangle^{- 1}\cos\left( \theta_{j} \right) $ <br> $q_x\left(x\right): - R_{v} \left\langle x - a_i \right\rangle^{- 1}\sin\left( \theta_{j} \right) $ <br> met $j$ het segment waar $R_v$ op aangrijpt. | $u_h \left(a_i \right) = 0$ | $R_v$ |
+| Scharnierende oplegging | $q_z\left(x\right) : R_{h} \left\langle x - a_i \right\rangle^{- 1}\sin\left( \theta_{j} \right) + R_{v} \left\langle x - a_i \right\rangle^{- 1}\cos\left( \theta_{j} \right)$<br> $q_x\left(x\right) : R_{h} \left\langle x - a_i \right\rangle^{- 1}\cos\left( \theta_{j} \right) - R_{v} \left\langle x - a_i \right\rangle^{- 1}\sin\left( \theta_{j} \right) $ <br> met $j$ het segment waar $R_h$ en $R_v$ aangrijpen. |$u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ | $R_h$, $R_v$ |
+| Inklemming | $q_z\left(x\right) : R_{h} \left\langle x - a_i \right\rangle^{- 1}\sin\left( \theta_{j} \right) + R_{v} \left\langle x - a_i \right\rangle^{- 1}\cos\left( \theta_{j} \right) + T \left\langle x - a_i \right\rangle^{- 2}$<br> $q_x\left(x\right) : R_{h} \left\langle x - a_i \right\rangle^{- 1}\cos\left( \theta_{j} \right) - R_{v} \left\langle x - a_i \right\rangle^{- 1}\sin\left( \theta_{j} \right) $ <br> met $j$ het segment waar $R_h$, $R_v$ en $T$ aangrijpen. | $\varphi \left( a_i \right) = 0$ <br> $u_v \left(a_i\right) = 0$ <br> $u_h \left(a_i\right) = 0$ | $R_h$, $R_v$, $T$ |
+| Aansluitpunt | $q_z\left(x\right) : V^{ik} \left\langle x - a_k  \right\rangle^{- 1}\cos\left( \theta_{j} \right) + H^{ik}\left\langle x - a_k \right\rangle^{- 1}\sin\left( \theta_{j} \right) +T^{ik} \left\langle x - a_k \right\rangle^{- 2} - V^{ik} \left\langle x - a_i  \right\rangle^{- 1}\cos\left( \theta_{j} \right) - H^{ik}\left\langle x - a_i \right\rangle^{- 1}\sin\left( \theta_{j} \right)- T^{ik} \left\langle x - a_i \right\rangle^{- 2} $ <br> $q_x\left(x\right) : -V^{ik} \left\langle x - a_k  \right\rangle^{- 1}\sin\left( \theta_{j} \right) + H^{ik}\left\langle x - a_k \right\rangle^{- 1}\cos\left( \theta_{j} \right) + V^{ik} \left\langle x - a_i  \right\rangle^{- 1}\sin\left( \theta_{j} \right) - H^{ik}\left\langle x - a_i \right\rangle^{- 1}\cos\left( \theta_{j} \right)$ <br> met $j$ het segment waar krachten aangrijpen bij $i$ en $k$. | $\varphi\left( a_i \right) = \varphi \left( a_k \right)$ <br>$u_v\left( a_i \right) = u_v \left( a_k \right)$ <br>$ u_h\left( a_i \right) = u_h \left( a_k \right)$ | $H^{ik}$, $V^{ik}$, $T^{ik}$ ||
+| Sprongpunt in naar andere vertakking | $q_z\left(x\right) : V^{ik} \left\langle x - a_k  \right\rangle^{- 1}\cos\left( \theta_{j} \right) + H^{ik}\left\langle x - a_k \right\rangle^{- 1}\sin\left( \theta_{j} \right) +T^{ik} \left\langle x - a_k \right\rangle^{- 2} - V^{ik} \left\langle x - a_i  \right\rangle^{- 1}\cos\left( \theta_{j} \right) - H^{ik}\left\langle x - a_i \right\rangle^{- 1}\sin\left( \theta_{j} \right)- T^{ik} \left\langle x - a_i \right\rangle^{- 2} + EI \varphi^{ik} \left\langle x - a_k \right\rangle^{- 3} + EI u_z^{ik} \left\langle x - a_k \right\rangle^{- 4} $ <br> $q_x\left(x\right) : -V^{ik} \left\langle x - a_k  \right\rangle^{- 1}\sin\left( \theta_{j} \right) + H^{ik}\left\langle x - a_k \right\rangle^{- 1}\cos\left( \theta_{j} \right) + V^{ik} \left\langle x - a_i  \right\rangle^{- 1}\sin\left( \theta_{j} \right) - H^{ik}\left\langle x - a_i \right\rangle^{- 1}\cos\left( \theta_{j} \right) + EI u_x^{ik} \left\langle x - a_k \right\rangle^{- 2}$ <br> met $j$ het segment waar krachten aangrijpen bij $i$ en $k$. | $N\left(a_i^{+}\right) = 0$ <br> $V\left(a_i^{+}\right) = 0$ <br> $M\left(a_i^{+}\right) = 0$ <br> $\varphi\left( a_i \right) = \varphi \left( a_k \right)$ <br> $u_v\left( a_i \right) = u_v \left( a_k \right)$ <br> $u_h\left( a_i \right) = u_h \left( a_k \right)$ | $H^{IK}$, $V^{IK}$, $T^{IK}$<br> $u_z^{ik}$, $u_x^{ik}$, $\varphi^{ik}$ ||
+| Knikpunt ||||
 ```
+
+%%%
+WORK IN PROGRESS
+ $ q_z : \sum\limits_{k}\sum\limits_{j}  F_{v,k} \left\langle a_i - b \right\rangle^{0} \left\langle x - a_{i} \right\rangle^{- 1}\left( \cos\left( \theta_{j} \right) - \cos\left( \theta_{j - 1} \right)  \right)  + \sum\limits_{i}\sum\limits_{\min{j} \text{ for which } a_i>b}^{\max{j}}F_{h,i}  \left\langle x - a_{i} \right\rangle^{- 1}\left( \sin\left( \theta_{j} \right) - \sin\left( \theta_{j - 1} \right) \right) + \sum\limits_{i}\sum\limits_{\min{j} \text{ for which } a_i>b}^{\max{j}} q_{v,i} \left( {\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \cos\left( \theta_{j} \right) - \cos\left( \theta_{j - 1} \right) \right) + \sum\limits_{i}\sum\limits_{\min{j} \text{ for which } a_i>b}^{\max{j}}q_{h,i} \left( {\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) $ <br> voor elke $F_i$ inclusing $H$, $V$ en $R$.
+%%%
 
 Als de functie springt naar een scharnierend verbonden staaf of scharnierend aansluit op een knooppunt, dan kunnen de oplosvergelijkingen voor de hoekverdraaiing weggelaten worden. Er hoeven dan ook geen alternatieve voorwaarden worden gesteld.
