@@ -126,7 +126,7 @@ q\left(x\right) : F \left\langle x - \bar x \right\rangle^{- 1}
 
 ```{math}
 :label: puntlast_2d
-q_z\left(x\right) : F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) + F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right)
+q_z\left(x\right) : F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) + F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right) \\
 q_x\left(x\right) : - F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) + F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right)
 ```
 
