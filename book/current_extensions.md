@@ -143,8 +143,8 @@ q_z\left(x\right) : T \left\langle x - \bar x \right\rangle^{- 2}
 ```{math}
 :label: koppel_2d
 \begin{align}
-&q_z\left(x\right) &: &T \left\langle x - \bar x \right\rangle^{- 2} \\
-&q_x\left(x\right) &: &0
+&q_z\left(x\right): &T \left\langle x - \bar x \right\rangle^{- 2} \\
+&q_x\left(x\right): &0
 \end{align}
 ```
 
@@ -153,14 +153,14 @@ Belasting die gelijkmatig verdeeld is over de constructie kan beschreven worden 
 
 ```{math}
 :label: Verveelde_belasting_1D
-q\left(x\right)= q \left\langle x - \bar x \right\rangle^{- 1} -q\left\langle x - \bar x \right\rangle^{- 1}
+q\left(x\right)= q \left\langle x - \bar x_1 \right\rangle^{- 1} -q\left\langle x - \bar x_2 \right\rangle^{- 1}
 ```
 
 ```{math}
 :label: Verveelde_belasting_2d
 \begin{align}
-&q_z\left(x\right)= &q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) &-q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) \\ & &+ q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) &-q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) \\
-& q_x \left(x \right) = &- q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) &+q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) \\ &&+q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) &- q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right)
+&q_z\left(x\right)= &q_{v} \left\langle x - \bar x_1 \right\rangle^{- 1} \cos \left( \theta \left(\bar x_1\right) \right) &-q_{v} \left\langle x_2 - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x_2\right) \right) \\ & &+ q_{h} \left\langle x - \bar x_1 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_1\right) \right) &-q_{h} \left\langle x - \bar x_2 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_2\right) \right) \\
+& q_x \left(x \right) = &- q_{v} \left\langle x - \bar x_1 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_1\right) \right) &+q_{v} \left\langle x - \bar x_2 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_2\right) \right) \\ &&+q_{h} \left\langle x - \bar x_1 \right\rangle^{- 1} \cos \left( \theta \left(\bar x_1\right) \right) &- q_{h} \left\langle x - \bar x_2 \right\rangle^{- 1} \cos \left( \theta \left(\bar x_2\right) \right)
 \end{align}
 ```
 
@@ -574,7 +574,7 @@ In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossing
 | Beginpunt constructie | | $N\left(\bar x^-\right) = 0$ <br> $V\left(\bar x^-\right) = 0$ <br> $M\left(\bar x^-\right) = 0$ <br> | Integratieconstantes $C_V$, $C_M$, $C_N$ | 
 | Eindpunt constructie | | $N\left(\bar x\right) = 0$ <br> $V\left(\bar x^+\right) = 0$ <br> $M\left(\bar x^+\right) = 0$ <br> | Integratieconstantes $C_w$, $C_{\varphi}$, $C_u$ |
 | Puntlast | $\begin{align} &q_z\left(x\right) : &F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right) \\ &q_x\left(x\right) : &- F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) \end{align}$ | | |
-| Koppel | $\begin{align} &q_z\left(x\right) &: &T \left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right) &: &0\end{align}$ | | | 
+| Koppel | $\begin{align} &q_z\left(x\right): &T \left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right): &0\end{align}$ | | | 
 | Verdeelde belasting | $\begin{align} &q_z\left(x\right)= &q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) &-q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) \\ & &+ q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) &-q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) \\& q_x \left(x \right) = &- q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) &+q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) \\ &&+q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) &- q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) \end{align}$ |||
 | Scharnierverbinding | $q_z\left(x\right) : EI \Delta \varphi_S \left\langle x - \bar x \right\rangle^{- 3}$ | $M \left(\bar x\right) = 0$| $\Delta \varphi_S$ |
 | Schuifverbinding | $q_z\left(x\right): EI \Delta u_{S,z} \left\langle x - \bar x \right\rangle^{- 4}$ | $V \left(\bar x\right) = 0$| $\Delta u_{S,z}$ |
