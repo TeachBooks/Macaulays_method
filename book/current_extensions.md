@@ -72,39 +72,32 @@ Het integreren van de singulariteitsfunctie is afhankelijk van zijn orde en is a
 
 Een aantal voorbeelden zijn hieronder weergegeven
 
-#### $n = -1$
+#### Voorbeeld $n = -1$
 
 Voor $n = -1$ evalueert de functie {eq}`vgl_4` voor het gehele domein naar 0. Als de originele definitie wordt aangehouden met $f\left(x\right)=\infty$ op $x=\bar x$ staat deze functie ook wel bekend als de Dirac-Delta functie.
 
-#### $n = 0$
+#### Voorbeeld $n = 0$
 
 Voor $n=0$ evalueert de functie {eq}`vgl_4` tot een stapfunctie, ook wel bekend als de Heaviside.
-```{figure} figures/image3.png
+```{figure} figures/heaviside.svg
 ---
 width: 400
 name: Figuur_3
 align: center
 ---
-Unit step functie {cite:p}`vanderwulp_2023`
+$\left\langle {x - \bar x} \right\rangle ^0$
 ```
 
-#### $n = 1$
-Voor $n=0$ geeft de functie {eq}`vgl_4` een linear verband na $\bar x$.
-```{figure} figures/image4.png
+#### Voorbeeld $n = 1$
+Voor $n=1$ geeft de functie {eq}`vgl_4` een linear verband na $\bar x$.
+```{figure} figures/unitramp.svg
 ---
 width: 400
 name: Figuur_4
 align: center 
 ---
-Unit ramp functie {cite:p}`vanderwulp_2023`
+$\left\langle {x - \bar x} \right\rangle ^1$
 ```
-
-````{toggle}
-```{eval-rst}
-.. literalinclude:: figures/heaviside.py
-   :language: python
-```
-````
 
 ### 1.3  Oplossingsstrategie
 
