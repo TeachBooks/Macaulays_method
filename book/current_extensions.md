@@ -121,6 +121,20 @@ Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast 
 
 ```{math}
 :label: puntlast_1d
+q\left(x\right) : F \left\langle x - \bar x \right\rangle^{- 1}
+```
+
+```{math}
+:label: puntlast_2d
+q_z\left(x\right) : F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) + F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right)
+q_x\left(x\right) : - F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) + F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right)
+```
+
+#### Koppel
+Een koppel werkt ook op een enkel punt in de constructie. Een koppel wordt beschreven door de orde $-2$ in de krachtenvergelijking van de loodrechte richting aangezien dit koppel geen invloed heeft op de langsrichting. Een koppel met waarde $T$ gelegen op punt $\bar x$ wordt dus gemodelleerd als.
+
+```{math}
+:label: puntlast_1d
 q\left(x\right) : F_{v} \left\langle x - \bar x \right\rangle^{- 1}
 ```
 
@@ -129,9 +143,6 @@ q\left(x\right) : F_{v} \left\langle x - \bar x \right\rangle^{- 1}
 q_z\left(x\right) : F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) 
 q_x\left(x\right) : - F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right)
 ```
-
-#### Koppel
-Een koppel werkt ook op een enkel punt in de constructie. Een koppel wordt beschreven door de orde $-2$ in de krachtenvergelijking van de loodrechte richting aangezien dit koppel geen invloed heeft op de langsrichting. Een koppel met waarde $T$ gelegen op punt $\bar x$ wordt dus gemodelleerd als $T{< x - \bar x >}^{- 2}$.
 
 #### Uniform verdeelde belasting
 Belasting die gelijkmatig verdeeld is over de constructie kan beschreven worden met de Heaviside functie. Een uniform verdeelde belasting met waarde $q_{z}$, beginpunt $\bar x_1$ en eindpunt $\bar x_2$ kan dan in de krachtvergelijking gemodelleerd worden als $q_{z}{< x - \bar x_1 >}^{0} - q_{z}{< x - \bar x+2 >}^{0}$. Hierbij werkt de waarde van $q_{z}$ vanaf $b$ in tegengestelde richting, dit geeft een totaal van 0. Deze werking is in {numref}`Figuur_6` weergegeven.
