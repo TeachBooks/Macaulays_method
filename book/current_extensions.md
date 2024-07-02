@@ -182,10 +182,7 @@ Belastingen die niet uniform maar lineair of parabolisch verdeeld zijn kunnen op
 Naast belastingen kunnen ook opleggingen en verbindingen worden gemodelleerd door middel van singulariteitsfuncties. Op de plek waar een oplegging of verbinding wordt toegevoegd gelden ook randvoorwaarden. Deze randvoorwaarden worden gebruikt om de vergelijkingen uiteindelijk op te lossen. Er zal nu worden toegelicht hoe verschillende opleggingen en verbindingen kunnen worden beschreven door middel van singulariteitsfuncties en welke randvoorwaarden daarbij horen. Er wordt in dit hoofdstuk alleen gekeken naar krachten loodrecht op de staaf en momenten. Krachten evenwijdig aan de staaf worden behandeld in het `ref`(hoofdstuk_2.3)Modelleren van opleggingen en verbindingen voor extensie.
 
 #### Inklemming
-Bij een inklemming kunnen een verticale oplegreactie en een inklemmingsmoment optreden. Zoals beschreven in het hoofdstuk modelleren van belastingen, kunnen deze beschreven worden met singulariteitsfuncties van respectievelijk orde $-1$ en $-2$.
-
-Daarnaast introduceert een inklemming ook twee randvoorwaarden. Ter plaatse van een inklemming is de zakking ($w$) en de rotatie ($\varphi$) van de staaf gelijk aan $0$.
-In {numref}`Figuur_7` is weergegeven hoe een inklemming gemodelleerd kan worden.
+Bij een inklemming kunnen een verticale oplegreactie en een inklemmingsmoment optreden. In {numref}`Figuur_7` is weergegeven hoe een inklemming gemodelleerd kan worden.
 
 ```{figure} figures/image7.png
 ---
@@ -194,6 +191,26 @@ name: Figuur_7
 align: center
 ---
 Modelleren van een inklemming {cite:p}`vanderwulp_2023`
+```
+
+Zoals beschreven in het hoofdstuk modelleren van belastingen, kunnen deze beschreven worden met singulariteitsfuncties van respectievelijk orde $-1$ en $-2$.
+
+```{math}
+:label: inklemming_2d_krachten
+\begin{align}
+&q_z\left(x\right) : &R_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) &+ R_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) &+ T \left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right) : &R_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) &- R_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right)
+\end{align}
+```
+
+Daarnaast introduceert een inklemming ook twee randvoorwaarden. Ter plaatse van een inklemming is de zakking ($w$) en de rotatie ($\varphi$) van de staaf gelijk aan $0$.
+
+```{math}
+:label: inklemming_2d_vergelijkingen
+\begin{align}
+&\varphi \left( \bar x \right) = 0\\
+&u_v \left(\bar x\right) = 0\\
+&u_h \left(\bar x\right) = 0
+\end{align}
 ```
 
 #### Scharnier- en roloplegging
