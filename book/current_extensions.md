@@ -81,22 +81,20 @@ Voor $n = -1$ evalueert de functie {eq}`vgl_4` voor het gehele domein naar 0. Al
 Voor $n=0$ evalueert de functie {eq}`vgl_4` tot een stapfunctie, ook wel bekend als de Heaviside.
 ```{figure} figures/heaviside.svg
 ---
-width: 400
 name: Figuur_3
 align: center
 ---
-$\left\langle {x - \bar x} \right\rangle ^0$
+Plot of $\left\langle {x - \bar x} \right\rangle ^0$
 ```
 
 #### Voorbeeld $n = 1$
 Voor $n=1$ geeft de functie {eq}`vgl_4` een linear verband na $\bar x$.
 ```{figure} figures/unitramp.svg
 ---
-width: 400
 name: Figuur_4
 align: center 
 ---
-$\left\langle {x - \bar x} \right\rangle ^1$
+Plot of $\left\langle {x - \bar x} \right\rangle ^1$
 ```
 
 ### 1.3  Oplossingsstrategie

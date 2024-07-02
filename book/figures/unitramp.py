@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-plt.figure()
+plt.figure(figsize=(3,3))
 plt.plot([-1,0,1],[0,0,1])
 plt.xlabel('$x$',loc='right')
 plt.ylabel('$q$')
@@ -10,7 +10,9 @@ ax.spines['bottom'].set_color('none')
 ax.spines['top'].set_position('zero')
 ax.xaxis.set_label_position('top')
 ax.xaxis.set_ticks_position('top')
+ax.axis('equal')
 plt.xlim(-1,1)
+plt.ylim(0,1)
 # set label of xtick to \bar x
 plt.xticks([0],['$\\bar x$'],)
 plt.yticks([0,1])
@@ -18,4 +20,4 @@ plt.yticks([0,1])
 ax.invert_yaxis()
 box = ax.get_position()
 #plt.show()
-plt.savefig('unitramp.svg')
+plt.savefig('book/figures/unitramp.svg')
