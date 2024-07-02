@@ -74,7 +74,7 @@ Een aantal voorbeelden zijn hieronder weergegeven
 
 #### Voorbeeld $n = -1$
 
-Voor $n = -1$ evalueert de functie {eq}`vgl_4` voor het gehele domein naar 0. Als de originele definitie wordt aangehouden met $f\left(x\right)=\infty$ op $x=\bar x$ staat deze functie ook wel bekend als de Dirac-Delta functie.
+Voor $n = -1$ evalueert de functie {eq}`vgl_4` voor het gehele domein naar 0. Als de originele definitie wordt aangehouden met $f\left(\bar x\right)=\infty$ staat deze functie ook wel bekend als de Dirac-Delta functie.
 
 #### Voorbeeld $n = 0$
 
@@ -117,7 +117,7 @@ Voor het modeleren van belastingen op de constructie wordt gebruik gemaakt van s
 Belastingen kunnen worden beschreven door de een singulariteitsfunctie van bijbehorende orde te vermenigvuldigen met de waarde van de kracht of verbinding. Naar aanleiding van het assenstelsel wordt een kracht positief of negatief gemodelleerd.
 
 #### Puntlast
-Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft, wordt gemodelleerd zoals getoond in {eq}`puntlast_1d` en {eq}`puntlast_2d`. In 2d wordt de kracht ontbonden in de langs- en loodrechte richting volg
+Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft, wordt gemodelleerd zoals getoond in {eq}`puntlast_1d` en {eq}`puntlast_2d`. In 2d wordt de kracht ontbonden in de langs- en loodrechte richting:
 
 ```{math}
 :label: puntlast_1d
@@ -574,8 +574,8 @@ In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossing
 | Beginpunt constructie | | $N\left(\bar x^-\right) = 0$ <br> $V\left(\bar x^-\right) = 0$ <br> $M\left(\bar x^-\right) = 0$ <br> | Integratieconstantes $C_V$, $C_M$, $C_N$ | 
 | Eindpunt constructie | | $N\left(\bar x\right) = 0$ <br> $V\left(\bar x^+\right) = 0$ <br> $M\left(\bar x^+\right) = 0$ <br> | Integratieconstantes $C_w$, $C_{\varphi}$, $C_u$ |
 | Puntlast | $\begin{align} &q_z\left(x\right) : &F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right) \\ &q_x\left(x\right) : &- F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) \end{align}$ | | |
-| Koppel | $\begin{align} &q_z\left(x\right): &T \left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right): &0\end{align}$ | | | 
-| Verdeelde belasting | $\begin{align} &q_z\left(x\right)= &q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) &-q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) \\ & &+ q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) &-q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) \\& q_x \left(x \right) = &- q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) &+q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) \\ &&+q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) &- q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) \end{align}$ |||
+| Koppel | $\begin{align} &q_z\left(x\right): &T \left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right): &0 \end{align}$ | | | 
+| Verdeelde belasting | $\begin{align} &q_z\left(x\right)= &q_{v} \left\langle x - \bar x_1 \right\rangle^{- 1} \cos \left( \theta \left(\bar x_1\right) \right) &-q_{v} \left\langle x_2 - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x_2\right) \right) \\ & &+ q_{h} \left\langle x - \bar x_1 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_1\right) \right) &-q_{h} \left\langle x - \bar x_2 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_2\right) \right) \\ & q_x \left(x \right) = &- q_{v} \left\langle x - \bar x_1 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_1\right) \right) &+q_{v} \left\langle x - \bar x_2 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_2\right) \right) \\ &&+q_{h} \left\langle x - \bar x_1 \right\rangle^{- 1} \cos \left( \theta \left(\bar x_1\right) \right) &- q_{h} \left\langle x - \bar x_2 \right\rangle^{- 1} \cos \left( \theta \left(\bar x_2\right) \right) \end{align}$ |||
 | Scharnierverbinding | $q_z\left(x\right) : EI \Delta \varphi_S \left\langle x - \bar x \right\rangle^{- 3}$ | $M \left(\bar x\right) = 0$| $\Delta \varphi_S$ |
 | Schuifverbinding | $q_z\left(x\right): EI \Delta u_{S,z} \left\langle x - \bar x \right\rangle^{- 4}$ | $V \left(\bar x\right) = 0$| $\Delta u_{S,z}$ |
 | Telescoopverbinding | $q_x\left(x\right) :EA \Delta u_{S,x} \left\langle x - \bar x \right\rangle^{- 2}$ | $N \left(\bar x\right) = 0$| $\Delta u_{S,x}$ |
