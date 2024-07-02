@@ -117,7 +117,18 @@ Voor het modeleren van belastingen op de constructie wordt gebruik gemaakt van s
 Belastingen kunnen worden beschreven door de een singulariteitsfunctie van bijbehorende orde te vermenigvuldigen met de waarde van de kracht of verbinding. Naar aanleiding van het assenstelsel wordt een kracht positief of negatief gemodelleerd.
 
 #### Puntlast
-Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $\bar x$ wordt gemodelleerd in de krachtvergelijking als $F{< x - \bar x >}^{- 1}$. Afhankelijk van de richting van de kracht wordt deze in de langs- of loodrechte belastingsvergelijking ingevuld.
+Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $\bar x$ wordt gemodelleerd zoals getoond in {eq}`puntlast_1d` en {eq}`puntlast_2d`. In 2d wordt de kracht ontbonden in de langs- en loodrechte richting
+
+```{math}
+:label: puntlast_1d
+q\left(x\right) : F_{v} \left\langle x - \bar x \right\rangle^{- 1}
+```
+
+```{math}
+:label: puntlast_2d
+q_z\left(x\right) : F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) 
+q_x\left(x\right) : - F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right)
+```
 
 #### Koppel
 Een koppel werkt ook op een enkel punt in de constructie. Een koppel wordt beschreven door de orde $-2$ in de krachtenvergelijking van de loodrechte richting aangezien dit koppel geen invloed heeft op de langsrichting. Een koppel met waarde $T$ gelegen op punt $\bar x$ wordt dus gemodelleerd als $T{< x - \bar x >}^{- 2}$.
