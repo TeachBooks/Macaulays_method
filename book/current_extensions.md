@@ -1,3 +1,14 @@
+---
+myst:
+  substitutions:
+    puntlast1d: "q\left(x\right) : F \left\langle x - \bar x \right\rangle^{- 1}"
+    puntlast2d: |
+        \begin{align}
+        &q_z\left(x\right) : &F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right) \\
+        &q_x\left(x\right) : &- F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right)
+        \end{align}
+---
+
 # Complete description of current extensions
 
 Dit rapport zal een overzicht bevatten van de opgedane kennis met betrekking tot de methode van Macaulay. Dit rapport is bedoeld voor personen met mechanica kennis die nog onbekend zijn met de methode van Macaulay. In dit rapport zal de methode van Macaulay worden toegelicht en zal er worden aangegeven hoe deze toegepast kan worden.
@@ -121,13 +132,15 @@ Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast 
 
 ```{math}
 :label: puntlast_1d
-q\left(x\right) : F \left\langle x - \bar x \right\rangle^{- 1}
+{{puntlast_1d}}
 ```
 
 ```{math}
 :label: puntlast_2d
-q_z\left(x\right) : F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) + F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right) \\
-q_x\left(x\right) : - F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) + F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right)
+\begin{align}
+&q_z\left(x\right) : &F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right) \\
+&q_x\left(x\right) : &- F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right)
+\end{align}
 ```
 
 #### Koppel
@@ -140,12 +153,14 @@ q_z\left(x\right) : T \left\langle x - \bar x \right\rangle^{- 2}
 
 ```{math}
 :label: koppel_2d
-q_z\left(x\right) : T \left\langle x - \bar x \right\rangle^{- 2} \\
-q_x\left(x\right) : 0
+\begin{align}
+&q_z\left(x\right) &: &T \left\langle x - \bar x \right\rangle^{- 2} \\
+&q_x\left(x\right) &: &0
+\end{align}
 ```
 
 #### Uniform verdeelde belasting
-Belasting die gelijkmatig verdeeld is over de constructie kan beschreven worden met de Heaviside functie. Een uniform verdeelde belasting met waarde $q_{z}$, beginpunt $\bar x_1$ en eindpunt $\bar x_2$ kan dan in de krachtvergelijking gemodelleerd worden als $q_{z}{< x - \bar x_1 >}^{0} - q_{z}{< x - \bar x+2 >}^{0}$. Hierbij werkt de waarde van $q_{z}$ vanaf $b$ in tegengestelde richting, dit geeft een totaal van 0. Deze werking is in {numref}`Figuur_6` weergegeven.
+Belasting die gelijkmatig verdeeld is over de constructie kan beschreven worden met de Heaviside functie. Een uniform verdeelde belasting met waarde $q_{z}$, beginpunt $\bar x_1$ en eindpunt $\bar x_2$ kan dan in 1D in de krachtvergelijking gemodelleerd worden als $q_{z}{< x - \bar x_1 >}^{0} - q_{z}{< x - \bar x_2 >}^{0}$. Hierbij werkt de waarde van $q_{z}$ vanaf $\bar x_2$ in tegengestelde richting, dit geeft een totaal van 0. Deze werking is in {numref}`Figuur_6` weergegeven.
 
 ```{figure} figures/image6.png
 ---
