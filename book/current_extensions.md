@@ -99,6 +99,12 @@ align: center
 Unit ramp functie {cite:p}`vanderwulp_2023`
 ```
 
+````{toggle}
+```{eval-rst}
+.. literalinclude:: figures/heaviside.py
+   :language: python
+```
+````
 
 ### 1.3  Oplossingsstrategie
 
@@ -404,7 +410,7 @@ q_{x}(x) = 0
 ```
 
 #### Puntlast
-Bij de normaal- en dwarskrachtenlijn van een puntlast ontstaat een sprong als de functie een hoekpunt passeert. Tegelijkertijd ontstaat er een knik in de momentenlijn als de functie een hoekpunt passeert. Deze sprong en knik ontstaan door de verandering van de projectie van de puntlast. Daarom volgen vgl. {eq}`vgl_Fvqz`, {eq}`vgl_Fhqz`, {eq}`vgl_Fvqx` en {eq}`vgl_Fhqx`.
+Bij de normaal- en dwarskrachtenlijn van een puntlast ontstaat een sprong als de functie een hoekpunt passeert. Tegelijkertijd ontstaat er een knik in de momentenlijn als de functie een hoekpunt passeert. Deze sprong en knik ontstaan door de verandering van de projectie van de puntlast. Daarom volgen vgl. {eq}`vgl_Fvqz` en {eq}`vgl_Fvqx`,
 
 ```{math}
 :label: vgl_Fvqz
