@@ -151,6 +151,19 @@ q_z\left(x\right) : T \left\langle x - \bar x \right\rangle^{- 2}
 #### Uniform verdeelde belasting
 Belasting die gelijkmatig verdeeld is over de constructie kan beschreven worden met de Heaviside functie. Een uniform verdeelde belasting met waarde $q_{z}$, beginpunt $\bar x_1$ en eindpunt $\bar x_2$ kan dan in 1D in de krachtvergelijking gemodelleerd worden als $q_{z}{< x - \bar x_1 >}^{0} - q_{z}{< x - \bar x_2 >}^{0}$. Hierbij werkt de waarde van $q_{z}$ vanaf $\bar x_2$ in tegengestelde richting, dit geeft een totaal van 0. Deze werking is in {numref}`Figuur_6` weergegeven.
 
+```{math}
+:label: Verveelde_belasting_1D
+q\left(x\right)= q \left\langle x - \bar x \right\rangle^{- 1} -q\left\langle x - \bar x \right\rangle^{- 1}
+```
+
+```{math}
+:label: Verveelde_belasting_2d
+\begin{align}
+&q_z\left(x\right)= &q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) &-q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) \\ & &+ q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) &-q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) \\
+& q_x \left(x \right) = &- q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) &+q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) \\ &&+q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) &- q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right)
+\end{align}
+```
+
 ```{figure} figures/image6.png
 ---
 width: 600
@@ -562,10 +575,7 @@ In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossing
 | Eindpunt constructie | | $N\left(\bar x\right) = 0$ <br> $V\left(\bar x^+\right) = 0$ <br> $M\left(\bar x^+\right) = 0$ <br> | Integratieconstantes $C_w$, $C_{\varphi}$, $C_u$ |
 | Puntlast | $\begin{align} &q_z\left(x\right) : &F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right) \\ &q_x\left(x\right) : &- F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) \end{align}$ | | |
 | Koppel | $\begin{align} &q_z\left(x\right) &: &T \left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right) &: &0\end{align}$ | | | 
-| Start verticale verdeelde belasting | $q_z\left(x\right)= q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right)$ <br> $ q_x \left(x \right) =- q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right)$|||
-| Einde verticale verdeelde belasting | $q_z\left(x\right)= -q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right)$ <br> $ q_x \left(x \right) =  q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right)$|||
-| Start horizontale verdeelde belasting | $q_z\left(x\right)= q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right)$ <br> $ q_x \left(x \right) = q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right)$|||
-| Einde horizontale verdeelde belasting | $q_z\left(x\right)= -q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right)$ <br> $ q_x \left(x \right) = - q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right)$|||
+| Verdeelde belasting | \begin{align} &q_z\left(x\right)= &q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) &-q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) \\ & &+ q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) &-q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) \\& q_x \left(x \right) = &- q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) &+q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right) \\ &&+q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) &- q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right) \end{align} |||
 | Scharnierverbinding | $q_z\left(x\right) : EI \Delta \varphi_S \left\langle x - \bar x \right\rangle^{- 3}$ | $M \left(\bar x\right) = 0$| $\Delta \varphi_S$ |
 | Schuifverbinding | $q_z\left(x\right): EI \Delta u_{S,z} \left\langle x - \bar x \right\rangle^{- 4}$ | $V \left(\bar x\right) = 0$| $\Delta u_{S,z}$ |
 | Telescoopverbinding | $q_x\left(x\right) :EA \Delta u_{S,x} \left\langle x - \bar x \right\rangle^{- 2}$ | $N \left(\bar x\right) = 0$| $\Delta u_{S,x}$ |
