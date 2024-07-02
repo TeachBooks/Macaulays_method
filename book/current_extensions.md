@@ -1,14 +1,3 @@
----
-myst:
-  substitutions:
-    puntlast1d: "q\left(x\right) : F \left\langle x - \bar x \right\rangle^{- 1}"
-    puntlast2d: |
-        \begin{align}
-        &q_z\left(x\right) : &F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right) \\
-        &q_x\left(x\right) : &- F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right)
-        \end{align}
----
-
 # Complete description of current extensions
 
 Dit rapport zal een overzicht bevatten van de opgedane kennis met betrekking tot de methode van Macaulay. Dit rapport is bedoeld voor personen met mechanica kennis die nog onbekend zijn met de methode van Macaulay. In dit rapport zal de methode van Macaulay worden toegelicht en zal er worden aangegeven hoe deze toegepast kan worden.
@@ -132,7 +121,7 @@ Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast 
 
 ```{math}
 :label: puntlast_1d
-{{puntlast_1d}}
+{{q\left(x\right) : F \left\langle x - \bar x \right\rangle^{- 1}}}
 ```
 
 ```{math}
@@ -564,16 +553,15 @@ Het aansluitpunt is het punt waarbij de functie van x opnieuw langs een knoop ga
 In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden voor starre onstructies als lokale afstand $\bar x$ de benoemde eigenschap.
 
 ````{div} full-width
-```{table} Onbekenden en vergelijkingen discontinuïteiten
+```{table} Onbekenden en vergelijkingen discontinuïteiten in 2D
 :name: table_twee
 
 | Situatie op $\bar x$| Belastingsvergelijing | Vergelijkingen | Onbekenden | 
 | ---  | --------------------- | --------------------- | -------------------- |
 | Beginpunt constructie | | $N\left(\bar x^-\right) = 0$ <br> $V\left(\bar x^-\right) = 0$ <br> $M\left(\bar x^-\right) = 0$ <br> | Integratieconstantes $C_V$, $C_M$, $C_N$ | 
 | Eindpunt constructie | | $N\left(\bar x\right) = 0$ <br> $V\left(\bar x^+\right) = 0$ <br> $M\left(\bar x^+\right) = 0$ <br> | Integratieconstantes $C_w$, $C_{\varphi}$, $C_u$ |
-| Verticale kracht | $q_z\left(x\right) : F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) $ <br> $q_x\left(x\right) : - F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) $ | | |
-| Horizontale kracht | $q_z\left(x\right) : F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right) $<br> $q_x\left(x\right) : F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) $ | ||
-| Koppel | $q_z\left(x\right) : T \left\langle x - \bar x \right\rangle^{- 2}$ | | | 
+| Puntlast | $\begin{align} &q_z\left(x\right) : &F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right) \\ &q_x\left(x\right) : &- F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) \end{align}$ | | |
+| Koppel | $\begin{align} &q_z\left(x\right) &: &T \left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right) &: &0\end{align}$ | | | 
 | Start verticale verdeelde belasting | $q_z\left(x\right)= q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right)$ <br> $ q_x \left(x \right) =- q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right)$|||
 | Einde verticale verdeelde belasting | $q_z\left(x\right)= -q_{v} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right)$ <br> $ q_x \left(x \right) =  q_{v} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right)$|||
 | Start horizontale verdeelde belasting | $q_z\left(x\right)= q_{h} \left\langle x - \bar x \right\rangle^{- 1} \sin \left( \theta \left(\bar x\right) \right)$ <br> $ q_x \left(x \right) = q_{h} \left\langle x - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x\right) \right)$|||
