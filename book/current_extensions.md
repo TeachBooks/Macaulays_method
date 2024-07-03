@@ -14,10 +14,10 @@ Dit rapport bestaat uit 4 hoofdstukken:
 
 In dit rapport wordt er gerefereerd naar de werken van {cite:ts}`vanderwulp_2023`, {cite:ts}`jankie_2023`, {cite:ts}`alex_2024` en {cite:ts}`mark_2024` en wordt er hevig gebruik gemaakt van citaties en parafraseringen.
 
-## 1.  De methode van Macaulay
+## De methode van Macaulay
 
 (hoofdstuk_1_1)=
-### 1.1 Belastingvergelijking
+### Belastingvergelijking
 
 Uit de balkentheorie van Euler-Bernoulli kunnen de differentiaalvergelijkingen voor buiging {eq}`vgl_1` en extensie {eq}`vgl_2` worden afgeleid. Begrip over de afleiding en het gebruik van deze vergelijkingen wordt als voorkennis beschouwd.
 
@@ -35,7 +35,7 @@ Over het algemeen worden deze vergelijkingen gebruikt door liggers eerst in vers
 
 Bij de methode van Macaulay wordt er op een andere manier gebruik gemaakt van deze differentiaalvergelijkingen. De methode van Macaulay maakt gebruik van singulariteitsfuncties om de belasting op een ligger te beschrijven. Dit heeft als grote voordeel dat een ligger niet opgesplitst hoeft te worden in verschillende delen. Het gedrag van een ligger kan zo in één vergelijking worden beschreven.
 
-### 1.2  Singulariteitsfuncties
+### Singulariteitsfuncties
 
 Zoals hierboven aangegeven maakt de methode van Macaulay gebruik van singulariteitsfuncties. Dit is een familie van functies die gebaseerd is op de Dirac-delta functie. Het differentiëren en integreren van deze Dirac-delta functie vormt deze familie. De singulariteitsfunctie is wiskundig als volgt gedefinieerd:
 
@@ -97,7 +97,7 @@ align: center
 Plot of $\left\langle {x - \bar x} \right\rangle ^1$
 ```
 
-### 1.3  Oplossingsstrategie
+### Oplossingsstrategie
 
 De eerste stap bij het oplossen van een probleem met de methode van Macaulay is het opstellen van de belastingvergelijking in de langs- en loodrechte richting. Hiervoor wordt de hele constructie gemodelleerd in één vergelijking per richting. Deze vergelijking kan vervolgens ingevuld worden als $q$ in de differentiaalvergelijkingen in `ref`(hoofdstuk_1_1). Hoe verschillende onderdelen van een constructie gemodelleerd kunnen worden in deze vergelijking is beschreven in `ref`(hoofdstuk_2).
 
@@ -108,15 +108,9 @@ Om deze onbekende reactiekrachten en integratieconstanten op te lossen kunnen de
 De gevonden waardes voor de reactiekrachten en integratieconstanten kunnen worden ingevuld in de vergelijkingen. Dit geeft de vergelijkingen die het gedrag van de staaf beschrijven.
 
 (hoofdstuk_2)=
-## 2.  Modelleren van belastingen, opleggingen en verbindingen
+## Modelleren van belastingen, opleggingen en verbindingen
 
-### 2.1 Modelleren van belastingen
-
-Voor het modeleren van belastingen op de constructie wordt gebruik gemaakt van singulariteitsfuncties. Dit maakt het mogelijk om de volledige constructie in één regel (per richting) te beschrijven en daarmee de differentiaalvergelijking op te lossen. Er zal nu toegelicht worden hoe verschillende krachten beschreven kunnen worden met singulariteitsfuncties.
-
-Belastingen kunnen worden beschreven door de een singulariteitsfunctie van bijbehorende orde te vermenigvuldigen met de waarde van de kracht of verbinding. Naar aanleiding van het assenstelsel wordt een kracht positief of negatief gemodelleerd.
-
-### 4.1 Assenstelsel
+### Assenstelsel
 
 Het model maakt gebruik van een globaal en een lokaal assenstelsel. Het globale assenstelsel bestaat uit een horizontale en een verticale as waarbij de positieve richtingen naar rechts en naar beneden wijzen. Het lokale assenstelsel bestaat uit een $x$-as en een $z$-as. De positieve $x$-as wordt afgebeeld met een blauwe pijl zichtbaar in {numref}`Figuur_20`en de positieve $z$-as is altijd een kwartslag met de klok mee t.o.v. de positieve $x$-as.
 
@@ -134,6 +128,12 @@ align: center
 ---
 Positieve assen in constructie  {cite:p}`alex_2024`
 ```
+
+### Modelleren van belastingen
+
+Voor het modeleren van belastingen op de constructie wordt gebruik gemaakt van singulariteitsfuncties. Dit maakt het mogelijk om de volledige constructie in één regel (per richting) te beschrijven en daarmee de differentiaalvergelijking op te lossen. Er zal nu toegelicht worden hoe verschillende krachten beschreven kunnen worden met singulariteitsfuncties.
+
+Belastingen kunnen worden beschreven door de een singulariteitsfunctie van bijbehorende orde te vermenigvuldigen met de waarde van de kracht of verbinding. Naar aanleiding van het assenstelsel wordt een kracht positief of negatief gemodelleerd.
 
 #### Puntlast
 Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft, wordt gemodelleerd zoals getoond in {eq}`puntlast_1d` en {eq}`puntlast_2d`.
@@ -203,7 +203,7 @@ Dit kan beschreven worden met singulariteitsfuncties met groottes $q_v$ en $q_h$
 Belastingen die niet uniform maar lineair of parabolisch verdeeld zijn kunnen op eenzelfde manier gemodelleerd worden als de uniform verdeelde belasting.
 
 (hoofdstuk_2.2)=
-### 2.2 Modelleren van opleggingen en verbindingen voor buiging
+### Modelleren van opleggingen en verbindingen
 
 Naast belastingen kunnen ook opleggingen en verbindingen worden gemodelleerd door middel van singulariteitsfuncties. Op de plek waar een oplegging of verbinding wordt toegevoegd gelden ook randvoorwaarden. Deze randvoorwaarden worden gebruikt om de vergelijkingen uiteindelijk op te lossen. Er zal nu worden toegelicht hoe verschillende opleggingen en verbindingen kunnen worden beschreven door middel van singulariteitsfuncties en welke randvoorwaarden daarbij horen. Er wordt in dit hoofdstuk alleen gekeken naar krachten loodrecht op de staaf en momenten. Krachten evenwijdig aan de staaf worden behandeld in het `ref`(hoofdstuk_2.3)Modelleren van opleggingen en verbindingen voor extensie.
 
@@ -504,68 +504,7 @@ De bijbhorende voorwaardes zijn dan als volgt:
 
 Ook hier is een deels verende verbinding is natuurlijk ook mogelijk met het weglaten van de desbetreffende termen.
 
-## 3.  Invloedslijnen met Macaulay
-
-De methode van Macaulay kan worden gebruikt om invloedslijnen te berekenen. In dit hoofdstuk zal worden toegelicht hoe de methode hierbij kan worden ingezet. Hierbij zal de focus liggen op de basis van invloedslijnen met Macaulay, door te beschrijven hoe invloedslijnen berekend kunnen worden voor eendimensionale constructies.
-
-### Methode
-De eerste stap voor het berekenen van invloedslijnen met de methode van Macaulay is het beschrijven van de krachtsverdeling op de ligger. Hierbij worden alle krachten die op de ligger spelen gedefinieerd op een positie $x$, waarin $x$ de variabele is die de positie op de ligger beschrijft. De puntlast waarvoor de invloedslijnen worden bepaald wordt gedefinieerd op een positie $x = \bar x_F$. Deze methode is weergegeven in figuur {numref}`Figuur_19`.
-
-```{figure} figures/image19.png
----
-width: 300
-name: Figuur_19
-align: center
----
-Methode voor invloedslijnen met Macaulay  {cite:p}`jankie_2023`
-```
-
-Vervolgens kan de belastingvergelijking worden geïntegreerd naar $x$. Dit zal resulteren in vergelijkingen met onbekende reactiekrachten en integratieconstanten.
-
-De randvoorwaarden kunnen worden opgesteld. Deze worden gebruikt om de onbekende reactiekrachten en integratieconstanten uit de vergelijkingen op te lossen.
-
-Invullen van de gevonden waardes voor de onbekenden in de geïntegreerde belastingvergelijking resulteert in de gewenste functies. Deze functies hangen af van $x$ en $\bar x_F$. Waarin voor $x$ een positie op de ligger ingevuld kan worden en $\bar x_F$ de locatie van de puntlast beschrijft. Zo kan de invloed van een puntlast op locatie $\bar x_F$ op de staafeigenschappen op locatie $x$ worden bepaald.
-
-## 4.  Oplossen van geknikte, vertakte en gesloten constructies
-
-De Macaulay methode kan worden uitgebreid zodat het ook toepasbaar is op geknikte, vertakte en gesloten, constructies. De belangrijkste sterktepunten van het model zijn dat het systematisch en robuust is doordat het is gebaseerd op de principes van evenwicht en continuïteit, de snedekrachten en verplaatsingen van elk punt kunnen worden bepaald doordat de functie continue is en dat de oplossingsvoorwaarden geringer in tal en eenvoudiger zijn dan voor de traditionele integratiemethode.
-
-### 4.2 Modelleren van knikken
-
-De belastingen worden in 2D anders gemodelleerd dan in 1D. De vergelijking voor elke belasting wordt voor elke knik aangepast waar de functie van $x$ langs gaat na het aangrijppunt van de belasting. De hoektermen zijn bepaald door te analyseren wat de invloed is van een hoek op de snedekrachtdiagrammen van een belasting.
-
-Voor elke kracht $j$ (voor elke $F_j$ en $q_j$ inclusing $H$, $V$ en $R$) wordt de belastingsvergelijking aangepast voor elke knik $i$ met $n$ het aantal knikken en met een bijbehorende hoek $\theta_i$. Daarbij zijn de locaties :
-
-```{math}
-:label: knikken
-\begin{align}
-&q_z \left( x\right) : &\sum\limits_{j}\sum\limits_{i}^{n} &\left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{v,j}  &\left\langle x - \bar x_i \right\rangle^{- 1} &\left( \cos\left( \theta \left( \bar x_i \right) \right) &- \cos\left( \theta \left( \bar x_{i-1}^- \right) \right)  \right) \\
-&&+ \sum\limits_{j}\sum\limits_{i}^n &\left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0}F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) $ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right)$ <br> $ \qquad + \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) $ <br> $ q_x \left( x\right) : \sum\limits_{j}\sum\limits_{i}^{n} \left(-\left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right)  \right) \right)$ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0}F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) $ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left( -\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \right)$ <br> $ \qquad + \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right)
-\end{align}
-```
-
-#### Knik
-Een koppel heeft geen invloed op de normaal- en dwarskrachten. Verder blijft het buigend moment van een koppel onveranderd bij een knikpunt. Daarom volgen vgl. {eq}`vgl_Tqz` en {eq}`vgl_Tqx`.
-
-```{math}
-:label: vgl_Tqz
-q_{z}(x) = T\left\langle x - \bar x \right\rangle^{- 2}
-```
-
-```{math}
-:label: vgl_Tqx
-q_{x}(x) = 0
-```
-
-#### Puntlast
-Bij de normaal- en dwarskrachtenlijn van een puntlast ontstaat een sprong als de functie een hoekpunt passeert. Tegelijkertijd ontstaat er een knik in de momentenlijn als de functie een hoekpunt passeert. Deze sprong en knik ontstaan door de verandering van de projectie van de puntlast. 
-
-Bij de normaal- en dwarskrachtenlijn van een uniform verdeelde belasting ontstaat zowel een sprong als een knik als de functie een hoekpunt passeert. De knik ontstaat door de verandering van de projectie van de verdeelde belasting. De sprong daarentegen ontstaat door een verandering in de projectie van de arbitrale belasting vervangend puntlast.
-
-
-
-
-### 4.3 Vergelijking voor horizontale en verticale verplaatsingen
+### Vergelijking voor horizontale en verticale verplaatsingen in 2D
 
 De doorbuiging ($u_{z}(x)$) en extensie ($u_{x}(x)$) zijn voor tweedimensionale constructies hele abstracte termen die niet bruikbaar zijn voor de oplossingsvoorwaarden. Daarom moeten ze worden gebruikt als invoer voor de vergelijkingen van de horizontale en verticale verplaatsing van de constructie ($u_{h}(x)$ en $u_{v}(x)$). De vergelijkingen stellen telkens dat de invloed van de doorbuiging en extensie van een staaf $ij$ ($u_{z,ij}(x)$ en $u_{x,ij}(x)$) op $u_{z}(x)$ en $u_{z}(x)$ gelijk aan nul is als $x < a_{i}$, een functie is als $a_{i} \leq x < a_{j}$ en constant is als $a_{j} \leq x$. Dit wordt afgebeeld in Figuur {numref}`Figuur_21` en {numref}`Figuur_22`. Vervolgens worden $u_{z,ij}(x)$ en $u_{x,ij}(x)$ vermenigvuldigd met een functie van de hoek van de staaf wat tot slot voor alle staven wordt opgesomd. Hieruit ontstaan vgl. {eq}`vgl_uv` en {eq}`vgl_uh`.
 
@@ -599,7 +538,71 @@ align: center
 De invloed van $u_{z,ij}\left(x\right)$ op $u_{z}\left(x\right)$  {cite:p}`alex_2024`
 ```
 
-### 4.4 Vertakte en gesloten constructies
+## Invloedslijnen met Macaulay
+
+De methode van Macaulay kan worden gebruikt om invloedslijnen te berekenen. In dit hoofdstuk zal worden toegelicht hoe de methode hierbij kan worden ingezet. Hierbij zal de focus liggen op de basis van invloedslijnen met Macaulay, door te beschrijven hoe invloedslijnen berekend kunnen worden voor eendimensionale constructies.
+
+### Methode
+De eerste stap voor het berekenen van invloedslijnen met de methode van Macaulay is het beschrijven van de krachtsverdeling op de ligger. Hierbij worden alle krachten die op de ligger spelen gedefinieerd op een positie $x$, waarin $x$ de variabele is die de positie op de ligger beschrijft. De puntlast waarvoor de invloedslijnen worden bepaald wordt gedefinieerd op een positie $x = \bar x_F$. Deze methode is weergegeven in figuur {numref}`Figuur_19`.
+
+```{figure} figures/image19.png
+---
+width: 300
+name: Figuur_19
+align: center
+---
+Methode voor invloedslijnen met Macaulay  {cite:p}`jankie_2023`
+```
+
+Vervolgens kan de belastingvergelijking worden geïntegreerd naar $x$. Dit zal resulteren in vergelijkingen met onbekende reactiekrachten en integratieconstanten.
+
+De randvoorwaarden kunnen worden opgesteld. Deze worden gebruikt om de onbekende reactiekrachten en integratieconstanten uit de vergelijkingen op te lossen.
+
+Invullen van de gevonden waardes voor de onbekenden in de geïntegreerde belastingvergelijking resulteert in de gewenste functies. Deze functies hangen af van $x$ en $\bar x_F$. Waarin voor $x$ een positie op de ligger ingevuld kan worden en $\bar x_F$ de locatie van de puntlast beschrijft. Zo kan de invloed van een puntlast op locatie $\bar x_F$ op de staafeigenschappen op locatie $x$ worden bepaald.
+
+## Oplossen van geknikte, vertakte en gesloten constructies
+
+De Macaulay methode kan worden uitgebreid zodat het ook toepasbaar is op geknikte, vertakte en gesloten, constructies. De belangrijkste sterktepunten van het model zijn dat het systematisch en robuust is doordat het is gebaseerd op de principes van evenwicht en continuïteit, de snedekrachten en verplaatsingen van elk punt kunnen worden bepaald doordat de functie continue is en dat de oplossingsvoorwaarden geringer in tal en eenvoudiger zijn dan voor de traditionele integratiemethode.
+
+### Modelleren van knikken
+
+De belastingen worden in 2D anders gemodelleerd dan in 1D. De vergelijking voor elke belasting wordt voor elke knik aangepast waar de functie van $x$ langs gaat na het aangrijppunt van de belasting. De hoektermen zijn bepaald door te analyseren wat de invloed is van een hoek op de snedekrachtdiagrammen van een belasting.
+
+Voor elke kracht $j$ (voor elke $F_j$ en $q_j$ inclusing $H$, $V$ en $R$) wordt de belastingsvergelijking aangepast voor elke knik $i$ met $n$ het aantal knikken en met een bijbehorende hoek $\theta_i$. Daarbij zijn de locaties :
+
+```{math}
+:label: knikken
+\begin{align}
+&q_z \left( x\right) : &\sum\limits_{j}\sum\limits_{i}^{n} \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1} &\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
+&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1} &\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
+&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} &q_{v,j}  \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right) &\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
+&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} &q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right) &\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
+&q_x \left( x\right) : &\sum\limits_{j}\sum\limits_{i}^{n} \left(-\left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1}&\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right)  \right) \right) \\
+&                      &+\sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0}       &F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1}&\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
+&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left( -\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0}&q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)&\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \right) \\
+&                      &+ \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} &q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)&\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right)
+\end{align}
+```
+$$
+\begin{align}
+&q_z \left( x\right) : &\sum\limits_{j}\sum\limits_{i}^{n} \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1} &\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
+&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1} &\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
+&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} &q_{v,j}  \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right) &\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
+&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} &q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right) &\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
+&q_x \left( x\right) : &\sum\limits_{j}\sum\limits_{i}^{n} -\left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1}&\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right)  \right)  \\
+&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0}       &F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1}&\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
+&                      &+ \sum\limits_{j}\sum\limits_{i}^n -\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0}&q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)&\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
+&                      &+ \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} &q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)&\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right)
+\end{align}
+$$
+
+Een koppel heeft geen invloed op de normaal- en dwarskrachten. Verder blijft het buigend moment van een koppel onveranderd bij een knikpunt.
+
+Bij de normaal- en dwarskrachtenlijn van een puntlast ontstaat een sprong als de functie een hoekpunt passeert. Tegelijkertijd ontstaat er een knik in de momentenlijn als de functie een hoekpunt passeert. Deze sprong en knik ontstaan door de verandering van de projectie van de puntlast. 
+
+Bij de normaal- en dwarskrachtenlijn van een uniform verdeelde belasting ontstaat zowel een sprong als een knik als de functie een hoekpunt passeert. De knik ontstaat door de verandering van de projectie van de verdeelde belasting. De sprong daarentegen ontstaat door een verandering in de projectie van de arbitrale belasting vervangend puntlast.
+
+### Vertakte en gesloten constructies
 
 Met de tot nu toe in dit hoofdstuk verstreken informatie kunnen geknikte constructies worden gemodelleerd met de Macaulay methode. Voor vertakte en gesloten constructies bestaan er drie bijzondere punten met unieke eigenschappen. Dit zijn het knooppunt ($a_k$), sprongpunt ($a_s$) en aansluitpunt ($a_a$).
 
