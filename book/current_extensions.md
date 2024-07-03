@@ -691,10 +691,10 @@ Ook hier geldt dat als als de functie scharnierend aansluit op een knooppunt, de
 In {numref}`table_een` {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossingsvoorwaarden gelden voor starre onstructies als lokale afstand $\bar x$ de benoemde eigenschap voor 1D en 2D situaties.
 
 ````{div} full-width
-```{table} Onbekenden en vergelijkingen discontinuïteiten in 1d
+```{table} Belastingfunctie, vergelijkingen en onbekenden voor discontinuïteiten in 1D
 :name: table_een
 
-| Situatie op $\bar x$| Belastingsvergelijing | Vergelijkingen | Onbekenden | 
+| Situatie op $\bar x$| Belastingfunctie | Vergelijkingen | Onbekenden | 
 | ---  | --------------------- | --------------------- | -------------------- |
 | Beginpunt en eindpunt constructie | | $N\left(\bar x^-\right) = 0$ <br> $V\left(\bar x^-\right) = 0$ <br> $M\left(\bar x^-\right) = 0$ <br> $N\left(\bar x\right) = 0$ <br> $V\left(\bar x^+\right) = 0$ <br> $M\left(\bar x^+\right) = 0$ | Integratieconstantes $C_V$, $C_M$, $C_N$, $C_w$, $C_{\varphi}$, $C_u$  | 
 | Puntlast | $\begin{align*}&{{q_z\left(x\right) : F \left\langle x - \bar x \right\rangle^{- 1}}}&{{q_x\left(x\right) : F \left\langle x - \bar x \right\rangle^{- 1}}}\end{align*}$ | | |
@@ -709,10 +709,10 @@ In {numref}`table_een` {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschr
 ````
 
 ````{div} full-width
-```{table} Onbekenden en vergelijkingen discontinuïteiten in 2D
+```{table} Belastingfunctie, vergelijkingen en onbekenden voor discontinuïteiten in 2D
 :name: table_twee
 
-| Situatie op $\bar x$| Belastingsvergelijing | Vergelijkingen | Onbekenden | 
+| Situatie op $\bar x$| Belastingsfunctie | Vergelijkingen | Onbekenden | 
 | ---  | --------------------- | --------------------- | -------------------- |
 | Beginpunt en eindpunt constructie | | $N\left(\bar x^-\right) = 0$ <br> $V\left(\bar x^-\right) = 0$ <br> $M\left(\bar x^-\right) = 0$ <br> $N\left(\bar x\right) = 0$ <br> $V\left(\bar x^+\right) = 0$ <br> $M\left(\bar x^+\right) = 0$ | Integratieconstantes $C_V$, $C_M$, $C_N$, $C_w$, $C_{\varphi}$, $C_u$  | 
 | Puntlast | $\begin{align*} &q_z\left(x\right) : &F_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left(\bar x\right) \right) \\ &q_x\left(x\right) : &- F_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta\left(\bar x\right) \right) &+F_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left(\bar x\right) \right) \end{align*}$ | | |
