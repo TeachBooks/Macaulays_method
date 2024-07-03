@@ -116,6 +116,25 @@ Voor het modeleren van belastingen op de constructie wordt gebruik gemaakt van s
 
 Belastingen kunnen worden beschreven door de een singulariteitsfunctie van bijbehorende orde te vermenigvuldigen met de waarde van de kracht of verbinding. Naar aanleiding van het assenstelsel wordt een kracht positief of negatief gemodelleerd.
 
+### 4.1 Assenstelsel
+
+Het model maakt gebruik van een globaal en een lokaal assenstelsel. Het globale assenstelsel bestaat uit een horizontale en een verticale as waarbij de positieve richtingen naar rechts en naar beneden wijzen. Het lokale assenstelsel bestaat uit een $x$-as en een $z$-as. De positieve $x$-as wordt afgebeeld met een blauwe pijl zichtbaar in {numref}`Figuur_20`en de positieve $z$-as is altijd een kwartslag met de klok mee t.o.v. de positieve $x$-as.
+
+Alle belastingen werken langs de globale assen, verdeelde belastingen werken langs de lengte van de staaf (zoals eigengewicht) en hoeken worden gemeten van de positieve h-as naar de positieve x-as
+
+De externe krachten en de verplaatsingen worden globaal genoteerd en de snedekracht-diagrammen lokaal. Er zijn twee vergelijkingen die de lokale as volgen. $q_{z}(x)$ is voor de krachten loodrecht op de staaf en integreert naar de dwarskrachtenvergelijking, enz. en $q_{x}(x)$ is voor de krachten parallel aan de staaf en integreert naar de normaalkrachtenvergelijking, enz.
+
+Voor een constructie in 1D komen de lokale en globale assen overeen en hebebn alle staven dezelfde oriëntatie.
+
+```{figure} figures/image20_2.svg
+---
+width: 300
+name: Figuur_20
+align: center
+---
+Positieve assen in constructie  {cite:p}`alex_2024`
+```
+
 #### Puntlast
 Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft, wordt gemodelleerd zoals getoond in {eq}`puntlast_1d` en {eq}`puntlast_2d`.
 
@@ -418,9 +437,9 @@ De randvoorwaardes die hierbij worden geintroduceerd zijn bevatten de veerconsta
 ```{math}
 :label: verend_vergelijkingen
 \begin{align}
-&\varphi \left( \bar x \right) = &- \cfrac{T_{\text{veer}}}{K_M}\\
-&u_v \left(\bar x\right) = &- \cfrac{F_{\text{veer},v}}{K_V}\\
-&u_h \left(\bar x\right) = &- \cfrac{F_{\text{veer},h}}{K_N}
+&\varphi \left( \bar x \right) = - \cfrac{T_{\text{veer}}}{K_M}\\
+&u_v \left(\bar x\right) = - \cfrac{F_{\text{veer},v}}{K_V}\\
+&u_h \left(\bar x\right) = - \cfrac{F_{\text{veer},h}}{K_N}
 \end{align}
 ```
 
@@ -430,7 +449,7 @@ Een deels verende oplegging is natuurlijk ook mogelijk met het weglaten van de d
 Verende verbindingen worden gemodelleerd als de verbinding waar het om gaat met een andere 
 randvoorwaarde.
 
-In {numref}`Figuur_14`, numref}`Figuur_18` en {numref}`Figuur_13` is weergegeven hoe de verende verbindingen gemodelleerd kunnen worden.
+In {numref}`Figuur_14`, {numref}`Figuur_18` en {numref}`Figuur_13` is weergegeven hoe de verende verbindingen gemodelleerd kunnen worden.
 
 ```{figure} figures/image14.png
 ---
@@ -464,9 +483,9 @@ De veer wordt dus beschreven als een scharnier met krachten met een grootte van 
 ```{math}
 :label: schranier_verend_krachten
 \begin{align}
-$q_z\left(x\right) : $EI \ \Delta \varphi \left\langle x - \bar x \right\rangle^{- 3} $+ T_{\text{veer}} \left\langle x - \bar x \right\rangle^{- 2} \\
-&& EI \ \Delta u_z \left\langle x - \bar x \right\rangle^{- 4} $+ F_{\text{veer},V} \left\langle x - \bar x \right\rangle^{- 1}
-$q_x\left(x\right) : $EA \ \Delta u_x \left\langle x - \bar x \right\rangle^{- 2} $+ F_{\text{veer},N} \left\langle x - \bar x \right\rangle^{- 1} \\
+&q_z\left(x\right) : &EI \ \Delta \varphi \left\langle x - \bar x \right\rangle^{- 3} &+ T_{\text{veer}} \left\langle x - \bar x \right\rangle^{- 2} \\
+&& EI \ \Delta u_z \left\langle x - \bar x \right\rangle^{- 4} &+ F_{\text{veer},V} \left\langle x - \bar x \right\rangle^{- 1}
+&q_x\left(x\right) : &EA \ \Delta u_x \left\langle x - \bar x \right\rangle^{- 2} &+ F_{\text{veer},N} \left\langle x - \bar x \right\rangle^{- 1} \\
 \end{align}
 ```
 
@@ -509,32 +528,23 @@ Invullen van de gevonden waardes voor de onbekenden in de geïntegreerde belasti
 
 ## 4.  Oplossen van geknikte, vertakte en gesloten constructies
 
-De Macaulay methode kan worden uitgebreid zodat het ook toepasbaar is op tweedimensionale, inclusief geknikte, vertakte en gesloten, constructies. De belangrijkste sterktepunten van het model zijn dat het systematisch en robuust is doordat het is gebaseerd op de principes van evenwicht en continuïteit, de snedekrachten en verplaatsingen van elk punt kunnen worden bepaald doordat de functie continue is en dat de oplossingsvoorwaarden geringer in tal en eenvoudiger zijn dan voor de traditionele integratiemethode.
+De Macaulay methode kan worden uitgebreid zodat het ook toepasbaar is op geknikte, vertakte en gesloten, constructies. De belangrijkste sterktepunten van het model zijn dat het systematisch en robuust is doordat het is gebaseerd op de principes van evenwicht en continuïteit, de snedekrachten en verplaatsingen van elk punt kunnen worden bepaald doordat de functie continue is en dat de oplossingsvoorwaarden geringer in tal en eenvoudiger zijn dan voor de traditionele integratiemethode.
 
-### 4.1 Assenstelsel
+### 4.2 Modelleren van knikken
 
-Het model maakt gebruik van een globaal en een lokaal assenstelsel. Het globale assenstelsel bestaat uit een horizontale en een verticale as waarbij de positieve richtingen naar rechts en naar beneden wijzen. Het lokale assenstelsel bestaat uit een $x$-as en een $z$-as. De positieve $x$-as wordt afgebeeld met een blauwe pijl zichtbaar in {numref}`Figuur_20`en de positieve $z$-as is altijd een kwartslag met de klok mee t.o.v. de positieve $x$-as.
+De belastingen worden in 2D anders gemodelleerd dan in 1D. De vergelijking voor elke belasting wordt voor elke knik aangepast waar de functie van $x$ langs gaat na het aangrijppunt van de belasting. De hoektermen zijn bepaald door te analyseren wat de invloed is van een hoek op de snedekrachtdiagrammen van een belasting.
 
-Alle belastingen werken langs de globale assen, verdeelde belastingen werken langs de lengte van de staaf (zoals eigengewicht) en hoeken worden gemeten van de positieve h-as naar de positieve x-as
+Voor elke kracht $j$ (voor elke $F_j$ en $q_j$ inclusing $H$, $V$ en $R$) wordt de belastingsvergelijking aangepast voor elke knik $i$ met $n$ het aantal knikken en met een bijbehorende hoek $\theta_i$. Daarbij zijn de locaties :
 
-De externe krachten en de verplaatsingen worden globaal genoteerd en de snedekracht-diagrammen lokaal. Er zijn twee vergelijkingen die de lokale as volgen. $q_{z}(x)$ is voor de krachten loodrecht op de staaf en integreert naar de dwarskrachtenvergelijking, enz. en $q_{x}(x)$ is voor de krachten parallel aan de staaf en integreert naar de normaalkrachtenvergelijking, enz.
-
-```{figure} figures/image20_2.svg
----
-width: 300
-name: Figuur_20
-align: center
----
-Positieve assen in constructie  {cite:p}`alex_2024`
+```{math}
+:label: knikken
+\begin{align}
+&q_z \left( x\right) : &\sum\limits_{j}\sum\limits_{i}^{n} &\left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{v,j}  &\left\langle x - \bar x_i \right\rangle^{- 1} &\left( \cos\left( \theta \left( \bar x_i \right) \right) &- \cos\left( \theta \left( \bar x_{i-1}^- \right) \right)  \right) \\
+&&+ \sum\limits_{j}\sum\limits_{i}^n &\left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0}F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) $ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right)$ <br> $ \qquad + \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) $ <br> $ q_x \left( x\right) : \sum\limits_{j}\sum\limits_{i}^{n} \left(-\left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right)  \right) \right)$ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0}F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) $ <br> $\qquad + \sum\limits_{j}\sum\limits_{i}^n \left( -\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \right)$ <br> $ \qquad + \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right)
+\end{align}
 ```
 
-### 4.2 Modelleren van belastingen
-
-De belastingen worden in 2D anders gemodelleerd dan in 1D. Er wordt in het model onderscheid gemaakt tussen een scharnier ($\varphi_{s}$), koppel ($T$), horizontale en verticale puntlast ($F_{h}\ en\ F_{v}$) en horizontale en verticale gelijkmatig verdeelde belasting ($q_{h}\ en\ q_{v}$). De vergelijking voor elke belasting is anders voor $q_{z}(x)$ en $q_{x}(x)$ en bestaan telkens uit een beginterm voor het aangrijppunt van de belasting en een systematische reeks hoektermen voor elke hoek waar de functie van $x$ langs gaat na het aangrijppunt van de belasting. De beginterm is telkens vergelijkbaar met de term voor 1D en de hoektermen zijn bepaald door te analyseren wat de invloed is van een hoek op de snedekrachtdiagrammen van een belasting.
-
-In het volgende stuk is $\bar x$ de afstand langs de x-as tot het begin-/aangrijppunt van de belasting, de afstand langs de x-as tot hoekpunt $i$, $\theta$ de hoek van de positieve horizontale as naar de positieve x-as.
-
-#### Koppel
+#### Knik
 Een koppel heeft geen invloed op de normaal- en dwarskrachten. Verder blijft het buigend moment van een koppel onveranderd bij een knikpunt. Daarom volgen vgl. {eq}`vgl_Tqz` en {eq}`vgl_Tqx`.
 
 ```{math}
@@ -548,42 +558,11 @@ q_{x}(x) = 0
 ```
 
 #### Puntlast
-Bij de normaal- en dwarskrachtenlijn van een puntlast ontstaat een sprong als de functie een hoekpunt passeert. Tegelijkertijd ontstaat er een knik in de momentenlijn als de functie een hoekpunt passeert. Deze sprong en knik ontstaan door de verandering van de projectie van de puntlast. Daarom volgen vgl. {eq}`vgl_Fvqz` en {eq}`vgl_Fvqx`,
+Bij de normaal- en dwarskrachtenlijn van een puntlast ontstaat een sprong als de functie een hoekpunt passeert. Tegelijkertijd ontstaat er een knik in de momentenlijn als de functie een hoekpunt passeert. Deze sprong en knik ontstaan door de verandering van de projectie van de puntlast. 
 
-```{math}
-:label: vgl_Fvqz
-q_{z}\left(x\right) = F_{v}\left( \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) + \sum\limits_{i}^{n} \left\langle \bar x_i - \bar x \right\rangle^{0} \left\langle x - \bar x_{i} \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_{i} \right) \right) - \cos\left( \theta \left( \bar x_{i-1} \right) \right) \right) \right) + F_{h}\left( \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) + \sum\limits_{i}^{n} \left\langle \bar x_i - \bar x \right\rangle^{0} \left\langle x - \bar x_{i} \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_{i} \right) \right) - \sin\left( \theta \left( \bar x_{i-1} \right) \right) \right) \right)
-```
+Bij de normaal- en dwarskrachtenlijn van een uniform verdeelde belasting ontstaat zowel een sprong als een knik als de functie een hoekpunt passeert. De knik ontstaat door de verandering van de projectie van de verdeelde belasting. De sprong daarentegen ontstaat door een verandering in de projectie van de arbitrale belasting vervangend puntlast.
 
-```{math}
-:label: vgl_Fvqx
-q_{x}\left(x\right) = -F_{v}\left( \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) + \sum\limits_{i}^{n} \left\langle \bar x_i - \bar x \right\rangle^{0} \left\langle x - \bar x_{i} \right\rangle^{- 1}\left( \sin\left( \theta \left( \bar x_{i} \right) \right) - \sin\left( \theta \left( \bar x_{i-1} \right) \right) \right) \right) + F_{h}\left( \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) + \sum\limits_{i}^{n} \left\langle \bar x_i - \bar x \right\rangle^{0} \left\langle x - \bar x_{i} \right\rangle^{- 1}\left( \cos\left( \theta \left( \bar x_{i} \right) \right) - \cos\left( \theta \left( \bar x_{i-1} \right) \right) \right) \right)
-```
 
-Met $\bar x$ de locatie van de kracht, en $n$ het aantal knikken met voor elke knik $i$ een bijbehorende coordinaat $\bar x_i$ en hoek $\theta \left( \bar x_i \right)$.
-
-#### Gelijkmatig verdeelde belasting
-Bij de normaal- en dwarskrachtenlijn van een uniform verdeelde belasting ontstaat zowel een sprong als een knik als de functie een hoekpunt passeert. De knik ontstaat door de verandering van de projectie van de verdeelde belasting. De sprong daarentegen ontstaat door een verandering in de projectie van de arbitrale belasting vervangend puntlast. Daarom volgen vgl. {eq}`vgl_qvqz`, {eq}`vgl_qhqz`, {eq}`vgl_qvqx` en {eq}`vgl_qhqx`.
-
-```{math}
-:label: vgl_qvqz
-q_{z}(x) = q_{v}\left( \left\langle x - b \right\rangle^{0}\cos\left( \theta_{b} \right)\  + \sum_{}^{}\left( \left( {\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right);\ \ voor\ a_{i} > b
-```
-
-```{math}
-:label: vgl_qhqz
-q_{z}(x) = q_{h}\left( \left\langle x - b \right\rangle^{0}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ \ ;\ \ voor\ a_{i} > b
-```
-
-```{math}
-:label: vgl_qvqx
-q_{x}(x) = - q_{v}\left( \left\langle x - b \right\rangle^{0}\sin\left( \theta_{b} \right) + \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \sin\left( \theta_{i} \right) - \sin\left( \theta_{i - 1} \right) \right) \right) \right)\ \ ;\ \ voor\ a_{i} > b
-```
-
-```{math}
-:label: vgl_qhqx
-q_{x}(x) = q_{h}\left( \left\langle x - b \right\rangle^{0}\cos\left( \theta_{b} \right) + \sum_{}^{}\left( \left( {(\left\langle x - a_{i} \right\rangle}^{0} + \left\langle x - a_{i} \right\rangle^{- 1}\left( a_{i} - b \right) \right)\left( \cos\left( \theta_{i} \right) - \cos\left( \theta_{i - 1} \right) \right) \right) \right)\ \ ;\ \ voor\ a_{i} > b
-```
 
 
 ### 4.3 Vergelijking voor horizontale en verticale verplaatsingen
