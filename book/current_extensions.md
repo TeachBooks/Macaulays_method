@@ -573,7 +573,7 @@ De Macaulay methode kan worden uitgebreid zodat het ook toepasbaar is op geknikt
 
 De belastingen worden in 2D anders gemodelleerd dan in 1D. De vergelijking voor elke belasting wordt voor elke knik aangepast waar de functie van $x$ langs gaat na het aangrijppunt van de belasting. De hoektermen zijn bepaald door te analyseren wat de invloed is van een hoek op de snedekrachtdiagrammen van een belasting.
 
-Voor elk segment wordt een hoek bepaald, welke kunnen worden samengevoegd in $\theta \left( \bar x \right)$
+Voor elk segment wordt een hoek bepaald, welke kunnen worden samengevoegd in $\theta \left( \bar x \right)$.
 
 Voor elke kracht $j$ (voor elke $F_j$ en $q_j$ inclusief oplegreacties en krachten uit knooppunten) wordt de belastingsvergelijking aangepast voor elke knik $i$ met $n$ het aantal knikken en met een bijbehorende hoek $\theta \left( \bar x_i \right)$. Daarbij zijn de locaties :
 
