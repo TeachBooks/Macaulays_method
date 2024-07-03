@@ -226,7 +226,7 @@ Daarnaast introduceert een inklemming ook drie randvoorwaarden:
 ```
 
 #### Scharnier- en roloplegging
-Aangezien krachten in de richting van de staaf nog niet worden meegenomen, kunnen scharnier- en rolopleggingen op dezelfde manier worden gemodelleerd. In {numref}`Figuur_8` is weergegeven hoe een scharnieroplegging gemodelleerd kan worden.
+Aangezien krachten in de richting van de staaf nog niet worden meegenomen, kunnen scharnier- en rolopleggingen op dezelfde manier worden gemodelleerd. In {numref}`Figuur_8` en {numref}`Figuur_15` is weergegeven hoe een scharnieroplegging gemodelleerd kan worden.
 
 ```{figure} figures/image8.png
 ---
@@ -235,6 +235,15 @@ name: Figuur_8
 align: center
 ---
 Modelleren van en scharnieroplegging {cite:p}`vanderwulp_2023`
+```
+
+```{figure} figures/image15.png
+---
+width: 300
+name: Figuur_15
+align: center
+---
+Modelleren van een scharnieroplegging bij extensie {cite:p}`vanderwulp_2023`
 ```
 
 Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ met onbekende groottes $R_v$, $R_h$ en $T$ op punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft.
@@ -349,22 +358,14 @@ q_x\left(x\right) : EA \ \Delta u_x \left\langle x - \bar x \right\rangle^{- 2}
 Een telescoopscharnier introduceert ook een randvoorwaarde. Ter plaatse van het telescoopscharnier is de normaalkracht ($N$) gelijk aan $0$.
 
 ```{math}
-:label: schuifscharnier_vergelijking
+:label: telescoopscharnier_vergelijking
 N \left(\bar x\right) = 0
 ```
 
 #### Verende opleggingen
-Er zijn twee soorten verende opleggingen: verende opleggingen die verticale verplaatsing tegengaan en verende opleggingen die rotatie tegen gaan. In beide gevallen wordt de veer gemodelleerd als kracht ter plaatse van de oplegging in de belasting vergelijking.
+Er zijn twee soorten verende opleggingen: verende opleggingen die verplaatsing tegengaan en verende opleggingen die rotatie tegen gaan. In beide gevallen wordt de veer gemodelleerd als kracht ter plaatse van de oplegging in de belasting vergelijking.
 
-Een verende oplegging die verticale verplaatsing tegengaat wordt gemodelleerd als puntlast met een grote van $F_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $w(\bar x) = - \frac{F_{veer}}{K_{w}}.$
-
-Waarin $w \left(\bar x\right)$ de zakking is ter plaatse van $a$ en $K_{w}$ de veerconstante.
-
-Een verende oplegging die rotatie tegengaat wordt gemodelleerd als koppel met een grote van $M_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $\varphi(\bar x) = - \frac{M_{veer}}{K_{\varphi}}$
-
-Waarin $\varphi \left(\bar x\right)$ de rotatie is ter plaatse van $\bar x$ en $K_{\varphi}$ de veerconstante.
-
-In {numref}`Figuur_11` en {numref}`Figuur_12` is weergegeven hoe beide veren gemodelleerd kunnen worden.
+In {numref}`Figuur_11`, {numref}`Figuur_17` en {numref}`Figuur_12` is weergegeven hoe beide veren gemodelleerd kunnen worden.
 
 ```{figure} figures/image11.png
 ---
@@ -373,6 +374,15 @@ name: Figuur_11
 align: center
 ---
 Modelleren van een translerende verende oplegging {cite:p}`vanderwulp_2023`
+```
+
+```{figure} figures/image17.png
+---
+width: 300
+name: Figuur_17
+align: center
+---
+Modelleren van een verende scharnieroplegging bij extensie {cite:p}`vanderwulp_2023`
 ```
 
 ```{figure} figures/image12.png
@@ -384,15 +394,19 @@ align: center
 Modelleren van een roterende verende oplegging {cite:p}`vanderwulp_2023`
 ```
 
+Een verende oplegging die verticale verplaatsing tegengaat wordt gemodelleerd als puntlast met een grote van $F_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $w(\bar x) = - \frac{F_{veer}}{K_{w}}.$
+
+Waarin $w \left(\bar x\right)$ de zakking is ter plaatse van $a$ en $K_{w}$ de veerconstante.
+
+Een verende oplegging die rotatie tegengaat wordt gemodelleerd als koppel met een grote van $M_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $\varphi(\bar x) = - \frac{M_{veer}}{K_{\varphi}}$
+
+Waarin $\varphi \left(\bar x\right)$ de rotatie is ter plaatse van $\bar x$ en $K_{\varphi}$ de veerconstante.
+
 #### Verende verbindingen
 Verende verbindingen worden gemodelleerd als de verbinding waar het om gaat met een andere 
 randvoorwaarde.
 
-Voor verende scharnierverbindingen is dit: $M \left( \bar x \right) = K_\varphi \cdot \Delta \varphi$, met $M \left(\bar x \right)$ het moment ter plaatse van punt $\bar x$, $K_\varphi$ de veerconstante en $\Delta \varphi$ de rotatie van het scharnier.
-
-Voor verende schuifscharnieren is dit: $V(\bar x) = \ K_{w}  \ \Delta w$ , met $V(\bar x)$ de dwarskracht ter plaatse van punt $bar x$, $\ K_{w}$ de veerconstante en $\Delta w$ verplaatsing ter plaatse van het scharnier.
-
-In {numref}`Figuur_15` en {numref}`Figuur_14` is weergegeven hoe beide verende verbindingen gemodelleerd kunnen worden.
+In {numref}`Figuur_15`, numref}`Figuur_18` en {numref}`Figuur_14` is weergegeven hoe de verende verbindingen gemodelleerd kunnen worden.
 
 ```{figure} figures/image14.png
 ---
@@ -401,6 +415,15 @@ name: Figuur_14
 align: center
 ---
 Modelleren van een roterende verende verbinding {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
+```
+
+```{figure} figures/image18.png
+---
+width: 300
+name: Figuur_18
+align: center
+---
+Modelleren van verende telescoopscharnieren {cite:p}`vanderwulp_2023`
 ```
 
 ```{figure} figures/image13.png
@@ -412,77 +435,11 @@ align: center
 Modelleren van een translerende verende verbinding {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
 ```
 
-`ref`(hoofdstuk_2.3)
-### 2.3 Modelleren van opleggingen en verbindingen voor extensie
-In het hoofdstuk `ref`(hoofdstuk_2.2) Modelleren van opleggingen en verbindingen voor buiging is gekeken naar hoe opleggingen en verbindingen die spelen bij krachten loodrecht op de staaf en momenten gemodelleerd kunnen worden. In dit hoofdstuk zal gekeken worden hoe opleggingen en verbindingen gemodelleerd kunnen worden bij krachten evenwijdig aan de staaf.
+Voor verende scharnierverbindingen is dit: $M \left( \bar x \right) = K_\varphi \cdot \Delta \varphi$, met $M \left(\bar x \right)$ het moment ter plaatse van punt $\bar x$, $K_\varphi$ de veerconstante en $\Delta \varphi$ de rotatie van het scharnier.
 
-Belastingen kunnen bij extensie op dezelfde manier gemodelleerd worden als bij buiging.
-
-#### Opleggingen
-Bij krachten evenwijdig aan de staaf worden alleen opleggingen gemodelleerd die een oplegreactie kunnen hebben in die richting. Een inklemming en scharnieropleggingen kunnen altijd een oplegreactie in die richting hebben en worden dus altijd gemodelleerd. Een roloplegging wordt enkel gemodelleerd als de rol niet kan verplaatsen in de richting evenwijdig aan de staaf.
-
-De oplegreactie evenwijdig aan de staaf wordt gemodelleerd als puntlast. Bij de oplegging speelt een extra randvoorwaarde, namelijk dat de axiale verplaatsing $(u)$ gelijk is aan $0$.
-
-In {numref}`Figuur_15` is weergegeven hoe een scharnieropleggingen gemodelleerd kan worden. Voor andere opleggingen met een oplegreactie evenwijdig aan de staaf gaat dit op dezelfde manier.
-
-```{figure} figures/image15.png
----
-width: 300
-name: Figuur_15
-align: center
----
-Modelleren van een scharnieroplegging bij extensie {cite:p}`vanderwulp_2023`
-```
-
-#### Telescoopscharnieren
-Deze scharnieren hebben axiale verplaatsing als vrijheidsgraad. Dit geeft een sprong in de vergelijking voor axiale verplaatsing ter plaatse van het scharnier. Deze spong kan gemodelleerd worden met de Heaviside functie. Terug differentiëren naar de belastingvergelijking geeft dan een singulariteitsfunctie met orde $-2$.
-
-Het telescoopscharnier introduceert ook een extra randvoorwaarde. Ter plaatse van het telescoopscharnier is de normaalkracht $(N)$ gelijk aan $0$.
-
-In {numref}`Figuur_16` is weergegeven hoe een telescoopscharnier gemodelleerd kan worden.
-
-```{figure} figures/image16.png
----
-width: 300
-name: Figuur_16
-align: center
----
-Modelleren van telescoop scharnieren {cite:p}`vanderwulp_2023`
-```
-
-#### Verende opleggingen
-Net als gewone opleggingen bij normaalkracht worden verende opleggingen gemodelleerd met een puntlast. De randvoorwaarde die hierbij speelt veranderd.
-Een verende oplegging die axiale verplaatsing tegengaat wordt gemodelleerd als puntlast met een grote van $F_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $u(\bar x) = - \frac{F_{veer}}{K_{u}}.$
-
-Waarin $u(\bar x)$ de axiale verplaatsing is ter plaatse van $\bar x$ en $K_{u}$ de veerconstante.
-
-In {numref}`Figuur_17` is weergegeven hoe een verende scharnieropleggingen gemodelleerd kan worden. Andere verende opleggingen die axiale verplaatsing tegengaan kunnen op dezelfde manier worden gemodelleerd.
-
-```{figure} figures/image17.png
----
-width: 300
-name: Figuur_17
-align: center
----
-Modelleren van een verende scharnieroplegging bij extensie {cite:p}`vanderwulp_2023`
-```
-
-
-#### Verende verbinding
-Een telescoopscharnier kan verend gedrag hebben. Het kan dan gemodelleerd worden als verende verbinding. Hierbij wordt het scharnier nogsteeds gemodelleerd als singulariteitsfunctie van orde $-2$/ De randvoorwaarde verandert wel.
+Voor verende schuifscharnieren is dit: $V(\bar x) = \ K_{w}  \ \Delta w$ , met $V(\bar x)$ de dwarskracht ter plaatse van punt $bar x$, $\ K_{w}$ de veerconstante en $\Delta w$ verplaatsing ter plaatse van het scharnier.
 
 Voor verende telescoopscharnieren wordt deze randvoorwaarde: $N(\bar x) = \ K_{u} \ \Delta u$ , met $N\left( \bar x \right)$ de normaalkracht ter plaatse van punt $\bar x$, $\ K_{u}$ de veerconstante en $\Delta u$ de axiale verplaatsing in het scharnier.
-
-In {numref}`Figuur_18` is weergegeven hoe een verend telescoopscharnier gemodelleerd kan worden.
-
-```{figure} figures/image18.png
----
-width: 300
-name: Figuur_18
-align: center
----
-Modelleren van verende telescoopscharnieren {cite:p}`vanderwulp_2023`
-```
 
 ## 3.  Invloedslijnen met Macaulay
 
