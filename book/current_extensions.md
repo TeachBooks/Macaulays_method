@@ -568,22 +568,10 @@ De Macaulay methode kan worden uitgebreid zodat het ook toepasbaar is op geknikt
 
 De belastingen worden in 2D anders gemodelleerd dan in 1D. De vergelijking voor elke belasting wordt voor elke knik aangepast waar de functie van $x$ langs gaat na het aangrijppunt van de belasting. De hoektermen zijn bepaald door te analyseren wat de invloed is van een hoek op de snedekrachtdiagrammen van een belasting.
 
-Voor elke kracht $j$ (voor elke $F_j$ en $q_j$ inclusing $H$, $V$ en $R$) wordt de belastingsvergelijking aangepast voor elke knik $i$ met $n$ het aantal knikken en met een bijbehorende hoek $\theta_i$. Daarbij zijn de locaties :
+Voor elke kracht $j$ (voor elke $F_j$ en $q_j$ inclusief oplegreacties en krachten uit knooppunten) wordt de belastingsvergelijking aangepast voor elke knik $i$ met $n$ het aantal knikken en met een bijbehorende hoek $\theta_i$. Daarbij zijn de locaties :
 
 ```{math}
 :label: knikken
-\begin{align}
-&q_z \left( x\right) : &\sum\limits_{j}\sum\limits_{i}^{n} \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1} &\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
-&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1} &\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
-&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} &q_{v,j}  \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right) &\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
-&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} &q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right) &\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
-&q_x \left( x\right) : &\sum\limits_{j}\sum\limits_{i}^{n} \left(-\left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1}&\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right)  \right) \right) \\
-&                      &+\sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0}       &F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1}&\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
-&                      &+ \sum\limits_{j}\sum\limits_{i}^n \left( -\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0}&q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)&\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \right) \\
-&                      &+ \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} &q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)&\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right)
-\end{align}
-```
-$$
 \begin{align}
 &q_z \left( x\right) : &\sum\limits_{j}\sum\limits_{i}^{n} \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{v,j}  \left\langle x - \bar x_i \right\rangle^{- 1} &\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
 &                      &+ \sum\limits_{j}\sum\limits_{i}^n \left\langle \bar x_i - \bar x_{F_j} \right\rangle^{0} &F_{h,j}  \left\langle x - \bar x_i \right\rangle^{- 1} &\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
@@ -594,7 +582,7 @@ $$
 &                      &+ \sum\limits_{j}\sum\limits_{i}^n -\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0}&q_{v,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_i \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)&\left( \sin\left( \theta \left( \bar x_i \right) \right) - \sin\left( \theta \left( \bar x_{i-1}^- \right) \right) \right) \\
 &                      &+ \sum\limits_{j}\sum\limits_{i}^n\left\langle \bar x_i - \bar x_{q_j} \right\rangle^{0} &q_{h,j} \left( {\left\langle x - \bar x_i \right\rangle}^{0} + \left\langle x - \bar x_u \right\rangle^{- 1}\left( \bar x_i - \bar x_{q_j} \right) \right)&\left( \cos\left( \theta \left( \bar x_i \right) \right) - \cos\left( \theta \left( \bar x_{i-1}^- \right) \right) \right)
 \end{align}
-$$
+```
 
 Een koppel heeft geen invloed op de normaal- en dwarskrachten. Verder blijft het buigend moment van een koppel onveranderd bij een knikpunt.
 
@@ -625,31 +613,67 @@ Gesloten constructie {cite:p}`alex_2024`
 ```
 
 #### Knooppunt
-Het knooppunt is het punt waarbij de functie van $x$ voor het eerst langs een knoop gaat (zoals pijl 1 op knoop B in {numref}`Figuur_vertakt`). Op $a_k$ moet voor elke staaf $IJ$ waarnaar de functie niet direct de weg vervolgd drie onbekende krachten worden toegevoegd $V^{IJ}$, $H^{IJ}$ en $T^{IJ}$. Hierin vertegenwoordigd $V^{IJ}$ de verticale kracht, $H^{IJ}$ de horizontale kracht en $T^{IJ}$ de koppel voortkomend uit staaf $IJ$ werkend op knoop $I$.
+Het knooppunt $\bar x_1$ is het punt waarbij de functie van $x$ voor het eerst langs een knoop gaat (zoals pijl 1 op knoop B in {numref}`Figuur_vertakt`). Op $\bar x_1$ moet voor elke staaf waarnaar de functie niet direct de weg vervolgd drie onbekende krachten worden toegevoegd. De formules voor deze krachten volgen bij het hieropvolgende sprongpunt en aansluitpunt.
 
 #### Sprongpunt
-Het sprongpunt, (zie {numref}`Figuur_sprongpunt`) is het punt waar de functie van $x$ in het globale assenstelsel een sprong maakt van punt $I$, wat een uiteinde of afsluiting is van een vertakking, naar punt $J$, wat een knoop is waar de functie van $x$ al eerder langs is geweest (zoals van punt C naar knoop B in figuur {numref}`Figuur_vertakt`). In het lokale assenstelsel verloopt de functie echter continue. Belastingen werkende op punt $I$ moeten gemodelleerd worden op $a_s^-$ en op punt $J$ op $a_s^+$. Op $a_s^+$ moeten ook de onbekende krachten $-V^{JK}$, $-H^{JK}$ en $-T^{JK}$ worden toegevoegd voor staaf $JK$ waarnaar de functie na de sprong de weg vervolgd. Verder moeten op $a_s^+$ de sprongconstanten $\varphi^{IJ}$, $u_z^{IJ}$ en $u_x^{IJ}$ toegevoegd worden voor de sprong in vervormingen tussen punt $I$ en $J$. Deze worden als volgt gemodelleerd:
+Het sprongpunt, (zie {numref}`Figuur_sprongpunt`) is het punt waar de functie van $x$ in het globale assenstelsel een sprong maakt van punt $\bar x_\text{sprong}$, wat een uiteinde of afsluiting is van een vertakking, naar punt $\bar x_2$, wat een knoop is waar de functie van $x$ al eerder langs is geweest (op $\bar x_1$). Een voorbeeld is van punt C naar knoop B in figuur {numref}`Figuur_vertakt`. In het lokale assenstelsel verloopt de functie echter continue.
+
+Op $\bar x_1$ moeten de onbekende krachten $\delta V$, $\delta H$ en $\Delta T$ worden toegevoegd waarnaar de functie na de sprong de weg vervolgd. Op $\bar x_2$ moeten dezelfde krachten weer worden afgetrokken. Verder moeten op $\bar x_2$ de sprongconstanten $\Delta \varphi$, $\Delta u_z$ en $\Delta u_x$ toegevoegd worden voor de sprong in vervormingen tussen punt $\bar x_\text{sprong}$ en $\bar x_2$. Deze worden als volgt gemodelleerd:
 
 ```{math}
-:label: vgl_sprong_phi_uz
-$q_z\left(x\right)=EI\varphi^{ij}x-as+-3+EIuzijx-as+-4$
-```
-```{math}
-:label: vgl_sprong_ux
-$q_x\left(x\right)=EAu_x^{ij}x-as+-2$
+:label: vgl_sprong_belasting
+\begin{align}
+&q_z\left(x\right) : &\Delta V \left\langle x - \bar x_1  \right\rangle^{- 1}\cos\left( \theta \left( \bar x_1 \right) \right) &- \Delta V \left\langle x - \bar x_2  \right\rangle^{- 1}\cos\left( \theta \left( \bar x_2 \right) \right) \\
+&                 & + \Delta H\left\langle x - \bar x_1 \right\rangle^{- 1}\sin\left( \theta \left( \bar x_1 \right) \right)        &- \Delta H\left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x_2 \right) \right) \\
+&                 & +\Delta T \left\langle x - \bar x_1 \right\rangle^{- 2}  &- \Delta T \left\langle x - \bar x_2 \right\rangle^{- 2} \\
+&                 &+EI \Delta \varphi \left\langle x - \bar x_2 \right\rangle^{- 3} &+ EI \Delta u_z \left\langle x - \bar x_3 \right\rangle^{- 4} \\
+&q_x\left(x\right) : &-\Delta V \left\langle x - \bar x_1  \right\rangle^{- 1}\sin\left( \theta \left( \bar x_1 \right) \right) &+ \Delta V \left\langle x - \bar x_2  \right\rangle^{- 1}\sin\left( \theta \left( \bar x_2 \right) \right)\\
+&                  & + \Delta H\left\langle x - \bar x_1 \right\rangle^{- 1}\cos\left( \theta \left( \bar x_1 \right) \right)  &- \Delta H\left\langle x - \bar x_2 \right\rangle^{- 1}\cos\left( \theta \left( \bar x_2 \right) \right) \\
+&                  &&+ EI \Delta u_x \left\langle x - \bar x_2 \right\rangle^{- 2}
+\end{align}
 ```
 
-```{figure} figures/sprongpunt.svg
----
-width: 300
-name: Figuur_sprongpunt
-align: center
----
-Modelleren van een sprongpunt {cite:p}`alex_2024`
+De onbekenden kunnen worden opgelost met de volgende vergelijkingen:
+
+```{math}
+:label: vgl_sprong_vergelijkingen
+N\left(\bar x_\text{sprong}^{+}\right) = 0 \\
+V\left(\bar x_\text{sprong}^{+}\right) = 0 \\
+M\left(\bar x_\text{sprong}^{+}\right) = 0 \\
+\varphi\left( \bar x_1 \right) = \varphi \left( \bar x_2 \right) \\
+u_v\left( \bar x_1 \right) = u_v \left( \bar x_2 \right) \\
+u_h\left( \bar x_1 \right) = u_h \left( \bar x_2 \right)
 ```
+
+Als de functie springt naar een scharnierend verbonden staaf op een knooppunt, dan kunnen de oplosvergelijkingen voor de hoekverdraaiing weggelaten worden. Er hoeven dan ook geen alternatieve voorwaarden worden gesteld.
 
 #### Aansluitpunt
-Het aansluitpunt is het punt waarbij de functie van x opnieuw langs een knoop gaat (zoals knoop B vanuit punt E in figuur {numref}`Figuur_gesloten`). $Op a_a^-$ moeten de drie onbekende krachten $-V^{IJ}$, ${-H}^{IJ}$ en $-T^{IJ}$ voor de staaf $IJ$  dat aansluit op punt $I$. Het aansluitpunt kan het einde zijn van de functie, maar de functie kan ook direct de weg vervolgen of een sprong maken. In dat geval gelden dezelfde regels als voor het sprongpunt (met of zonder sprongconstanten voor weg vervolgen of sprong maken)
+Het aansluitpunt is het punt waarbij de functie van $x$ opnieuw langs een knoop gaat (zoals knoop B vanuit punt E in figuur {numref}`Figuur_gesloten`). Dezelfde vergelijkingen als voor een sprongpunt gelden, waarbij $\Delta \varphi$, $\Delta u_z$ en $\Delta u_x$ weg kunnen worden gelaten. Ditmaal is $\bar x_1$ de eerste keer dat de functie langs de knoop komt en $\bar x_2$ de twee keer:
+
+```{math}
+:label: vgl_aansluit_belasting
+\begin{align}
+&q_z\left(x\right) : &\Delta V \left\langle x - \bar x_1  \right\rangle^{- 1}\cos\left( \theta \left( \bar x_1 \right) \right) &- \Delta V \left\langle x - \bar x_2  \right\rangle^{- 1}\cos\left( \theta \left( \bar x_2 \right) \right) \\
+&                 & + \Delta H\left\langle x - \bar x_1 \right\rangle^{- 1}\sin\left( \theta \left( \bar x_1 \right) \right)        &- \Delta H\left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x_2 \right) \right) \\
+&                 & +\Delta T \left\langle x - \bar x_1 \right\rangle^{- 2}  &- \Delta T \left\langle x - \bar x_2 \right\rangle^{- 2} \\
+&q_x\left(x\right) : &-\Delta V \left\langle x - \bar x_1  \right\rangle^{- 1}\sin\left( \theta \left( \bar x_1 \right) \right) &+ \Delta V \left\langle x - \bar x_2  \right\rangle^{- 1}\sin\left( \theta \left( \bar x_2 \right) \right)\\
+&                  & + \Delta H\left\langle x - \bar x_1 \right\rangle^{- 1}\cos\left( \theta \left( \bar x_1 \right) \right)  &- \Delta H\left\langle x - \bar x_2 \right\rangle^{- 1}\cos\left( \theta \left( \bar x_2 \right) \right) \\
+\end{align}
+```
+
+De onbekenden kunnen worden opgelost met de volgende vergelijkingen:
+
+```{math}
+:label: vgl_aansluit_vergelijkingen
+N\left(\bar x_\text{sprong}^{+}\right) = 0 \\
+V\left(\bar x_\text{sprong}^{+}\right) = 0 \\
+M\left(\bar x_\text{sprong}^{+}\right) = 0 \\
+\varphi\left( \bar x_1 \right) = \varphi \left( \bar x_2 \right) \\
+u_v\left( \bar x_1 \right) = u_v \left( \bar x_2 \right) \\
+u_h\left( \bar x_1 \right) = u_h \left( \bar x_2 \right)
+```
+
+Ook hier geldt dat als als de functie scharnierend aansluit op een knooppunt, de oplosvergelijkingen voor de hoekverdraaiing weggelaten kunnen worden. Er hoeven dan ook geen alternatieve voorwaarden worden gesteld.
 
 ## Overzicht modellering discontinuïteiten
 
@@ -680,7 +704,3 @@ In {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschreven welke oplossing
 
 ```
 ````
-
-
-
-Als de functie springt naar een scharnierend verbonden staaf of scharnierend aansluit op een knooppunt, dan kunnen de oplosvergelijkingen voor de hoekverdraaiing weggelaten worden. Er hoeven dan ook geen alternatieve voorwaarden worden gesteld.
