@@ -164,8 +164,10 @@ Dit kan beschreven worden met singulariteitsfuncties met groottes $q_v$ en $q_h$
 
 ```{math}
 :label: Verveelde_belasting_1D
-&q_z\left(x\right)= &q_v \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_v\left\langle x - \bar x_2 \right\rangle^{- 1}
+\begin{align}
+&q_z\left(x\right)= &q_v \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_v\left\langle x - \bar x_2 \right\rangle^{- 1} \\
 &q_z\left(x\right)= &q_h \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_h\left\langle x - \bar x_2 \right\rangle^{- 1}
+\end{align}
 ```
 
 ```{math}
@@ -247,7 +249,8 @@ Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ met onbekend
 ```{math}
 :label: scharnieropl_2d_krachten
 \begin{align}
-&q_z\left(x\right) : &R_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) &+ R_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) : &R_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) &- R_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right)
+&q_z\left(x\right) : &R_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) &+ R_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) \\
+&q_x\left(x\right): &R_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) &- R_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right)
 \end{align}
 ```
 
@@ -277,11 +280,11 @@ align: center
 Modelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
 ```
 
-Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ en $-2$ met onbekende grootte $\Delta \varphi$ op punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft.
+Dit kan beschreven worden met singulariteitsfuncties met orde $-3$ met onbekende grootte $\Delta \varphi$ op punt $\bar x$:
 
 ```{math}
 :label: schranier_krachten
-&q_z\left(x\right) : &EI \ \Delta \varphi \left\langle x - \bar x \right\rangle^{- 3}
+q_z\left(x\right) : EI \ \Delta \varphi \left\langle x - \bar x \right\rangle^{- 3}
 ```
 
 Een scharnier introduceert ook een randvoorwaarde. Ter plaatse van het scharnier is het moment ($M$) gelijk aan $0$.
@@ -293,9 +296,9 @@ M \left(\bar x\right) = 0
 
 
 #### Schuifscharnier
-Schuifscharnieren in een constructie kunnen worden beschreven met singulariteitsfuncties van orde $-4$. Zoals roterende scharnieren een sprong geven in de krommingslijn, geven schuifscharnieren een sprong in de doorbuigingslijn. Hieruit volgt dat schuifscharnieren in de belasting vergelijking beschreven worden met een singulariteitsfunctie van orde $-4$. Een schuifscharnier gelegen op punt $\bar x$ wordt gemodelleerd als $EI\ \Delta w{< x - \bar x >}^{- 4}$. Met $\Delta w$ de grote van de sprong in de doorbuigingslijn.
+Schuifscharnieren in een constructie kunnen worden beschreven met singulariteitsfuncties van orde $-4$. Zoals roterende scharnieren een sprong geven in de krommingslijn, geven schuifscharnieren een sprong in de doorbuigingslijn. Hieruit volgt dat schuifscharnieren in de belasting vergelijking beschreven worden met een singulariteitsfunctie van orde $-4$. 
 
-Een schuifscharnier introduceert ook een randvoorwaarde. Ter plaatse van het schuifscharnier is de dwarskracht ($V$) gelijk aan $0$.
+
 
 In {numref}`Figuur_10` is weergegeven hoe een schuifscharnier gemodelleerd kan worden.
 
@@ -308,6 +311,47 @@ align: center
 Modelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
 ```
 
+Dit kan beschreven worden met singulariteitsfuncties met ordes $-4$ met onbekende grootte $\Delta u_z$ op punt $\bar x$:
+
+```{math}
+:label: schuifscharnier_krachten
+q_z\left(x\right) : EI \ \Delta u_z \left\langle x - \bar x \right\rangle^{- 4}
+```
+
+Een schuifscharnier introduceert ook een randvoorwaarde. Ter plaatse van het schuifscharnier is de dwarskracht ($V$) gelijk aan $0$.
+
+```{math}
+:label: schuifscharnier_vergelijking
+V \left(\bar x\right) = 0
+```
+
+#### Telescoopscharnieren
+Deze scharnieren hebben axiale verplaatsing als vrijheidsgraad. Dit geeft een sprong in de vergelijking voor axiale verplaatsing ter plaatse van het scharnier. Deze spong kan gemodelleerd worden met de Heaviside functie. Terug differentiëren naar de belastingvergelijking geeft dan een singulariteitsfunctie met orde $-2$.
+
+In {numref}`Figuur_16` is weergegeven hoe een telescoopscharnier gemodelleerd kan worden.
+
+```{figure} figures/image16.png
+---
+width: 300
+name: Figuur_16
+align: center
+---
+Modelleren van telescoop scharnieren {cite:p}`vanderwulp_2023`
+```
+
+Dit kan beschreven worden met singulariteitsfuncties met ordes $-2$ met onbekende grootte $\Delta u_x$ op punt $\bar x$:
+
+```{math}
+:label: telescoopscharnier_krachten
+q_x\left(x\right) : EA \ \Delta u_x \left\langle x - \bar x \right\rangle^{- 2}
+```
+
+Een telescoopscharnier introduceert ook een randvoorwaarde. Ter plaatse van het telescoopscharnier is de normaalkracht ($N$) gelijk aan $0$.
+
+```{math}
+:label: schuifscharnier_vergelijking
+N \left(\bar x\right) = 0
+```
 
 #### Verende opleggingen
 Er zijn twee soorten verende opleggingen: verende opleggingen die verticale verplaatsing tegengaan en verende opleggingen die rotatie tegen gaan. In beide gevallen wordt de veer gemodelleerd als kracht ter plaatse van de oplegging in de belasting vergelijking.
