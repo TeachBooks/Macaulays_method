@@ -118,7 +118,7 @@ Alle belastingen werken langs de globale assen, verdeelde belastingen werken lan
 
 De externe krachten en de verplaatsingen worden globaal genoteerd en de snedekracht-diagrammen lokaal. Er zijn twee vergelijkingen die de lokale as volgen. $q_{z}(x)$ is voor de krachten loodrecht op de staaf en integreert naar de dwarskrachtenvergelijking, enz. en $q_{x}(x)$ is voor de krachten parallel aan de staaf en integreert naar de normaalkrachtenvergelijking, enz.
 
-Voor een constructie in 1D komen de lokale en globale assen overeen en hebebn alle staven dezelfde oriëntatie.
+Voor een constructie in 1D komen de lokale en globale assen overeen en hebben alle staven dezelfde oriëntatie.
 
 ```{figure} figures/image20_2.svg
 ---
@@ -126,7 +126,7 @@ width: 300
 name: Figuur_20
 align: center
 ---
-Positieve assen in constructie  {cite:p}`alex_2024`
+Positieve assen in 2D constructie {cite:p}`alex_2024`
 ```
 
 ### Modelleren van belastingen
@@ -573,7 +573,9 @@ De Macaulay methode kan worden uitgebreid zodat het ook toepasbaar is op geknikt
 
 De belastingen worden in 2D anders gemodelleerd dan in 1D. De vergelijking voor elke belasting wordt voor elke knik aangepast waar de functie van $x$ langs gaat na het aangrijppunt van de belasting. De hoektermen zijn bepaald door te analyseren wat de invloed is van een hoek op de snedekrachtdiagrammen van een belasting.
 
-Voor elke kracht $j$ (voor elke $F_j$ en $q_j$ inclusief oplegreacties en krachten uit knooppunten) wordt de belastingsvergelijking aangepast voor elke knik $i$ met $n$ het aantal knikken en met een bijbehorende hoek $\theta_i$. Daarbij zijn de locaties :
+Voor elk segment wordt een hoek bepaald, welke kunnen worden samengevoegd in $\theta \left( \bar x \right)$
+
+Voor elke kracht $j$ (voor elke $F_j$ en $q_j$ inclusief oplegreacties en krachten uit knooppunten) wordt de belastingsvergelijking aangepast voor elke knik $i$ met $n$ het aantal knikken en met een bijbehorende hoek $\theta \left( \bar x_i \right)$. Daarbij zijn de locaties :
 
 ```{math}
 :label: knikken
