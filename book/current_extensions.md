@@ -409,7 +409,7 @@ Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ en $-2$ met 
 ```{math}
 :label:  verend_2d_krachten
 \begin{align}
-&q_z\left(x\right) : &F_{\text{veer},h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) &+ F_{\text{veer},v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) &+ T_{\text{veer}}_left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right) : &R_{\text{veer},h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) &- R_{\text{veer},v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right)
+&q_z\left(x\right) : &F_{\text{veer},h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) &+ F_{\text{veer},v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) &+ T_{\text{veer}} \left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right) : &R_{\text{veer},h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) &- R_{\text{veer},v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right)
 \end{align}
 ```
 
@@ -418,9 +418,9 @@ De randvoorwaardes die hierbij worden geintroduceerd zijn bevatten de veerconsta
 ```{math}
 :label: verend_vergelijkingen
 \begin{align}
-&\varphi \left( \bar x \right) = $- \cfrac{T_{\text{veer}}}{K_M}\\
-&u_v \left(\bar x\right) = $- \cfrac{F_{\text{veer},v}}{K_V}\\
-&u_h \left(\bar x\right) = $- \cfrac{F_{\text{veer},h}}{K_N}
+&\varphi \left( \bar x \right) = &- \cfrac{T_{\text{veer}}}{K_M}\\
+&u_v \left(\bar x\right) = &- \cfrac{F_{\text{veer},v}}{K_V}\\
+&u_h \left(\bar x\right) = &- \cfrac{F_{\text{veer},h}}{K_N}
 \end{align}
 ```
 
@@ -459,7 +459,7 @@ align: center
 Modelleren van een translerende verende verbinding {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
 ```
 
-De veer wordt dus beschreven als een scharnier met krachten met een grootte van $F_{\text{veer},V}$, $F_{\text{veer},N}$, $T_{\text{veer}}. Dit kan beschreven worden met singulariteitsfuncties met orde $-3$ met onbekende grootte $\Delta \varphi$, $\Delta u_z$, $\Delta u_x$ op punt $\bar x$ in 1D:
+De veer wordt dus beschreven als een scharnier met krachten met een grootte van $F_{\text{veer},V}$, $F_{\text{veer},N}$, $T_{\text{veer}}$. Dit kan beschreven worden met singulariteitsfuncties met orde $-3$ met onbekende grootte $\Delta \varphi$, $\Delta u_z$, $\Delta u_x$ op punt $\bar x$ in 1D:
 
 ```{math}
 :label: schranier_verend_krachten
@@ -467,6 +467,7 @@ De veer wordt dus beschreven als een scharnier met krachten met een grootte van 
 $q_z\left(x\right) : $EI \ \Delta \varphi \left\langle x - \bar x \right\rangle^{- 3} $+ T_{\text{veer}} \left\langle x - \bar x \right\rangle^{- 2} \\
 && EI \ \Delta u_z \left\langle x - \bar x \right\rangle^{- 4} $+ F_{\text{veer},V} \left\langle x - \bar x \right\rangle^{- 1}
 $q_x\left(x\right) : $EA \ \Delta u_x \left\langle x - \bar x \right\rangle^{- 2} $+ F_{\text{veer},N} \left\langle x - \bar x \right\rangle^{- 1} \\
+\end{align}
 ```
 
 In 2D worden de reactiekrachten berekend in het lokale assenstelsel maar moeten deze worden omgeschreven naar het globale assenstelsel in de belastingsvergelijking.
@@ -476,11 +477,13 @@ De bijbhorende voorwaardes zijn dan als volgt:
 ```{math}
 :label: scharnier_vervend_vergelijking
 \begin{align}
-&M \left(\bar x\right) = &T_{\text{veer}} = &-K_M \cdot \Delta \varphi
-&V \left(\bar x\right) = &F_{\text{veer},V} = &-K_V \cdot \Delta u_z
+&M \left(\bar x\right) = &T_{\text{veer}} = &-K_M \cdot \Delta \varphi \\
+&V \left(\bar x\right) = &F_{\text{veer},V} = &-K_V \cdot \Delta u_z \\
 &N \left(\bar x\right) = &F_{\text{veer},N} = &-K_N \cdot \Delta u_x
 \end{align}
 ```
+
+Ook hier is een deels verende verbinding is natuurlijk ook mogelijk met het weglaten van de desbetreffende termen.
 
 ## 3.  Invloedslijnen met Macaulay
 
