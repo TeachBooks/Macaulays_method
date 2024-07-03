@@ -19,6 +19,7 @@ in SymPy.
 {cite:ts}`mark_2024`
 
 ## Documenten
+- [TU Delft Education repository](https://repository.tudelft.nl/record/uuid:73518fcb-e2a6-4b63-9c6c-22607e11ebe9)
 - [GitHub repository old code](https://github.com/mvg2002/BEP_examples_SymPy_1.12), also shown in this book
 - [GitHub repository new code](https://github.com/mvg2002/BEP_examples_SymPy_1.14.dev), also shown in this book
 - [GitHub respoitory other example](https://github.com/mvg2002/Beam-examples), also shown in this book

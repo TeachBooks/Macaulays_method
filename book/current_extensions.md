@@ -117,12 +117,14 @@ Voor het modeleren van belastingen op de constructie wordt gebruik gemaakt van s
 Belastingen kunnen worden beschreven door de een singulariteitsfunctie van bijbehorende orde te vermenigvuldigen met de waarde van de kracht of verbinding. Naar aanleiding van het assenstelsel wordt een kracht positief of negatief gemodelleerd.
 
 #### Puntlast
-Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft, wordt gemodelleerd zoals getoond in {eq}`puntlast_1d` en {eq}`puntlast_2d`. In 2d wordt de kracht ontbonden in de langs- en loodrechte richting:
+Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast kan gemodelleerd worden met de Dirac-delta functie. Een puntlast met een waarde $F$, ter plaatse van punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft, wordt gemodelleerd zoals getoond in {eq}`puntlast_1d` en {eq}`puntlast_2d`.
 
 ```{math}
 :label: puntlast_1d
 {{q\left(x\right) : F \left\langle x - \bar x \right\rangle^{- 1}}}
 ```
+
+In 2d wordt de kracht ontbonden in de langs- en loodrechte richting:
 
 ```{math}
 :label: puntlast_2d
@@ -133,7 +135,7 @@ Een puntlast geeft belasting op een enkele plek in de constructie. Een puntlast 
 ```
 
 #### Koppel
-Een koppel werkt ook op een enkel punt in de constructie. Een koppel wordt beschreven door de orde $-2$ in de krachtenvergelijking van de loodrechte richting aangezien dit koppel geen invloed heeft op de langsrichting. Een koppel met waarde $T$ ter plaatse van punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft, wordt als volgt gemodelleerd.
+Een koppel werkt ook op een enkel punt in de constructie. Een koppel wordt beschreven door de orde $-2$ in de krachtenvergelijking van de loodrechte richting aangezien dit koppel geen invloed heeft op de langsrichting. Een koppel met waarde $T$ ter plaatse van punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft, wordt als volgt gemodelleerd in 1D en 2D:
 
 ```{math}
 :label: koppel_1d
@@ -160,7 +162,7 @@ align: center
 Modelleren van een uniform verdeelde belasting {cite:p}`vanderwulp_2023`
 ```
 
-Dit kan beschreven worden met singulariteitsfuncties met groottes $q_v$ en $q_h$ van punt $\bar x_1$ tot $x_2$ waarbij de staaf een hoek $\theta \left( \bar x_1 \right)$ en $\theta \left( \bar x_2 \right)$ heeft.
+Dit kan beschreven worden met singulariteitsfuncties met groottes $q_v$ en $q_h$ van punt $\bar x_1$ tot $x_2$ waarbij de staaf een hoek $\theta \left( \bar x_1 \right)$ en $\theta \left( \bar x_2 \right)$ heeft in 1D en 2D:
 
 ```{math}
 :label: Verveelde_belasting_1D
@@ -198,7 +200,7 @@ align: center
 Modelleren van een inklemming {cite:p}`vanderwulp_2023`
 ```
 
-Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ en $-2$ met onbekende groottes $R_v$, $R_h$ en $T$ op punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft.
+Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ en $-2$ met onbekende groottes $R_v$, $R_h$ en $T$ op punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft in 1D en 2D:
 
 ```{math}
 :label: inklemming_1d_krachten
@@ -246,7 +248,7 @@ align: center
 Modelleren van een scharnieroplegging bij extensie {cite:p}`vanderwulp_2023`
 ```
 
-Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ met onbekende groottes $R_v$, $R_h$ en $T$ op punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft.
+Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ met onbekende groottes $R_v$, $R_h$ en $T$ op punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft in 1D en 2D:
 
 ```{math}
 :label: schranieropl_1d_krachten
@@ -289,7 +291,7 @@ align: center
 Modelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
 ```
 
-Dit kan beschreven worden met singulariteitsfuncties met orde $-3$ met onbekende grootte $\Delta \varphi$ op punt $\bar x$:
+Dit kan beschreven worden met singulariteitsfuncties met orde $-3$ met onbekende grootte $\Delta \varphi$ op punt $\bar x$ in zowel 1D als 2D met dezelfde vergelijking:
 
 ```{math}
 :label: schranier_krachten
@@ -306,8 +308,6 @@ M \left(\bar x\right) = 0
 
 #### Schuifscharnier
 Schuifscharnieren in een constructie kunnen worden beschreven met singulariteitsfuncties van orde $-4$. Zoals roterende scharnieren een sprong geven in de krommingslijn, geven schuifscharnieren een sprong in de doorbuigingslijn. Hieruit volgt dat schuifscharnieren in de belasting vergelijking beschreven worden met een singulariteitsfunctie van orde $-4$. 
-
-
 
 In {numref}`Figuur_10` is weergegeven hoe een schuifscharnier gemodelleerd kan worden.
 
@@ -365,7 +365,7 @@ N \left(\bar x\right) = 0
 #### Verende opleggingen
 Er zijn twee soorten verende opleggingen: verende opleggingen die verplaatsing tegengaan en verende opleggingen die rotatie tegen gaan. In beide gevallen wordt de veer gemodelleerd als kracht ter plaatse van de oplegging in de belasting vergelijking.
 
-In {numref}`Figuur_11`, {numref}`Figuur_17` en {numref}`Figuur_12` is weergegeven hoe beide veren gemodelleerd kunnen worden.
+In {numref}`Figuur_11`, {numref}`Figuur_17` en {numref}`Figuur_12` is weergegeven hoe de veren gemodelleerd kunnen worden.
 
 ```{figure} figures/image11.png
 ---
@@ -394,19 +394,43 @@ align: center
 Modelleren van een roterende verende oplegging {cite:p}`vanderwulp_2023`
 ```
 
-Een verende oplegging die verticale verplaatsing tegengaat wordt gemodelleerd als puntlast met een grote van $F_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $w(\bar x) = - \frac{F_{veer}}{K_{w}}.$
+Een verende oplegging in alle richtingen die verticale verplaatsing tegengaat wordt gemodelleerd als puntlast met een grootte van $F_{\text{veer},v}$, $F_{\text{veer},h}$, $T_{\text{veer}}$. 
 
-Waarin $w \left(\bar x\right)$ de zakking is ter plaatse van $a$ en $K_{w}$ de veerconstante.
+Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ en $-2$ met onbekende groottes $R_v$, $R_h$ en $T$ op punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft in 1D en 2D:
 
-Een verende oplegging die rotatie tegengaat wordt gemodelleerd als koppel met een grote van $M_{veer}$. De randvoorwaarde die hier wordt geïntroduceerd is: $\varphi(\bar x) = - \frac{M_{veer}}{K_{\varphi}}$
+```{math}
+:label: verend_1d_krachten
+\begin{align}
+&q_z\left(x\right) : &F_{\text{veer},v} \left\langle x - \bar x \right\rangle^{- 1} &+ T_{\text{veer}} \left\langle x - \bar x \right\rangle^{- 2} \\
+&q_x\left(x\right) : &F_{\text{veer},h} \left\langle x - \bar x \right\rangle^{- 1}
+\end{align}
+```
 
-Waarin $\varphi \left(\bar x\right)$ de rotatie is ter plaatse van $\bar x$ en $K_{\varphi}$ de veerconstante.
+```{math}
+:label:  verend_2d_krachten
+\begin{align}
+&q_z\left(x\right) : &F_{\text{veer},h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) &+ F_{\text{veer},v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) &+ T_{\text{veer}}_left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right) : &R_{\text{veer},h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) &- R_{\text{veer},v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right)
+\end{align}
+```
+
+De randvoorwaardes die hierbij worden geintroduceerd zijn bevatten de veerconstantes $K_T$, $K_V$ en $K_N$:
+
+```{math}
+:label: verend_vergelijkingen
+\begin{align}
+&\varphi \left( \bar x \right) = $- \cfrac{T_{\text{veer}}}{K_M}\\
+&u_v \left(\bar x\right) = $- \cfrac{F_{\text{veer},v}}{K_V}\\
+&u_h \left(\bar x\right) = $- \cfrac{F_{\text{veer},h}}{K_N}
+\end{align}
+```
+
+Een deels verende oplegging is natuurlijk ook mogelijk met het weglaten van de desbetreffende termen.
 
 #### Verende verbindingen
 Verende verbindingen worden gemodelleerd als de verbinding waar het om gaat met een andere 
 randvoorwaarde.
 
-In {numref}`Figuur_15`, numref}`Figuur_18` en {numref}`Figuur_14` is weergegeven hoe de verende verbindingen gemodelleerd kunnen worden.
+In {numref}`Figuur_14`, numref}`Figuur_18` en {numref}`Figuur_13` is weergegeven hoe de verende verbindingen gemodelleerd kunnen worden.
 
 ```{figure} figures/image14.png
 ---
@@ -435,11 +459,28 @@ align: center
 Modelleren van een translerende verende verbinding {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
 ```
 
-Voor verende scharnierverbindingen is dit: $M \left( \bar x \right) = K_\varphi \cdot \Delta \varphi$, met $M \left(\bar x \right)$ het moment ter plaatse van punt $\bar x$, $K_\varphi$ de veerconstante en $\Delta \varphi$ de rotatie van het scharnier.
+De veer wordt dus beschreven als een scharnier met krachten met een grootte van $F_{\text{veer},V}$, $F_{\text{veer},N}$, $T_{\text{veer}}. Dit kan beschreven worden met singulariteitsfuncties met orde $-3$ met onbekende grootte $\Delta \varphi$, $\Delta u_z$, $\Delta u_x$ op punt $\bar x$ in 1D:
 
-Voor verende schuifscharnieren is dit: $V(\bar x) = \ K_{w}  \ \Delta w$ , met $V(\bar x)$ de dwarskracht ter plaatse van punt $bar x$, $\ K_{w}$ de veerconstante en $\Delta w$ verplaatsing ter plaatse van het scharnier.
+```{math}
+:label: schranier_verend_krachten
+\begin{align}
+$q_z\left(x\right) : $EI \ \Delta \varphi \left\langle x - \bar x \right\rangle^{- 3} $+ T_{\text{veer}} \left\langle x - \bar x \right\rangle^{- 2} \\
+&& EI \ \Delta u_z \left\langle x - \bar x \right\rangle^{- 4} $+ F_{\text{veer},V} \left\langle x - \bar x \right\rangle^{- 1}
+$q_x\left(x\right) : $EA \ \Delta u_x \left\langle x - \bar x \right\rangle^{- 2} $+ F_{\text{veer},N} \left\langle x - \bar x \right\rangle^{- 1} \\
+```
 
-Voor verende telescoopscharnieren wordt deze randvoorwaarde: $N(\bar x) = \ K_{u} \ \Delta u$ , met $N\left( \bar x \right)$ de normaalkracht ter plaatse van punt $\bar x$, $\ K_{u}$ de veerconstante en $\Delta u$ de axiale verplaatsing in het scharnier.
+In 2D worden de reactiekrachten berekend in het lokale assenstelsel maar moeten deze worden omgeschreven naar het globale assenstelsel in de belastingsvergelijking.
+
+De bijbhorende voorwaardes zijn dan als volgt:
+
+```{math}
+:label: scharnier_vervend_vergelijking
+\begin{align}
+&M \left(\bar x\right) = &T_{\text{veer}} = &-K_M \cdot \Delta \varphi
+&V \left(\bar x\right) = &F_{\text{veer},V} = &-K_V \cdot \Delta u_z
+&N \left(\bar x\right) = &F_{\text{veer},N} = &-K_N \cdot \Delta u_x
+\end{align}
+```
 
 ## 3.  Invloedslijnen met Macaulay
 
