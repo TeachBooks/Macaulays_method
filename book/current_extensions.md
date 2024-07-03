@@ -23,12 +23,12 @@ Uit de balkentheorie van Euler-Bernoulli kunnen de differentiaalvergelijkingen v
 
 ```{math}
 :label: vgl_1
-EI\frac{d^{4}w}{dx^{4}} + q_{z}
+EI\frac{d^{4}w}{dx^{4}} + q_{z}\left( x \right) = 0
 ```
 
 ```{math}
 :label: vgl_2
-EA\frac{d^{2}w}{dx^{2}} + q_{x}
+EA\frac{d^{2}w}{dx^{2}} + q_{x}\left( x \right) = 0
 ```
 
 Over het algemeen worden deze vergelijkingen gebruikt door liggers eerst in verschillende delen met gelijke belasting op te splitsen. Vervolgens kan ieder deel beschreven worden met de differentiaalvergelijking en wordt er gebruik gemaakt van overgangsvoorwaarden.
