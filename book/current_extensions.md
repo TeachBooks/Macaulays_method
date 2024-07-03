@@ -151,9 +151,21 @@ q_z\left(x\right) : T \left\langle x - \bar x \right\rangle^{- 2}
 #### Uniform verdeelde belasting
 Belasting die gelijkmatig verdeeld is over de constructie kan beschreven worden met twee Heaviside functies. Hierbij werkt de waarde van $q_{z}$ eerste vanaf $\bar x_1$ in de daadwerkelijke richtingen en dan vanaf $\bar x_2$ in tegengestelde richting, dit geeft een totaal van $0$ voor $x > \bar x_2$. Deze werking is in {numref}`Figuur_6` weergegeven.
 
+```{figure} figures/image6.png
+---
+width: 600
+name: Figuur_6
+align: center
+---
+Modelleren van een uniform verdeelde belasting {cite:p}`vanderwulp_2023`
+```
+
+Dit kan beschreven worden met singulariteitsfuncties met groottes $q_v$ en $q_h$ van punt $\bar x_1$ tot $x_2$ waarbij de staaf een hoek $\theta \left( \bar x_1 \right)$ en $\theta \left( \bar x_2 \right)$ heeft.
+
 ```{math}
 :label: Verveelde_belasting_1D
-q\left(x\right)= q \left\langle x - \bar x_1 \right\rangle^{- 1} -q\left\langle x - \bar x_2 \right\rangle^{- 1}
+&q_z\left(x\right)= &q_v \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_v\left\langle x - \bar x_2 \right\rangle^{- 1}
+&q_z\left(x\right)= &q_h \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_h\left\langle x - \bar x_2 \right\rangle^{- 1}
 ```
 
 ```{math}
@@ -162,15 +174,6 @@ q\left(x\right)= q \left\langle x - \bar x_1 \right\rangle^{- 1} -q\left\langle 
 &q_z\left(x\right): &q_{v} \left\langle x - \bar x_1 \right\rangle^{- 1} \cos \left( \theta \left(\bar x_1\right) \right) &-q_{v} \left\langle x_2 - \bar x \right\rangle^{- 1} \cos \left( \theta \left(\bar x_2\right) \right) \\ & &+ q_{h} \left\langle x - \bar x_1 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_1\right) \right) &-q_{h} \left\langle x - \bar x_2 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_2\right) \right) \\
 & q_x \left(x \right) : &- q_{v} \left\langle x - \bar x_1 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_1\right) \right) &+q_{v} \left\langle x - \bar x_2 \right\rangle^{- 1} \sin \left( \theta \left(\bar x_2\right) \right) \\ &&+q_{h} \left\langle x - \bar x_1 \right\rangle^{- 1} \cos \left( \theta \left(\bar x_1\right) \right) &- q_{h} \left\langle x - \bar x_2 \right\rangle^{- 1} \cos \left( \theta \left(\bar x_2\right) \right)
 \end{align}
-```
-
-```{figure} figures/image6.png
----
-width: 600
-name: Figuur_6
-align: center
----
-Modelleren van een uniform verdeelde belasting {cite:p}`vanderwulp_2023`
 ```
 
 #### Lineair en parabolisch verdeelde belastingen
@@ -193,7 +196,7 @@ align: center
 Modelleren van een inklemming {cite:p}`vanderwulp_2023`
 ```
 
-Zoals beschreven in het hoofdstuk modelleren van belastingen, kunnen deze beschreven worden met singulariteitsfuncties van respectievelijk orde $-1$ en $-2$.
+Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ en $-2$ met onbekende groottes $R_v$, $R_h$ en $T$ op punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft.
 
 ```{math}
 :label: inklemming_1d_krachten
@@ -209,7 +212,7 @@ Zoals beschreven in het hoofdstuk modelleren van belastingen, kunnen deze beschr
 \end{align}
 ```
 
-Daarnaast introduceert een inklemming ook twee randvoorwaarden. Ter plaatse van een inklemming is de zakking ($w$) en de rotatie ($\varphi$) van de staaf gelijk aan $0$.
+Daarnaast introduceert een inklemming ook drie randvoorwaarden:
 
 ```{math}
 :label: inklemming_vergelijkingen
@@ -221,11 +224,7 @@ Daarnaast introduceert een inklemming ook twee randvoorwaarden. Ter plaatse van 
 ```
 
 #### Scharnier- en roloplegging
-Aangezien krachten in de richting van de staaf nog niet worden meegenomen, kunnen scharnier- en rolopleggingen op dezelfde manier worden gemodelleerd. Bij een scharnier- of roloplegging speelt een verticale oplegreactie. Deze oplegreactie kan worden gemodelleerd met een singulariteitsfunctie van orde $-1$.
-
-Een scharnier- of roloplegging introduceert ook een randvoorwaarde. Ter plaatse van de oplegging is de zakking ($w$) gelijk aan $0$.
-
-In {numref}`Figuur_8` is weergegeven hoe een scharnieroplegging gemodelleerd kan worden. Dit is hetzelfde voor een roloplegging.
+Aangezien krachten in de richting van de staaf nog niet worden meegenomen, kunnen scharnier- en rolopleggingen op dezelfde manier worden gemodelleerd. In {numref}`Figuur_8` is weergegeven hoe een scharnieroplegging gemodelleerd kan worden.
 
 ```{figure} figures/image8.png
 ---
@@ -236,10 +235,36 @@ align: center
 Modelleren van en scharnieroplegging {cite:p}`vanderwulp_2023`
 ```
 
-#### Scharnier
-Scharnierende verbindingen in constructies kunnen worden beschreven met singulariteitsfuncties van orde $-3$. Dit valt te beredeneren uit het feit dat scharnieren een sprong in de krommingslijn geven, en daar dus orde $0$ hebben. Terug differentiëren naar de belasting vergelijking geeft een singulariteitsfunctie van orde $-3$. Een scharnier gelegen op punt $\bar x$ wordt gemodelleerd als $EI\ \Delta \varphi{< x - \bar x >}^{- 3}$. De $\Delta \varphi$ staat hier voor de rotatie van het scharnier, ofwel de grote van de sprong in de krommingslijn.
+Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ met onbekende groottes $R_v$, $R_h$ en $T$ op punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft.
 
-Een scharnier introduceert ook een randvoorwaarde. Ter plaatse van het scharnier is het moment ($M$) gelijk aan $0$.
+```{math}
+:label: schranieropl_1d_krachten
+\begin{align}
+&q_z\left(x\right) : &R_{v} \left\langle x - \bar x \right\rangle^{- 1} \\ &q_x\left(x\right) : &R_{h} \left\langle x - \bar x \right\rangle^{- 1}
+\end{align}
+```
+
+```{math}
+:label: scharnieropl_2d_krachten
+\begin{align}
+&q_z\left(x\right) : &R_{h} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right) &+ R_{v} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) : &R_{h} \left\langle x - \bar x \right\rangle^{- 1}\cos\left( \theta \left( \bar x \right) \right) &- R_{v} \left\langle x - \bar x \right\rangle^{- 1}\sin\left( \theta \left( \bar x \right) \right)
+\end{align}
+```
+
+Daarnaast introduceert een scharnier ook twee randvoorwaarden:
+
+```{math}
+:label: scharnieropl_vergelijkingen
+\begin{align}
+&u_v \left(\bar x\right) = 0\\
+&u_h \left(\bar x\right) = 0
+\end{align}
+```
+
+Bij een rolscharnier vervallen de krachten en vergelijkingen in vrijgemaakte richting
+
+#### Scharnier
+Scharnierende verbindingen in constructies kunnen worden beschreven met singulariteitsfuncties van orde $-3$. Dit valt te beredeneren uit het feit dat scharnieren een sprong in de krommingslijn geven, en daar dus orde $0$ hebben. Terug differentiëren naar de belasting vergelijking geeft een singulariteitsfunctie van orde $-3$.
 
 In {numref}`Figuur_9` is weergegeven hoe een scharnier gemodelleerd kan worden.
 
@@ -250,6 +275,20 @@ name: Figuur_9
 align: center
 ---
 Modelleren van een scharnier {cite:p}`vanderwulp_2023`, correctie {cite:p}`mark_2024`
+```
+
+Dit kan beschreven worden met singulariteitsfuncties met ordes $-1$ en $-2$ met onbekende grootte $\Delta \varphi$ op punt $\bar x$ waarbij de staaf een hoek $\theta \left( \bar x \right)$ heeft.
+
+```{math}
+:label: schranier_krachten
+&q_z\left(x\right) : &EI \ \Delta \varphi \left\langle x - \bar x \right\rangle^{- 3}
+```
+
+Een scharnier introduceert ook een randvoorwaarde. Ter plaatse van het scharnier is het moment ($M$) gelijk aan $0$.
+
+```{math}
+:label: scharnier_vergelijking
+M \left(\bar x\right) = 0
 ```
 
 
