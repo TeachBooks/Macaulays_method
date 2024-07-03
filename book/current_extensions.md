@@ -189,8 +189,8 @@ Dit kan beschreven worden met singulariteitsfuncties met groottes $q_v$ en $q_h$
 ```{math}
 :label: Verveelde_belasting_1D
 \begin{align}
-&q_z\left(x\right)= &q_v \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_v\left\langle x - \bar x_2 \right\rangle^{- 1} \\
-&q_z\left(x\right)= &q_h \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_h\left\langle x - \bar x_2 \right\rangle^{- 1}
+&q_z\left(x\right): &q_v \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_v\left\langle x - \bar x_2 \right\rangle^{- 1} \\
+&q_z\left(x\right): &q_h \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_h\left\langle x - \bar x_2 \right\rangle^{- 1}
 \end{align}
 ```
 
@@ -701,7 +701,7 @@ In {numref}`table_een` {numref}`table_twee` {cite:p}`alex_2024` wordt voorgeschr
 | Beginpunt en eindpunt constructie | | $N\left(\bar x^-\right) = 0$ <br> $V\left(\bar x^-\right) = 0$ <br> $M\left(\bar x^-\right) = 0$ <br> $N\left(\bar x\right) = 0$ <br> $V\left(\bar x^+\right) = 0$ <br> $M\left(\bar x^+\right) = 0$ | Integratieconstantes $C_V$, $C_M$, $C_N$, $C_w$, $C_{\varphi}$, $C_u$  | 
 | Puntlast | $\begin{align*}&{{q_z\left(x\right) : F \left\langle x - \bar x \right\rangle^{- 1}}}&{{q_x\left(x\right) : F \left\langle x - \bar x \right\rangle^{- 1}}}\end{align*}$ | | |
 | Koppel | $q_z\left(x\right) : T \left\langle x - \bar x \right\rangle^{- 2}$ | | | 
-| Verdeelde belasting | $\begin{align*}&q_z\left(x\right)= &q_v \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_v\left\langle x - \bar x_2 \right\rangle^{- 1} \\&q_z\left(x\right)= &q_h \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_h\left\langle x - \bar x_2 \right\rangle^{- 1} \end{align*}$ <br> Met $\bar x_1$ en $\bar x_2$ het begin en eind van de verdeelde belasting |||
+| Verdeelde belasting | $\begin{align*}&q_z\left(x\right): &q_v \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_v\left\langle x - \bar x_2 \right\rangle^{- 1} \\&q_z\left(x\right): &q_h \left\langle x - \bar x_1 \right\rangle^{- 1} &-q_h\left\langle x - \bar x_2 \right\rangle^{- 1} \end{align*}$ <br> Met $\bar x_1$ en $\bar x_2$ het begin en eind van de verdeelde belasting |||
 | Scharnier-/schuif-/telescoop-verbinding | $q_z\left(x\right) : EI \ \Delta \varphi \left\langle x - \bar x \right\rangle^{- 3} \\ q_z\left(x\right) : EI \ \Delta u_z \left\langle x - \bar x \right\rangle^{- 4} \\ q_x\left(x\right) : EA \ \Delta u_x \left\langle x - \bar x \right\rangle^{- 2} $ | $\begin{align*}M \left(\bar x\right) = 0 \\ V \left(\bar x\right) = 0 \\ N \left(\bar x\right) = 0 \end{align*}$| $\Delta \varphi$, $\Delta u_z$ en $\Delta u_x$ |
 | Inklemming | $\begin{align*} &q_z\left(x\right) : &R_{v} \left\langle x - \bar x \right\rangle^{- 1} &+ T \left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right) : &R_{h} \left\langle x - \bar x \right\rangle^{- 1} \end{align*}$ | $R_h$, $R_v$ en $T$ |
 | Verende oplegging | $\begin{align*} &q_z\left(x\right) : &F_{\text{veer},v} \left\langle x - \bar x \right\rangle^{- 1} &+ T_{\text{veer}} \left\langle x - \bar x \right\rangle^{- 2} \\ &q_x\left(x\right) : &F_{\text{veer},h} \left\langle x - \bar x \right\rangle^{- 1} \end{align*}$ | $\begin{align*}& T_{\text{veer}} = - {K_M} \varphi \ \left( \bar x \right) \\& F_{\text{veer},v} = - {K_V} \ u_v \left(\bar x\right)\\& F_{\text{veer},h} = - {K_N} \ u_h \left(\bar x\right)\end{align*}$ |$F_{\text{veer},V}$, $F_{\text{veer},N}$, $T_{\text{veer}}$|
