@@ -20,4 +20,5 @@
 |     Collapse mechanisms plasticity              |  -             |   -                         |
 |     Virtual work                                |  -              |   -                         |
 |     3D structures                               |  -              |   -                         |
+|     Develop GUI to use Macaulay's method        |  -              |   -                         |
 |     ... (all ideas are welcome)                 |                               |   -                         |
