@@ -21,4 +21,5 @@
 |     Virtual work                                |  -              |   -                         |
 |     3D structures                               |  -              |   -                         |
 |     Develop GUI to use Macaulay's method        |  -              |   -                         |
-|     ... (all ideas are welcome)                 |                               |   -                         |
+|     Periodic boundary conditions                | - | - |
+|     ... (all ideas are welcome)                 |                               |                           |
