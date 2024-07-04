@@ -23,7 +23,7 @@ Uit de balkentheorie van Euler-Bernoulli kunnen de differentiaalvergelijkingen v
 
 ```{math}
 :label: vgl_1
-EI\frac{d^{4}w}{dx^{4}} + q_{z}\left( x \right) = 0
+EI\frac{d^{4}w}{dx^{4}} - q_{z}\left( x \right) = 0
 ```
 
 ```{math}
