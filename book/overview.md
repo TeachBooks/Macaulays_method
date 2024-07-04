@@ -16,7 +16,8 @@
 |     Branching 2D structures with kinked parts   | 23 June 2023, 24 June 2024: Suggestions provided by Ezzat, completed by Alex |  -                          |
 |     Branching curved 2D structures              | 23 June 2023: Suggestion provided by Ezzat |   -                         |
 |     Looping 2D structures                       | 24 June 2023: Completed by Alex             |  -                          |
-|     Truss structures                            | 24 June 2023: Completed but not specialized for truss by Alex             |   -                         |
+|     Truss structures                            | 24 June 2023: Completed by Alex but not specifically for truss    |   -                         |
 |     Collapse mechanisms plasticity              |  -             |   -                         |
 |     Virtual work                                |  -              |   -                         |
+|     3D structures                               |  -              |   -                         |
 |     ... (all ideas are welcome)                 |                               |   -                         |
