@@ -5,9 +5,10 @@ parts:
   - caption: Overview
     chapters:
     - file: Onderzoeksvoorstel.ipynb
-      title: Research proposal (in Dutch)
+      title: Macaulay's method (in Dutch)
     - file: overview.md
     - file: current_extensions
+      title: Current extensions (in Dutch)
   - caption: Student theses (in Dutch)
     chapters:
     - file: theses/justus.md
