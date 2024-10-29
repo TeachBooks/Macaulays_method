@@ -22,4 +22,5 @@
 |     3D structures                               |  -              |   -                         |
 |     Develop GUI to use Macaulay's method        |  -              |   -                         |
 |     Periodic boundary conditions                | - | - |
+|     Varying stiffness of elements               | - | - |
 |     ... (all ideas are welcome)                 |   |   |
