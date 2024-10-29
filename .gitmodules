@@ -19,3 +19,6 @@
 [submodule "book/theses/Macaulay-2D"]
 	path = book/theses/Macaulay-2D
 	url = https://github.com/AJDBaudoin/Macaulay-2D.git
+[submodule "book/theses/sympy"]
+	path = book/theses/sympy
+	url = https://github.com/BorekSaheli/sympy.git

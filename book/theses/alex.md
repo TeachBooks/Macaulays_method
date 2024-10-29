@@ -127,4 +127,5 @@ constructies.
 {cite:ts}`alex_2024`
 
 ## Documenten
+- [TU Delft repository](https://repository.tudelft.nl/record/uuid:f921c7d0-dde9-4d3c-9572-dd8462e9df4a)
 - [GitHub repository ](https://github.com/AJDBaudoin/Macaulay-2D), also shown in this book

@@ -58,6 +58,9 @@ parts:
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_11.ipynb
       - file: theses/BEP_examples_SymPy_1.14.dev/BEP_example_12.ipynb
       - file: theses/Beam-examples/3pin_example.ipynb
+    - files: theses/borek
+      sections:
+      - file: theses/borek_example.ipynb
   - caption: Appendices
     chapters:
     - file: references.md
