@@ -13,4 +13,4 @@
 {cite:ts}`borek_2024`
 
 ## Documenten
-- [GitHub repository](https://github.com/BorekSaheli/sympy/tree/structure2d), examples also shown in this book: [example 1](./Macaulay-s-toegepast-met-invloedslijnen/Eendimensionale_voorbeelden.ipynb) and [example 2](./Macaulay-s-toegepast-met-invloedslijnen/Tweedimensionale_voorbeelden.ipynb)
+- [GitHub repository](https://github.com/BorekSaheli/sympy/tree/structure2d), example as in report shown in this [book](./borek_example.ipynb)
