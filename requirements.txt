@@ -3,7 +3,6 @@ teachbooks # depends on jupyter-book
 numpy
 sympy
 matplotlib
-sphinx-thebe
 jupyterbook_patches
 sphinx-image-inverter
 
