@@ -13,4 +13,5 @@
 {cite:ts}`borek_2024`
 
 ## Documenten
+- [TU Delft repository](https://resolver.tudelft.nl/uuid:e4961d2e-230f-419c-9a15-545ff0f049f8)
 - [GitHub repository](https://github.com/BorekSaheli/sympy/tree/structure2d), example as in report shown in this [book](./borek_example.ipynb)
