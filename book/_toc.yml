@@ -60,7 +60,10 @@ parts:
       - file: theses/Beam-examples/3pin_example.ipynb
     - file: theses/borek
       sections:
-      - file: theses/borek_example.ipynb
+      - file: theses/examples_borek/borek_example_1.ipynb
+      - file: theses/examples_borek/borek_example_2.ipynb
+      - file: theses/examples_borek/borek_example_3.ipynb
+      - file: theses/examples_borek/borek_example_4.ipynb
   - caption: Appendices
     chapters:
     - file: references.md
