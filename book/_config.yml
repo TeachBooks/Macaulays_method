@@ -29,6 +29,7 @@ sphinx:
     html_last_updated_fmt: '%B %-d, %Y'
   extra_extensions:
     - sphinx.ext.imgconverter
+    - jupyterbook_patches
     - sphinx_image_inverter
 
 bibtex_bibfiles: 
