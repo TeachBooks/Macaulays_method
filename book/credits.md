@@ -40,7 +40,7 @@ Next to courses on structural mechanics, Tom (co)teaches courses on optimisation
 
 - {fa}`envelope` T.R.vanWoudenberg@tudelft.nl
 - {fa}`envelope` tomvanw@hotmail.com
-- {fa}`phone` 015-2789739
+- {fa}`phone` +31152789739
 - {fa}`location-dot` TU Delft – Civil Engineering & Geosciences - Department 3MD – Section Applied Mechanics - Room 6.45
 - <i class="fa-brands fa-github"></i> [GitHub profile ](https://github.com/Tom-van-Woudenberg)
 - <i class="fa-brands fa-linkedin"></i> [LinkedIn profile](https://www.linkedin.com/in/tom-van-woudenberg/)
