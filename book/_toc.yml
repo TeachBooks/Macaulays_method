@@ -67,3 +67,4 @@ parts:
   - caption: Appendices
     chapters:
     - file: references.md
+    - file: credits.md
