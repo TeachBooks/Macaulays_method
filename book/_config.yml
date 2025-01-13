@@ -27,6 +27,7 @@ sphinx:
       use_repository_button: true
       use_edit_page_button: true
       use_issues_button : true
+      announcement : "This book has been moved to: <a href='https://oit.tudelft.nl/Macaulays-method' style='color:white'>https://oit.tudelft.nl/Macaulays-method </a>."
       launch_buttons:
           thebe: true
     html_last_updated_fmt: '%B %-d, %Y'
